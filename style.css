@@ -1,0 +1,361 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+body {
+  line-height: 1.6;
+} */
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-play-state: paused;
+  animation-name: fadeInUp; /* Default animation */
+}
+
+.animate-on-scroll.animated {
+  animation-play-state: running;
+}
+
+/* Individual animation classes */
+.fade-in-up {
+  animation-name: fadeInUp;
+}
+
+.fade-in-down {
+  animation-name: fadeInDown;
+}
+
+.fade-in-left {
+  animation-name: fadeInLeft;
+}
+
+.fade-in-right {
+  animation-name: fadeInRight;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.scale-in {
+  animation-name: scaleIn;
+}
+
+.bounce-in {
+  animation-name: bounceIn;
+}
+
+/* Delay classes */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+
+/* Hero section load animation */
+.hero-title, .hero-description, .hero-button, .hero-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.hero-image {
+  opacity: 0;
+  transform: translateY(30px) scale(0.9);
+  transition: all 0.8s ease-out;
+}
+
+.hero-loaded .hero-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.hero-loaded .hero-description {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.hero-loaded .hero-button {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.4s;
+}
+
+.hero-loaded .hero-image {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition-delay: 0.5s;
+}
+
+.hero-loaded .hero-card:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.hero-loaded .hero-card:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+
+.hero-loaded .hero-card:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.0s;
+}
+
+.hero-loaded .hero-card:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.2s;
+}
+
+.hero-loaded .hero-card:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.4s;
+}
+
+/* Testimonial Carousel Styles */
+.testimonial-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  flex: 0 0 auto;
+  width: 941.9567260742188px;
+  height: 416.2909240722656px;
+  margin: 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.carousel-nav:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-nav.prev {
+  left: 10px;
+}
+
+.carousel-nav.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Responsive Design for Testimonial Carousel */
+@media (max-width: 1024px) {
+  .testimonial-card {
+    width: 90vw;
+    height: 400px;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 95vw;
+    height: 350px;
+    margin: 0 5px;
+  }
+  
+  .carousel-nav {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .carousel-nav.prev {
+    left: 5px;
+  }
+  
+  .carousel-nav.next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    width: 100vw;
+    height: 300px;
+    margin: 0;
+  }
+  
+  .carousel-nav {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .carousel-nav.prev {
+    left: 2px;
+  }
+  
+  .carousel-nav.next {
+    right: 2px;
+  }
+  
+  .carousel-dots {
+    bottom: 10px;
+  }
+}
+
+/* Testimonial Carousel Styles */
+.testimonial-carousel {
+  user-select: none; /* Prevent text selection during drag */
+}
+
+.testimonial-slide {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth slide animation */
+}
+
+.testimonial-carousel.dragging .testimonial-slide {
+  transition: none; /* Disable transition during drag for smooth feedback */
+}
+
+.carousel-dot {
+  transition: all 0.3s ease;
+}
+
+.carousel-dot:hover {
+  transform: scale(1.2);
+}
