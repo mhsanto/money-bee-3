@@ -225,10 +225,9 @@ body {
 .testimonial-card {
   flex: 0 0 auto;
   width: 941.9567260742188px;
-  min-height: 416.2909240722656px;
+  /* min-height: 416.2909240722656px; */
   margin: 0 10px;
   border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   overflow: hidden;
 }
 
