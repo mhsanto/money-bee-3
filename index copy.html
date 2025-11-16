@@ -412,159 +412,76 @@
     </nav>
   </div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Loan Malaysia Hero Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  
   <!-- Hero Section -->
   <section id="hero-section"
-    class="relative rounded-3xl overflow-hidden mx-auto max-w-screen-3xl px-4 mt-8"
-    style="background-color:rgba(35, 82, 134, 1);">
-    <div class="relative z-10 px-4 md:px-3 py-12 md:py-20 lg:py-32 flex md:min-h-[60vh] md:min-h-[70vh]">
-      <div class="md:absolute md:top-20">
-        <h1
-          class="hero-title text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 md:leading-relaxed md:px-4">
-          <div class="flex flex-col gap-6 text-white font-[78px]">
-            <p>Personal Loan Malaysia with</p>
-            <p>Full Support Case Manager</p>
-          </div>
-        </h1>
-        <p
-          class="hero-description text-sm md:text-sm lg:text-base mb-4 md:mb-8 max-w-xl leading-relaxed text-gray-400 md:mt-12 md:px-4">
-          We combine smart AI to find your best offer with a real human Case Manager to support you for the *entire loan term*.
+    class="relative rounded-3xl overflow-hidden mx-auto px-4 mt-8"
+    style="background: linear-gradient(90deg, 
+      rgba(28, 151, 242, 1) 0%, 
+      rgba(29, 138, 229, 1) 12%, 
+      rgba(30, 125, 216, 1) 25%, 
+      rgba(31, 112, 203, 1) 37%, 
+      rgba(32, 99, 190, 1) 50%, 
+      rgba(33, 86, 177, 1) 62%, 
+      rgba(34, 73, 164, 1) 75%, 
+      rgba(35, 60, 151, 1) 87%, 
+      rgba(36, 47, 138, 1) 100%);">
+    
+    <div class="relative z-10 grid md:grid-cols-2 gap-8 items-center min-h-[500px] md:min-h-[600px]">
+      
+      <!-- Left Content -->
+      <div class="px-6 md:px-12 py-12 md:py-20">
+        <p class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8 md:mb-12">
+          Personal Loan Malaysia with Full
         </p>
-
-        <!-- Apply Button (Mobile/Tablet - below description) -->
-        <div class="md:hidden mb-6">
-          <button type="button" style="background-color: #f9d157"
-            class="hero-button px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition text-sm">
-            Apply Now
-          </button>
+        <p class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8 md:mb-12">
+        Support Case Manager
+        </p>
+        
+        <!-- Apply Button -->
+        <button type="button" 
+          style="background-color: #f9d157"
+          class="px-8 py-3.5 rounded-lg font-semibold text-black hover:opacity-90 transition text-base lg:text-lg shadow-lg">
+          Apply Now
+        </button>
+      </div>
+      
+      <!-- Right Image with Overlay -->
+      <div class="hidden md:block relative h-full">
+        <div class="absolute right-[-15px] top-0 h-full w-full">
+          <img 
+            src="./assets/images/hero/blue-collar-mens.png" 
+            alt="Business professionals discussing loan" 
+            class="h-full w-full object-cover object-left rounded-r-3xl"
+          />
+          <!-- Blue overlay on image -->
         </div>
       </div>
+      
     </div>
-
-    <!-- Apply Button (Desktop - bottom left) -->
-    <div class="hidden md:block absolute bottom-[6rem] left-12 z-20">
-      <button type="button" style="background-color: #f9d157"
-        class="hero-button px-8 py-3 rounded-lg font-semibold text-black hover:opacity-90 transition text-base lg:text-lg">
-        Apply Now
-      </button>
+    
+    <!-- Mobile Image (optional - below content) -->
+    <div class="md:hidden relative h-64 -mx-4 -mb-0">
+      <img 
+        src="./assets/images/hero/hero-image.png" 
+        alt="Business professionals discussing loan" 
+        class="w-full h-full object-cover"
+      />
     </div>
-
-    <!-- Feature Cards Grid -->
-    <div
-      class="relative md:absolute md:bottom-[3rem] md:right-4 z-20 px-4 md:px-0 pb-6 md:pb-0 md:max-w-[calc(100%-2rem)]">
-      <div class="flex flex-col gap-2 md:gap-0">
-        <!-- Top Row: 3 articles (2 per row on mobile/tablet) -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-0">
-          <!-- Instant Loan Matching -->
-          <article
-            class="hero-card bg-black/30 backdrop-blur-sm p-2 md:p-3 shadow-sm hover:shadow-md transition delay-500">
-            <div class="flex items-center gap-1.5 md:gap-2">
-              <div style="background-color: #f9d157"
-                class="w-7 h-7 md:w-8 md:h-8 rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="assets/images/icon/instant-loan.svg" class="w-6 h-6" alt="Instant Loan Matching" />
-              </div>
-              <div class="flex flex-col min-w-0">
-                <h3 class="font-semibold text-white text-[10px] md:text-xs mb-0.5 md:mb-1 truncate">
-                  Instant Loan Matching
-                </h3>
-                <p class="text-[9px] md:text-xs text-white line-clamp-2">
-                  Get your best options in seconds
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Safe & Compliant -->
-          <article
-            class="hero-card bg-black/30 backdrop-blur-sm p-2 md:p-3 shadow-sm hover:shadow-md transition delay-600">
-            <div class="flex items-center gap-1.5 md:gap-2">
-              <div style="background-color: #f9d157"
-                class="w-7 h-7 md:w-8 md:h-8 rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="assets/images/icon/safe-compliant.svg" class="w-6 h-6" alt="Safe & Compliant" />
-              </div>
-              <div class="flex flex-col min-w-0">
-                <h3 class="font-semibold text-white text-[10px] md:text-xs mb-0.5 md:mb-1 truncate">
-                  Safe & Compliant
-                </h3>
-                <p class="text-[9px] md:text-xs text-white line-clamp-2">
-                  Licensed lenders, PDPA data protection
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Hybrid Support -->
-          <article
-            class="hero-card bg-black/30 backdrop-blur-sm p-2 md:p-3 shadow-sm hover:shadow-md transition delay-700">
-            <div class="flex items-center gap-1.5 md:gap-2">
-              <div style="background-color: #f9d157"
-                class="w-7 h-7 md:w-8 md:h-8 rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="assets/images/icon/hybrid-support.svg" class="w-6 h-6" alt="Hybrid Support" />
-              </div>
-              <div class="flex flex-col min-w-0 md:w-full">
-                <h3 class="font-semibold text-white text-[10px] md:text-xs mb-0.5 md:mb-1 truncate">
-                  Hybrid Support
-                </h3>
-                <p class="text-[9px] md:text-xs text-white line-clamp-2">
-                  AI insights + real case managers
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="hero-card bg-black/30 backdrop-blur-sm p-3 shadow-sm hover:shadow-md transition delay-800">
-            <div class="flex items-center gap-2">
-              <div style="background-color: #f9d157"
-                class="w-8 h-8  rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="assets/images/icon/financial-health-hub.svg" class="w-6 h-6" alt="Financial Health Hub" />
-              </div>
-              <div class="flex flex-col">
-                <h3 class="font-semibold text-white text-xs mb-1">
-                  Financial Health Hub
-                </h3>
-                <p class="text-xs text-white">
-                  Learn to borrow wisely, avoid scams
-                </p>
-              </div>
-            </div>
-          </article>
-          <!-- Financial Health Hub -->
-          <article class="hero-card bg-black/30 backdrop-blur-sm p-3 shadow-sm hover:shadow-md transition delay-800">
-            <div class="flex items-center gap-2">
-              <div style="background-color: #f9d157"
-                class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.2506 6.12375C15.5816 5.52049 14.7914 5.06713 13.9329 4.79401C13.0744 4.5209 12.1675 4.43434 11.2729 4.54013C9.92251 4.69433 8.65685 5.27632 7.6608 6.20107C6.66476 7.12582 5.99054 8.34486 5.73665 9.68007C5.48276 11.0153 5.66251 12.3967 6.24963 13.6225C6.83675 14.8483 7.80048 15.8542 9 16.4932V20.25C9.0002 20.4489 9.07928 20.6395 9.21989 20.7801C9.3605 20.9207 9.55115 20.9998 9.75 21H10.5V21.75C10.5002 21.9489 10.5793 22.1395 10.7199 22.2801C10.8605 22.4207 11.0511 22.4998 11.25 22.5H12.75C12.9489 22.4998 13.1395 22.4207 13.2801 22.2801C13.4207 22.1395 13.4998 21.9489 13.5 21.75V21H14.25C14.4489 20.9998 14.6395 20.9207 14.7801 20.7801C14.9207 20.6395 14.9998 20.4489 15 20.25V16.4936C15.9051 16.0116 16.6804 15.3181 17.26 14.4722C17.8397 13.6262 18.2065 12.6529 18.3292 11.6348C18.452 10.6167 18.3272 9.58403 17.9653 8.62455C17.6034 7.66507 17.0152 6.80716 16.2506 6.12375ZM14.25 18V18.75H9.75V18H14.25ZM12.7507 21.75H11.25V21H12.75L12.7507 21.75ZM13.125 20.25H9.75V19.5H14.25V20.25H13.125ZM14.4608 15.927C14.3975 15.9578 14.3442 16.0057 14.307 16.0653C14.2697 16.1249 14.25 16.1938 14.25 16.2641V17.25H12.375V15.5303L13.3901 14.5151C13.4584 14.4444 13.4962 14.3497 13.4954 14.2513C13.4945 14.153 13.4551 14.059 13.3856 13.9894C13.316 13.9199 13.222 13.8805 13.1237 13.8796C13.0253 13.8788 12.9306 13.9166 12.8599 13.9849L12 14.8447L11.1401 13.9849C11.0694 13.9166 10.9747 13.8788 10.8763 13.8796C10.778 13.8805 10.684 13.9199 10.6144 13.9894C10.5449 14.059 10.5055 14.153 10.5046 14.2513C10.5038 14.3497 10.5416 14.4444 10.6099 14.5151L11.625 15.5303V17.25H9.75V16.2638C9.75001 16.1935 9.73029 16.1248 9.6931 16.0652C9.6559 16.0057 9.60272 15.9578 9.53962 15.927C8.44503 15.3953 7.55253 14.5228 6.99621 13.4405C6.43988 12.3583 6.24979 11.1247 6.45447 9.92514C6.65916 8.72559 7.24758 7.62486 8.13132 6.78832C9.01507 5.95178 10.1464 5.4246 11.3554 5.286C11.572 5.26182 11.7899 5.24968 12.0079 5.24962C13.39 5.24558 14.7241 5.7564 15.75 6.6825C16.4378 7.29727 16.9637 8.07191 17.2812 8.93804C17.5987 9.80418 17.6981 10.7352 17.5706 11.6488C17.4431 12.5625 17.0926 13.4307 16.5502 14.1768C16.0077 14.9229 15.2898 15.524 14.46 15.927H14.4608ZM12 3.75C12.0995 3.75 12.1948 3.71049 12.2652 3.64016C12.3355 3.56984 12.375 3.47446 12.375 3.375V1.875C12.375 1.77554 12.3355 1.68016 12.2652 1.60984C12.1948 1.53951 12.0995 1.5 12 1.5C11.9005 1.5 11.8052 1.53951 11.7348 1.60984C11.6645 1.68016 11.625 1.77554 11.625 1.875V3.375C11.625 3.47446 11.6645 3.56984 11.7348 3.64016C11.8052 3.71049 11.9005 3.75 12 3.75ZM6.43125 5.83687C6.46607 5.87172 6.50741 5.89936 6.5529 5.91822C6.5984 5.93709 6.64717 5.94681 6.69643 5.94683C6.74569 5.94684 6.79446 5.93716 6.83998 5.91833C6.88549 5.89949 6.92685 5.87188 6.96169 5.83706C6.99653 5.80225 7.02417 5.76091 7.04304 5.71541C7.0619 5.66991 7.07162 5.62114 7.07164 5.57188C7.07166 5.52263 7.06197 5.47385 7.04314 5.42834C7.0243 5.38282 6.99669 5.34147 6.96187 5.30662L5.901 4.24575C5.86641 4.20993 5.82503 4.18137 5.77928 4.16171C5.73353 4.14206 5.68432 4.13171 5.63453 4.13128C5.58473 4.13085 5.53535 4.14034 5.48927 4.15919C5.44318 4.17805 5.40131 4.20589 5.3661 4.2411C5.33089 4.27631 5.30305 4.31818 5.28419 4.36427C5.26534 4.41035 5.25585 4.45973 5.25628 4.50953C5.25671 4.55932 5.26706 4.60853 5.28671 4.65428C5.30637 4.70003 5.33493 4.74141 5.37075 4.776L6.43125 5.83687ZM4.5 10.5H3C2.90054 10.5 2.80516 10.5395 2.73484 10.6098C2.66451 10.6802 2.625 10.7755 2.625 10.875C2.625 10.9745 2.66451 11.0698 2.73484 11.1402C2.80516 11.2105 2.90054 11.25 3 11.25H4.5C4.59946 11.25 4.69484 11.2105 4.76516 11.1402C4.83549 11.0698 4.875 10.9745 4.875 10.875C4.875 10.7755 4.83549 10.6802 4.76516 10.6098C4.69484 10.5395 4.59946 10.5 4.5 10.5Z"
-                    fill="black" />
-                  <path
-                    d="M6.4328 15.9132L5.3723 16.9741C5.33648 17.0087 5.30791 17.0501 5.28826 17.0958C5.2686 17.1416 5.25826 17.1908 5.25783 17.2406C5.25739 17.2903 5.26688 17.3397 5.28574 17.3858C5.30459 17.4319 5.33244 17.4738 5.36765 17.509C5.40286 17.5442 5.44473 17.572 5.49081 17.5909C5.5369 17.6097 5.58628 17.6192 5.63607 17.6188C5.68586 17.6184 5.73507 17.608 5.78082 17.5884C5.82657 17.5687 5.86795 17.5401 5.90255 17.5043L6.96342 16.4435C7.03173 16.3727 7.06953 16.278 7.06867 16.1797C7.06782 16.0814 7.02838 15.9873 6.95885 15.9178C6.88932 15.8482 6.79527 15.8088 6.69695 15.808C6.59862 15.8071 6.50352 15.8449 6.4328 15.9132ZM18.1005 4.24583L17.0397 5.30671C17.0039 5.3413 16.9753 5.38268 16.9556 5.42843C16.936 5.47418 16.9256 5.52339 16.9252 5.57318C16.9248 5.62297 16.9343 5.67235 16.9531 5.71844C16.972 5.76452 16.9998 5.80639 17.035 5.8416C17.0702 5.87681 17.1121 5.90466 17.1582 5.92351C17.2043 5.94237 17.2537 5.95186 17.3034 5.95142C17.3532 5.95099 17.4024 5.94065 17.4482 5.92099C17.4939 5.90134 17.5353 5.87277 17.5699 5.83696L18.6308 4.77608C18.6666 4.74149 18.6952 4.70011 18.7148 4.65436C18.7345 4.60861 18.7448 4.5594 18.7453 4.50961C18.7457 4.45981 18.7362 4.41043 18.7174 4.36435C18.6985 4.31826 18.6707 4.27639 18.6354 4.24118C18.6002 4.20597 18.5584 4.17813 18.5123 4.15927C18.4662 4.14042 18.4168 4.13093 18.367 4.13136C18.3172 4.13179 18.268 4.14214 18.2223 4.16179C18.1765 4.18145 18.1351 4.21001 18.1005 4.24583ZM17.5703 15.9132C17.5 15.8428 17.4046 15.8033 17.3051 15.8033C17.2056 15.8032 17.1102 15.8427 17.0399 15.913C16.9695 15.9833 16.9299 16.0787 16.9299 16.1782C16.9299 16.2777 16.9694 16.3731 17.0397 16.4435L18.1005 17.5043C18.1713 17.5726 18.266 17.6104 18.3643 17.6096C18.4626 17.6087 18.5567 17.5693 18.6262 17.4998C18.6958 17.4302 18.7352 17.3362 18.736 17.2379C18.7369 17.1395 18.6991 17.0448 18.6308 16.9741L17.5703 15.9132ZM21.0015 10.5001H19.5015C19.4021 10.5001 19.3067 10.5396 19.2364 10.6099C19.1661 10.6802 19.1265 10.7756 19.1265 10.8751C19.1265 10.9745 19.1661 11.0699 19.2364 11.1402C19.3067 11.2106 19.4021 11.2501 19.5015 11.2501H21.0015C21.101 11.2501 21.1964 11.2106 21.2667 11.1402C21.337 11.0699 21.3765 10.9745 21.3765 10.8751C21.3765 10.7756 21.337 10.6802 21.2667 10.6099C21.1964 10.5396 21.101 10.5001 21.0015 10.5001Z"
-                    fill="black" />
-                  <path
-                    d="M6.69434 16.0581C6.72707 16.0584 6.75906 16.0711 6.78223 16.0942C6.8054 16.1174 6.81807 16.1494 6.81836 16.1821C6.81846 16.1984 6.81546 16.2142 6.80957 16.229L6.7832 16.27L5.72266 17.3306C5.71121 17.3424 5.69775 17.3523 5.68262 17.3589C5.66737 17.3654 5.65039 17.3685 5.63379 17.3687C5.61742 17.3688 5.60112 17.366 5.58594 17.3599C5.57057 17.3536 5.55568 17.3443 5.54395 17.3325C5.53237 17.3209 5.52385 17.3066 5.51758 17.2915C5.51129 17.2761 5.50767 17.2593 5.50781 17.2427C5.50796 17.2263 5.51115 17.2099 5.51758 17.1948C5.52413 17.1796 5.53396 17.1653 5.5459 17.1538L6.60645 16.0933C6.62973 16.0708 6.66146 16.0579 6.69434 16.0581ZM17.3047 16.0532C17.3379 16.0532 17.3701 16.0669 17.3936 16.0903L18.4512 17.1479L18.4775 17.188C18.4835 17.203 18.4865 17.2194 18.4863 17.2358C18.486 17.2686 18.4724 17.2996 18.4492 17.3228C18.4261 17.3459 18.395 17.3595 18.3623 17.3599C18.3459 17.36 18.3294 17.3571 18.3145 17.3511L18.2744 17.3247L17.2168 16.2671C17.1933 16.2436 17.1797 16.2114 17.1797 16.1782C17.1797 16.1451 17.1934 16.1138 17.2168 16.0903C17.2402 16.067 17.2716 16.0533 17.3047 16.0532ZM19.502 10.7505H21.002C21.0349 10.7506 21.0665 10.7633 21.0898 10.7866C21.1133 10.8101 21.127 10.8423 21.127 10.8755C21.1268 10.9085 21.1132 10.94 21.0898 10.9634C21.0665 10.9867 21.035 11.0004 21.002 11.0005H19.502C19.4688 11.0005 19.4365 10.9868 19.4131 10.9634C19.3898 10.94 19.3771 10.9085 19.377 10.8755C19.377 10.8423 19.3896 10.8101 19.4131 10.7866C19.4365 10.7632 19.4688 10.7505 19.502 10.7505ZM18.3691 4.38135C18.3857 4.3812 18.4026 4.38483 18.418 4.39111C18.4331 4.39738 18.4474 4.4059 18.459 4.41748C18.4707 4.42922 18.48 4.44411 18.4863 4.45947C18.4925 4.47465 18.4952 4.49095 18.4951 4.50732C18.495 4.52392 18.4919 4.54091 18.4854 4.55615C18.4788 4.57128 18.4689 4.58474 18.457 4.59619L17.3896 5.66357C17.3782 5.67528 17.3646 5.68444 17.3496 5.69092C17.3345 5.69741 17.3182 5.70145 17.3018 5.70166C17.2852 5.7018 17.2683 5.69818 17.2529 5.69189C17.2376 5.68561 17.2236 5.67628 17.2119 5.66455C17.2002 5.65283 17.1908 5.63887 17.1846 5.62354C17.1784 5.60833 17.1747 5.5921 17.1748 5.57568C17.1749 5.55908 17.179 5.5421 17.1855 5.52686C17.192 5.51188 17.2012 5.4982 17.2129 5.48682L17.2168 5.48389L18.2773 4.42236L18.2803 4.41943C18.2918 4.4075 18.306 4.39767 18.3213 4.39111C18.3364 4.38469 18.3527 4.3815 18.3691 4.38135Z"
-                    stroke="white" stroke-opacity="0.4" stroke-width="0.5" />
-                </svg>
-              </div>
-              <div class="flex flex-col">
-                <h3 class="font-semibold text-white text-xs mb-1">
-                  Financial Health Hub
-                </h3>
-                <p class="text-xs text-white">
-                  Every borrower is unique, so is our advice
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!-- Bottom Row: 2 articles -->
-      </div>
-    </div>
-
-    <!-- Background Image -->
-    <div class="absolute top-0 right-0 z-0">
-      <img src="./assets/images/hero/blue-collar-mens.png" alt="Hero Background" class="w-[53rem] h-full object-contain" />
-    </div>
+    
   </section>
 
+</body>
+</html>
   <!-- A Smarter, Safer Way to Borrow (How It Works) -->
   <section id="how-it-works" class="py-16 relative">
     <div class="max-w-screen-3xl mx-auto px-4">
