@@ -414,27 +414,28 @@
 
   <!-- Hero Section -->
   <section id="hero-section"
-    class="relative rounded-3xl overflow-hidden mx-auto max-w-screen-3xl px-4 mt-8"
-    style="background-color:rgba(35, 82, 134, 1);">
+    class="relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl overflow-hidden h-[80vh] mx-auto max-w-screen-3xl px-4 mt-8">
     <div class="relative z-10 px-4 md:px-3 py-12 md:py-20 lg:py-32 flex md:min-h-[60vh] md:min-h-[70vh]">
-      <div class="md:absolute md:top-20">
+      <div class="max-w-2xl md:absolute md:top-20">
         <h1
           class="hero-title text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 md:leading-relaxed md:px-4">
           <div class="flex flex-col gap-6 text-white font-[78px]">
-            <p>Personal Loan Malaysia with</p>
-            <p>Full Support Case Manager</p>
+            <p>AI-Powered Loan</p>
+            <p>Matching with Human</p>
+            <p>Case Managers</p>
           </div>
         </h1>
         <p
           class="hero-description text-sm md:text-sm lg:text-base mb-4 md:mb-8 max-w-xl leading-relaxed text-gray-400 md:mt-12 md:px-4">
-          We combine smart AI to find your best offer with a real human Case Manager to support you for the *entire loan term*.
+          We combine smart AI to find your best offer with a real human Case
+          Manager to support you for the *entire loan term*.
         </p>
 
         <!-- Apply Button (Mobile/Tablet - below description) -->
         <div class="md:hidden mb-6">
           <button type="button" style="background-color: #f9d157"
             class="hero-button px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition text-sm">
-            Apply Now
+            Get Your AI-Match
           </button>
         </div>
       </div>
@@ -444,7 +445,7 @@
     <div class="hidden md:block absolute bottom-[6rem] left-12 z-20">
       <button type="button" style="background-color: #f9d157"
         class="hero-button px-8 py-3 rounded-lg font-semibold text-black hover:opacity-90 transition text-base lg:text-lg">
-        Apply Now
+        Get Your AI-Match
       </button>
     </div>
 
@@ -559,21 +560,38 @@
       </div>
     </div>
 
-    <!-- Background Image -->
-    <div class="absolute top-0 right-0 z-0">
-      <img src="./assets/images/hero/blue-collar-mens.png" alt="Hero Background" class="w-[53rem] h-full object-contain" />
+    <!-- Background Video -->
+    <div class="absolute inset-0 z-0">
+      <img src="./assets/images/hero/hero-image.png" alt="Hero Background" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black opacity-30"></div>
     </div>
   </section>
 
   <!-- A Smarter, Safer Way to Borrow (How It Works) -->
   <section id="how-it-works" class="py-16 relative">
+     <div class="absolute top-4 left-0 z-[-1]">
+        <img src="assets/images/icon/neorolink.png" alt="RM Currency" class="w-full h-[350px] object-contain" />
+      </div>
+     <div class="absolute bottom-[25%] left-0 z-[-2]">
+        <img src="assets/images/icon/bluish.png" alt="RM Currency" class="w-full h-[50rem] object-contain" />
+      </div>
+        <!-- Background Image -->
+      <div class="absolute top-[15%] right-0 z-2 max-w-[280px] overflow-hidden">
+        <img src="assets/images/icon/money-coins.png" alt="" class="w-full h-[240px] object-contain" />
+      </div>
+      <!-- Blue Effect SVG -->
+      <div class="absolute bottom-[25%] right-0 z-[-2]">
+        <img src="assets/images/icon/bluish-right.png" alt="RM Currency" class="w-full h-[50rem] object-contain" />
+      </div>
     <div class="max-w-screen-3xl mx-auto px-4">
-      <h2 id="how-it-works-title"
-        class="animate-on-scroll fade-in-up text-3xl md:text-4xl font- text-gray-900 mb-8 text-center text-3xl md:text-4xl font-semibold">
-        A Smarter, Safer Way to Borrow
-      </h2>
+      <div
+        class="relative z-10 rounded-3xl border border-white/30 bg-white/15 backdrop-blur-lg px-6 py-10 shadow-lg md:px-10 md:py-12 md:backdrop-blur-xl lg:rounded-none lg:border-0 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:px-0 lg:py-0">
+        <h2 id="how-it-works-title"
+          class="animate-on-scroll fade-in-up text-3xl md:text-4xl font- text-gray-900 mb-8 text-center text-3xl md:text-4xl font-semibold">
+          A Smarter, Safer Way to Borrow
+        </h2>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         <!-- Left: Steps list -->
         <ol class="space-y-5">
           <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-100">
@@ -660,7 +678,7 @@
         <!-- Left Column (Image) -->
         <div class="h-[600px] w-full">
           <img src="./assets/images/person/suit-guy.png" alt="Professional man using smartphone"
-            class="animate-on-scroll scale-in w-full h-full object-cover rounded-lg" />
+            class="animate-on-scroll scale-in w-full h-full object-cover rounded-xl" />
         </div>
         <!-- Right Column (Content) -->
         <div class="flex flex-col justify-between h-full items-start relative pl-8">
@@ -729,43 +747,19 @@
   </section>
   <!-- Smart Financing Options Section -->
   <section class="py-16 relative">
+     <div class="absolute top-4 right-0 z-[-1]">
+        <img src="assets/images/icon/neorolink-right.png" alt="RM Currency" class="w-full h-[350px] object-contain" />
+      </div>
+     <div class="absolute top-4 right-0 z-[-1]">
+        <img src="assets/images/icon/bluish-right.png" alt="RM Currency" class="w-full h-[50rem] object-contain" />
+      </div>
+      <div class="absolute top-[40%] right-0 z-[-1]">
+        <img src="assets/images/icon/RM-right.png" alt="RM Currency" class="w-full h-[220px] object-contain" />
+      </div>
+      <div class="absolute bottom-[20%] left-0 z-[-1]">
+        <img src="assets/images/icon/RM-left.png" alt="RM Currency" class="w-full h-[220px] object-contain" />
+      </div>
     <div class="max-w-screen-3xl mx-auto px-4">
-      <!-- Background Image -->
-      <div class="absolute top-[15%] right-0 z-2 max-w-[280px] overflow-hidden">
-        <img src="assets/images/icon/money-coins.png" alt="" class="w-full h-[280px] object-contain" />
-      </div>
-      <!-- Blue Effect SVG -->
-      <div class="absolute top-0 left-0 z-1 overflow-hidden">
-        <svg width="300" height="600" viewBox="0 0 441 1089" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_f_7_6835)">
-            <circle cx="-103.5" cy="544.5" r="213.5" fill="#2B90FF" fill-opacity="0.5" />
-          </g>
-          <defs>
-            <filter id="filter0_f_7_6835" x="-648" y="0" width="1089" height="1089" filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="165.5" result="effect1_foregroundBlur_7_6835" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-      <div class="absolute top-[-25%] right-0 z-[-1] max-w-[50%] overflow-hidden">
-        <svg width="674" height="1347" viewBox="0 0 674 1347" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_f_7_6791)">
-            <circle cx="673.5" cy="673.5" r="342.5" fill="#2B90FF" fill-opacity="0.5" />
-          </g>
-          <defs>
-            <filter id="filter0_f_7_6791" x="0" y="0" width="1347" height="1347" filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="165.5" result="effect1_foregroundBlur_7_6791" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-
       <div class="text-center mb-12">
         <h2 class="animate-on-scroll fade-in-up text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
           Find the Financing You Need
