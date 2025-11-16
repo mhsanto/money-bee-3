@@ -876,10 +876,10 @@
       </div>
 
       <!-- Section 2: Bottom 4 Additional Loans (Car Loan and the rest) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 palce-items-center mx-auto max-w-screen-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center mx-auto max-w-screen-xl">
         <!-- Car Loan (Card 5) - STYLES MODIFIED -->
         <div
-          class="animate-on-scroll fade-in-up delay-100 card-bg-light rounded-xl p-4  flex flex-col transform hover:scale-[1.02] transition duration-300 border border-blue-100 backdrop-blur-lg max-w-[400px] mx-auto">
+          class="animate-on-scroll fade-in-up delay-100 card-bg-light rounded-xl p-4  flex flex-col transform hover:scale-[1.02] transition duration-300 border border-blue-100 backdrop-blur-lg w-full md:max-w-[400px]">
           <h3 class="text-xl font-semibold text-black text-center mb-4">
             Car Loan
           </h3>
@@ -899,7 +899,7 @@
 
         <!-- Property Loan (Card 6) - STYLES MODIFIED -->
         <div
-          class="animate-on-scroll fade-in-up delay-200 card-bg-light rounded-xl p-4  flex flex-col transform hover:scale-[1.02] transition duration-300 border border-blue-100 backdrop-blur-lg max-w-[400px]">
+          class="animate-on-scroll fade-in-up delay-200 card-bg-light rounded-xl p-4  flex flex-col transform hover:scale-[1.02] transition duration-300 border border-blue-100 backdrop-blur-lg md:max-w-[400px]">
           <h3 class="text-xl font-semibold text-black text-center mb-4">
             Property Loan
           </h3>
@@ -921,7 +921,7 @@
 
         <!-- Education Loan (Card 8) moved to bottom row per Figma order -->
         <div
-          class="animate-on-scroll fade-in-up delay-300 card-bg-light rounded-xl p-4  flex flex-col transform hover:scale-[1.02] transition duration-300 border border-blue-100 backdrop-blur-lg max-w-[400px]">
+          class="animate-on-scroll fade-in-up delay-300 card-bg-light rounded-xl p-4  flex flex-col transform hover:scale-[1.02] transition duration-300 border border-blue-100 backdrop-blur-lg md:max-w-[400px]">
           <h3 class="text-xl font-semibold text-black text-center mb-4">
             Education Loan
           </h3>
@@ -1149,8 +1149,6 @@
       </div>
     </div>
   </section>
-
-  
   <!-- Testimonial Section -->
   <section class="py-8 sm:py-12 md:py-16 lg:py-12">
     <div class="mx-auto px-4 sm:px-6 lg:px-8">
@@ -1165,59 +1163,35 @@
           <div class="flex transition-transform duration-500 ease-in-out testimonial-slide">
             <!-- Slide 1 -->
             <div
-              class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card animate-on-scroll fade-in-up delay-100 hover:bg-gray-50 transition-all duration-300"
-              style="width: 80vw; max-width: 900px">
-              <div class="overflow-hidden rounded-xl" style="width: 100%; height: 416.2909240722656px">
-                <div class="flex h-full rounded-xl">
+              class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card animate-on-scroll fade-in-up delay-100 hover:bg-gray-50 transition-all duration-300 w-full max-w-[900px]">
+              <div class="overflow-hidden rounded-xl">
+                <div class="flex flex-col md:flex-row h-full rounded-xl">
                   <!-- Left Section: Photo -->
-                  <div class="w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
+                  <div class="w-full md:w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
                     <img src="./assets/images/person/hijab-lady-2.png" alt="Elizabeth"
-                      class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                      class="w-full h-48 md:h-full object-cover hover:scale-110 transition-transform duration-300" />
                   </div>
                   <!-- Right Section: Content -->
-                  <div class="w-3/5 flex flex-col p-6">
+                  <div class="w-full md:w-3/5 flex flex-col p-4 md:p-6">
                     <!-- First Row: Name and Comma Icon -->
                     <div class="flex items-center justify-between mb-4">
                       <h3 class="text-xl md:text-4xl font-bold text-black">
                         Elizabeth
                       </h3>
                       <div class="text-xl md:text-3xl text-gray-400 font-bold flex gap-1 hidden sm:flex">
-                        <svg width="41" height="60" viewBox="0 0 41 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
-                            fill="#235286" fill-opacity="0.1" stroke="#F6F6F6" />
-                        </svg>
-                        <svg width="41" height="60" viewBox="0 0 41 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
-                            fill="#235286" fill-opacity="0.1" stroke="#F6F6F6" />
-                        </svg>
+                        <img src="assets/images/icon/quote-mark.svg" alt="quote" class="w-[41px] h-[60px]" />
+                        <img src="assets/images/icon/quote-mark.svg" alt="quote" class="w-[41px] h-[60px]" />
                       </div>
                     </div>
-                    <div class="flex flex-col justify-between h-[15rem]">
+                    <div class="flex flex-col justify-between flex-grow">
                       <!-- Second Row: Stars and Date -->
-                      <div class="flex items-center gap-12 mb-4">
+                      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-12 mb-4">
                         <div class="flex gap-1">
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
                         </div>
                         <p class="text-sm text-gray-500">October 25</p>
                       </div>
@@ -1241,59 +1215,35 @@
 
             <!-- Slide 2 -->
             <div
-              class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card animate-on-scroll fade-in-up delay-200 hover:bg-gray-50 transition-all duration-300"
-              style="width: 80vw; max-width: 900px">
-              <div class="overflow-hidden rounded-xl" style="width: 100%; height: 416.2909240722656px">
-                <div class="flex h-full rounded-xl">
+              class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card animate-on-scroll fade-in-up delay-200 hover:bg-gray-50 transition-all duration-300 w-full max-w-[900px]">
+              <div class="overflow-hidden rounded-xl">
+                <div class="flex flex-col md:flex-row h-full rounded-xl">
                   <!-- Left Section: Photo -->
-                  <div class="w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
+                  <div class="w-full md:w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
                     <img src="./assets/images/person/yuan.png" alt="Yuan"
-                      class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                      class="w-full h-48 md:h-full object-cover hover:scale-110 transition-transform duration-300" />
                   </div>
                   <!-- Right Section: Content -->
-                  <div class="w-3/5 flex flex-col p-6">
+                  <div class="w-full md:w-3/5 flex flex-col p-4 md:p-6">
                     <!-- First Row: Name and Comma Icon -->
                     <div class="flex items-center justify-between mb-4">
                       <h3 class="text-2xl md:text-4xl font-bold text-black">
                         Yuan
                       </h3>
                       <div class="text-2xl md:text-3xl text-gray-400 font-bold flex gap-1">
-                        <svg width="41" height="60" viewBox="0 0 41 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
-                            fill="#235286" fill-opacity="0.1" stroke="#F6F6F6" />
-                        </svg>
-                        <svg width="41" height="60" viewBox="0 0 41 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
-                            fill="#235286" fill-opacity="0.1" stroke="#F6F6F6" />
-                        </svg>
+                        <img src="assets/images/icon/quote-mark.svg" alt="quote" class="w-[41px] h-[60px]" />
+                        <img src="assets/images/icon/quote-mark.svg" alt="quote" class="w-[41px] h-[60px]" />
                       </div>
                     </div>
-                    <div class="flex flex-col justify-between h-[15rem]">
+                    <div class="flex flex-col justify-between flex-grow">
                       <!-- Second Row: Stars and Date -->
-                      <div class="flex items-center gap-12 mb-4">
+                      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-12 mb-4">
                         <div class="flex gap-1">
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
                         </div>
                         <p class="text-sm text-gray-500">June 19, 2024</p>
                       </div>
@@ -1317,59 +1267,35 @@
 
             <!-- Slide 3 -->
             <div
-              class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card hover:bg-gray-50 transition-all duration-300"
-              style="width: 100vw; max-width: 900px">
-              <div class="overflow-hidden rounded-xl" style="width: 100%; height: 416.2909240722656px">
-                <div class="flex h-full rounded-xl">
+              class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card hover:bg-gray-50 transition-all duration-300 w-full max-w-[900px]">
+              <div class="overflow-hidden rounded-xl">
+                <div class="flex flex-col md:flex-row h-full rounded-xl">
                   <!-- Left Section: Photo -->
-                  <div class="w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
+                  <div class="w-full md:w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
                     <img src="./assets/images/person/hijab-lady-2.png" alt="Elizabeth"
-                      class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                      class="w-full h-48 md:h-full object-cover hover:scale-110 transition-transform duration-300" />
                   </div>
                   <!-- Right Section: Content -->
-                  <div class="w-3/5 flex flex-col p-6">
+                  <div class="w-full md:w-3/5 flex flex-col p-4 md:p-6">
                     <!-- First Row: Name and Comma Icon -->
                     <div class="flex items-center justify-between mb-4">
                       <h3 class="text-2xl md:text-4xl font-bold text-black">
                         Elizabeth
                       </h3>
                       <div class="text-2xl md:text-3xl text-gray-400 font-bold flex gap-1">
-                        <svg width="41" height="60" viewBox="0 0 41 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
-                            fill="#235286" fill-opacity="0.1" stroke="#F6F6F6" />
-                        </svg>
-                        <svg width="41" height="60" viewBox="0 0 41 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
-                            fill="#235286" fill-opacity="0.1" stroke="#F6F6F6" />
-                        </svg>
+                        <img src="assets/images/icon/quote-mark.svg" alt="quote" class="w-[41px] h-[60px]" />
+                        <img src="assets/images/icon/quote-mark.svg" alt="quote" class="w-[41px] h-[60px]" />
                       </div>
                     </div>
-                    <div class="flex flex-col justify-between h-[15rem]">
+                    <div class="flex flex-col justify-between flex-grow">
                       <!-- Second Row: Stars and Date -->
-                      <div class="flex items-center gap-12 mb-4">
+                      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-12 mb-4">
                         <div class="flex gap-1">
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
                         </div>
                         <p class="text-sm text-gray-500">October 25</p>
                       </div>
@@ -1393,59 +1319,35 @@
 
             <!-- Slide 2 -->
             <div
-              class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card animate-on-scroll fade-in-up delay-300 hover:bg-gray-50 transition-all duration-300"
-              style="width: 100vw; max-width: 900px">
-              <div class="overflow-hidden rounded-xl" style="width: 100%; height: 416.2909240722656px">
-                <div class="flex h-full rounded-xl">
+              class="flex-shrink-0 rounded-xl overflow-hidden testimonial-card animate-on-scroll fade-in-up delay-300 hover:bg-gray-50 transition-all duration-300 w-full max-w-[900px]">
+              <div class="overflow-hidden rounded-xl">
+                <div class="flex flex-col md:flex-row h-full rounded-xl">
                   <!-- Left Section: Photo -->
-                  <div class="w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
+                  <div class="w-full md:w-2/5 flex-shrink-0 rounded-xl overflow-hidden">
                     <img src="./assets/images/person/yuan.png" alt="Yuan"
-                      class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                      class="w-full h-48 md:h-full object-cover hover:scale-110 transition-transform duration-300" />
                   </div>
                   <!-- Right Section: Content -->
-                  <div class="w-3/5 flex flex-col p-6">
+                  <div class="w-full md:w-3/5 flex flex-col p-4 md:p-6">
                     <!-- First Row: Name and Comma Icon -->
                     <div class="flex items-center justify-between mb-4">
                       <h3 class="text-2xl md:text-4xl font-bold text-black">
                         Yuan
                       </h3>
                       <div class="text-2xl md:text-3xl text-gray-400 font-bold flex gap-1">
-                        <svg width="41" height="60" viewBox="0 0 41 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
-                            fill="#235286" fill-opacity="0.1" stroke="#F6F6F6" />
-                        </svg>
-                        <svg width="41" height="60" viewBox="0 0 41 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M33.6437 72.0776H6.48065C3.1778 72.0776 0.500183 69.4 0.500183 66.0972V25.6138C0.500183 11.7437 11.7444 0.499512 25.6144 0.499512H30.2863C33.589 0.499665 36.2667 3.17731 36.2668 6.47998C36.2668 9.78273 33.589 12.4603 30.2863 12.4604H25.6125C18.3492 12.4604 12.4612 18.3485 12.4611 25.6118V32.9536H33.6437C36.9466 32.9536 39.6242 35.6312 39.6242 38.9341V66.0972L39.6164 66.4048C39.4615 69.4629 37.0095 71.9149 33.9514 72.0698L33.6437 72.0776Z"
-                            fill="#235286" fill-opacity="0.1" stroke="#F6F6F6" />
-                        </svg>
+                        <img src="assets/images/icon/quote-mark.svg" alt="quote" class="w-[41px] h-[60px]" />
+                        <img src="assets/images/icon/quote-mark.svg" alt="quote" class="w-[41px] h-[60px]" />
                       </div>
                     </div>
-                    <div class="flex flex-col justify-between h-[15rem]">
+                    <div class="flex flex-col justify-between flex-grow">
                       <!-- Second Row: Stars and Date -->
-                      <div class="flex items-center gap-12 mb-4">
+                      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-12 mb-4">
                         <div class="flex gap-1">
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
+                          <img src="assets/images/icon/star.svg" alt="star" class="w-5 h-5" />
                         </div>
                         <p class="text-sm text-gray-500">June 19, 2024</p>
                       </div>
@@ -1480,10 +1382,6 @@
       </div>
     </div>
   </section>
-
-
-
-
   <!-- Footer Section -->
   <footer style="background: linear-gradient(181.63deg, #D6E9FF 1.47%, #235286 98.72%)" class="text-white py-8 md:py-12">
     <div class="max-w-screen-3xl mx-auto px-4">

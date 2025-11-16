@@ -225,7 +225,7 @@ body {
 .testimonial-card {
   flex: 0 0 auto;
   width: 941.9567260742188px;
-  height: 416.2909240722656px;
+  min-height: 416.2909240722656px;
   margin: 0 10px;
   border-radius: 12px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -288,7 +288,7 @@ body {
 @media (max-width: 1024px) {
   .testimonial-card {
     width: 90vw;
-    height: 400px;
+    min-height: 450px;
     max-width: 800px;
   }
 }
@@ -296,19 +296,19 @@ body {
 @media (max-width: 768px) {
   .testimonial-card {
     width: 95vw;
-    height: 350px;
+    min-height: 500px;
     margin: 0 5px;
   }
-  
+
   .carousel-nav {
     width: 35px;
     height: 35px;
   }
-  
+
   .carousel-nav.prev {
     left: 5px;
   }
-  
+
   .carousel-nav.next {
     right: 5px;
   }
@@ -317,23 +317,23 @@ body {
 @media (max-width: 480px) {
   .testimonial-card {
     width: 100vw;
-    height: 300px;
+    min-height: 550px;
     margin: 0;
   }
-  
+
   .carousel-nav {
     width: 30px;
     height: 30px;
   }
-  
+
   .carousel-nav.prev {
     left: 2px;
   }
-  
+
   .carousel-nav.next {
     right: 2px;
   }
-  
+
   .carousel-dots {
     bottom: 10px;
   }
