@@ -358,3 +358,48 @@ body {
 .carousel-dot:hover {
   transform: scale(1.2);
 }
+
+/* Service Provider Cards Hover Effects */
+.service-provider-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.service-provider-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(35, 82, 134, 0.15);
+}
+
+.service-provider-card .provider-icon {
+  transition: all 0.3s ease;
+  filter: brightness(1) contrast(1);
+}
+
+.service-provider-card:hover .provider-icon {
+  filter: brightness(0) invert(1) contrast(1.2);
+}
+
+/* Smooth background transition */
+.service-provider-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(35, 82, 134, 1);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.service-provider-card:hover::before {
+  opacity: 1;
+}
+
+/* Ensure text transitions smoothly */
+.service-provider-card h3,
+.service-provider-card p {
+  transition: color 0.3s ease;
+}
