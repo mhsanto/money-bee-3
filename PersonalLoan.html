@@ -640,9 +640,7 @@
           </p>
         </div>
       </div>
-      <div class="absolute top-4 left-0 z-[-1] hidden md:block">
-        <img src="assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[200px] md:h-[250px] object-contain opacity-30" />
-      </div>
+     
     </div>
   </section>
 
@@ -1364,14 +1362,8 @@
     </section>
     
     <!-- New Loan Process Section -->
-    <section class="py-16 relative">
-      <div class="absolute top-4 right-0 z-[-1]">
-        <img
-          src="assets/images/icon/RM-right.png"
-          alt="RM Currency"
-          class="w-full h-[250px] object-contain"
-        />
-      </div>
+    <section class="py-16 relative mb-16">
+      
       <div class="max-w-screen-3xl  mx-auto px-4">
         <div
           class="flex flex-col items-center mb-12 text-center animate-on-scroll"
@@ -1523,6 +1515,9 @@
           </div>
         </div>
       </div>
+       <div class="absolute bottom-0 left-0 z-[-1]  ">
+        <img src="assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[150px] md:h-[150] object-contain " />
+      </div>
     </section>
   <!-- FAQ Section -->
   <section class="min-h-[60vh] md:min-h-[60vh] relative bg-transparent w-full mb-16 h-auto">
@@ -1533,13 +1528,13 @@
         class="bg-white bg-opacity-5 rounded-lg p-4 md:px-8 shadow-2xl h-full flex flex-col justify-center md:justify-around h-[60vh] md:h-[60vh]"
         style="backdrop-filter: blur(51px)">
         <h2 class="animate-on-scroll fade-in-right text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-start">
-          Your Questions, Answered
+          FAQ (Personal Loan Focused)
         </h2>
         <div class="space-y-8 md:space-y-16">
           <div class="animate-on-scroll fade-in-right delay-50 faq-item">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-xl font-semibold text-black">
-                What is a Hybrid AI+Human Model?
+                Who can apply for a personal loan?
               </h3>
               <svg class="w-5 h-5 md:w-6 md:h-6 transition-transform flex-shrink-0" fill="none" viewBox="0 0 36 38">
                 <path stroke="#7D7D7D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1548,15 +1543,14 @@
               </svg>
             </div>
             <p class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2">
-              Yes. Some licensed lenders accept borrowers earning from RM1,500. Our AI will filter for these lenders so
-              you don’t waste time.
+              Civil servants, private employees, self-employed workers, and gig workers may apply, depending on lender requirements.
             </p>
           </div>
 
           <div class="animate-on-scroll fade-in-right delay-250 faq-item">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-xl font-semibold text-black">
-                What does a Case Manager do?
+                What documents are required?
               </h3>
               <svg class="w-5 h-5 md:w-6 md:h-6 transition-transform flex-shrink-0" fill="none" viewBox="0 0 36 38">
                 <path stroke="#7D7D7D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1565,15 +1559,14 @@
               </svg>
             </div>
             <p class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2">
-              A Case Manager is your post-loan support person — they help manage repayments, serve as a single point of
-              contact with lenders, and look for better offers to keep your financial health on track.
+              A clear copy of your NRIC (MyKad), latest 3-6 months' salary slips, bank statements showing salary credit, and EPF (KWSP) statement for salaried employees. Self-employed applicants need business registration documents and business bank statements.
             </p>
           </div>
 
           <div class="animate-on-scroll fade-in-right delay-400 faq-item">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-xl font-semibold text-black">
-                Are there Islamic personal loans?
+                What if I have a low credit score?
               </h3>
               <svg class="w-5 h-5 md:w-6 md:h-6 transition-transform flex-shrink-0" fill="none" viewBox="0 0 36 38">
                 <path stroke="#7D7D7D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1582,24 +1575,21 @@
               </svg>
             </div>
             <p class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2">
-              Yes, we partner with Islamic banks offering Shariah-compliant
-              financing.
+              Having a low credit score doesn't automatically disqualify you. Our AI system identifies lenders who are more flexible with credit requirements, and our Case Managers can guide you on improving your credit health over time.
             </p>
           </div>
-          <div class="animate-on-scroll fade-in-right delay-300 faq-item">
-            <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
-              <h3 class="text-base md:text-xl font-semibold text-black">
-                How soon can I get funds?
-              </h3>
-              <svg class="w-5 h-5 md:w-6 md:h-6 transition-transform flex-shrink-0" fill="none" viewBox="0 0 36 38">
-                <path stroke="#7D7D7D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M18 14V26M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z">
-                </path>
-              </svg>
-            </div>
-            <p class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2">
-              Funds can be disbursed within 1-3 business days after approval.
+
+          <!-- Still have questions section -->
+          <div class="animate-on-scroll fade-in-right delay-550 bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+            <h3 class="text-lg md:text-xl font-semibold text-black mb-4">
+              Still have questions?
+            </h3>
+            <p class="text-gray-700 text-sm md:text-base mb-4">
+              Can't find the answer you're looking for? Please chat to our friendly team.
             </p>
+            <a href="#contact" class="inline-block px-6 py-3 bg-[#F9D157] text-black font-semibold rounded-lg hover:bg-[#ffe176] transition-colors duration-300">
+              Get in touch
+            </a>
           </div>
         </div>
       </div>
