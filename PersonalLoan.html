@@ -721,9 +721,9 @@
   </section>
 
   <!-- Key Financial Terms Section -->
-  <section class="py-20 ">
+  <section class="py-12 md:py-16 lg:py-20">
     <div class="max-w-screen-3xl mx-auto px-4">
-      <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-[1.1fr_1fr]">
+      <div class="grid grid-cols-1 items-center gap-8 md:gap-12 lg:gap-16 lg:grid-cols-[1.1fr_1fr]">
         <!-- Left Column: Image -->
         <figure class="order-1">
           <div class="relative rounded-[15px] overflow-hidden shadow-2xl shadow-black/40">
@@ -735,62 +735,111 @@
         </figure>
 
         <!-- Right Column: Term Details -->
-        <div class="order-2 ">
-          <h2 id="terms-title" class="mt-6 text-3xl md:text-4xl lg:text-[2.8rem] font-semibold leading-tight">Key Terms
+        <div class="order-2">
+          <h2 id="terms-title" class="mt-6 text-3xl lg:text-[2.8rem] font-semibold leading-tight text-center md:text-left">Key Terms
             to Understand</h2>
 
-          <div class="relative mt-12 h-28">
-            <div class="space-y-12 lg:pl-16">
-              <article class="relative">
+          <!-- Mobile Layout: Vertical cards -->
+          <div class="block lg:hidden space-y-6 mt-8">
+            <!-- Interest Rate Term -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+              <div class="flex items-center gap-3 mb-3">
                 <img src="./assets/images/icon/blue-arrow-stair.png" alt="Blue arrow stair icon"
-                  class=" absolute -left-16 top-5 w-[290px] h-[2rem]" />
-                <div class="absolute left-[-50px]">
-                  <p class="text-xs ">Interest Rate (Conventional)</p>
-                  <h3 class=" text-xs"> Profit Rate (Islamic)</h3>
+                  class="w-10 h-10 object-contain flex-shrink-0" />
+                <div>
+                  <p class="text-sm font-semibold text-gray-900">Interest Rate (Conventional)</p>
+                  <p class="text-sm font-semibold text-gray-900">Profit Rate (Islamic)</p>
                 </div>
-                <p class="mt-3  absolute left-[15rem] top-[-2rem]  leading-tight text-sm">The interest rate is the
-                  percentage charged on the loan amount. Conventional rates are calculated on the remaining balance,
-                  while flat rates apply to the full amount throughout the loan term, making conventional rates
-                  typically more cost-effective in many cases.</p>
-              </article>
+              </div>
+              <p class="text-sm text-gray-700 leading-relaxed">
+                The interest rate is the percentage charged on the loan amount. Conventional rates are calculated on the remaining balance,
+                while flat rates apply to the full amount throughout the loan term, making conventional rates
+                typically more cost-effective in many cases.
+              </p>
+            </div>
 
+            <!-- Tenure Term -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+              <div class="flex items-center gap-3 mb-3">
+                <img src="./assets/images/icon/blue-arrow-stair.png" alt="Blue arrow stair icon"
+                  class="w-10 h-10 object-contain flex-shrink-0" />
+                <div>
+                  <p class="text-sm font-semibold text-gray-900">Tenure</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-700 leading-relaxed">
+                This is the cost of borrowing. It can be a "flat rate" (calculated on the original principal) or "reducing balance"
+                (calculated on the remaining amount you owe). Always look at the Effective Interest Rate (EIR) to see
+                the true cost.
+              </p>
+            </div>
 
+            <!-- Debt Service Ratio Term -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+              <div class="flex items-center gap-3 mb-3">
+                <img src="./assets/images/icon/blue-arrow-stair.png" alt="Blue arrow stair icon"
+                  class="w-10 h-10 object-contain flex-shrink-0" />
+                <div>
+                  <p class="text-sm font-semibold text-gray-900">Debt Service Ratio (DSR)</p>
+                  <p class="text-sm font-semibold text-gray-900">Profit Rate (Islamic)</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-700 leading-relaxed">
+                This is a key calculation all lenders use. It's your total monthly debt commitments (including the new loan) divided by your net
+                monthly income. Most banks in Malaysia look for a DSR below 60-70%.
+              </p>
             </div>
           </div>
-          <div class="relative mt-12 h-28">
-            <div class="space-y-12 lg:pl-16">
-              <article class="relative">
-                <img src="./assets/images/icon/blue-arrow-stair.png" alt="Blue arrow stair icon"
-                  class=" absolute -left-16 top-15 w-[290px] h-[2rem]" />
-                <div class="absolute left-[-50px]">
-                  <p class="text-xs ">Tenure</p>
-                </div>
-                <p class="mt-3  absolute left-[15rem] top-[-2rem] leading-relaxed text-sm ">This is the cost of
-                  borrowing. It can be a "flat rate" (calculated on the original principal) or "reducing balance"
-                  (calculated on the remaining amount you owe). Always look at the Effective Interest Rate (EIR) to see
-                  the true cost.
-                </p>
-              </article>
 
-
+          <!-- Desktop Layout: Absolute positioning -->
+          <div class="hidden lg:block">
+            <div class="relative mt-12 h-28">
+              <div class="space-y-12 lg:pl-16">
+                <article class="relative">
+                  <img src="./assets/images/icon/blue-arrow-stair.png" alt="Blue arrow stair icon"
+                    class="absolute -left-16 top-5 w-[290px] h-[2rem]" />
+                  <div class="absolute left-[-50px]">
+                    <p class="text-xs">Interest Rate (Conventional)</p>
+                    <h3 class="text-xs">Profit Rate (Islamic)</h3>
+                  </div>
+                  <p class="mt-3 absolute left-[15rem] top-[-2rem] leading-tight text-sm">The interest rate is the
+                    percentage charged on the loan amount. Conventional rates are calculated on the remaining balance,
+                    while flat rates apply to the full amount throughout the loan term, making conventional rates
+                    typically more cost-effective in many cases.</p>
+                </article>
+              </div>
             </div>
-          </div>
-          <div class="relative mt-12 h-28">
-            <div class="space-y-12 lg:pl-16">
-              <article class="relative">
-                <img src="./assets/images/icon/blue-arrow-stair.png" alt="Blue arrow stair icon"
-                  class=" absolute -left-16 top-5 w-[290px] h-[2rem]" />
-                <div class="absolute left-[-50px]">
-                  <p class="text-xs ">Debt Service Ratio (DSR)</p>
-                  <h3 class=" text-xs"> Profit Rate (Islamic)</h3>
-                </div>
-                <p class="mt-3  absolute left-[15rem] top-[-2rem] leading-relaxed text-sm">This is a key calculation all
-                  lenders use. It's your total monthly debt commitments (including the new loan) divided by your net
-                  monthly income. Most banks in Malaysia look for a DSR below 60-70%.
-                </p>
-              </article>
-
-
+            <div class="relative mt-12 h-28">
+              <div class="space-y-12 lg:pl-16">
+                <article class="relative">
+                  <img src="./assets/images/icon/blue-arrow-stair.png" alt="Blue arrow stair icon"
+                    class="absolute -left-16 top-15 w-[290px] h-[2rem]" />
+                  <div class="absolute left-[-50px]">
+                    <p class="text-xs">Tenure</p>
+                  </div>
+                  <p class="mt-3 absolute left-[15rem] top-[-2rem] leading-relaxed text-sm">This is the cost of
+                    borrowing. It can be a "flat rate" (calculated on the original principal) or "reducing balance"
+                    (calculated on the remaining amount you owe). Always look at the Effective Interest Rate (EIR) to see
+                    the true cost.
+                  </p>
+                </article>
+              </div>
+            </div>
+            <div class="relative mt-12 h-28">
+              <div class="space-y-12 lg:pl-16">
+                <article class="relative">
+                  <img src="./assets/images/icon/blue-arrow-stair.png" alt="Blue arrow stair icon"
+                    class="absolute -left-16 top-5 w-[290px] h-[2rem]" />
+                  <div class="absolute left-[-50px]">
+                    <p class="text-xs">Debt Service Ratio (DSR)</p>
+                    <h3 class="text-xs">Profit Rate (Islamic)</h3>
+                  </div>
+                  <p class="mt-3 absolute left-[15rem] top-[-2rem] leading-relaxed text-sm">This is a key calculation all
+                    lenders use. It's your total monthly debt commitments (including the new loan) divided by your net
+                    monthly income. Most banks in Malaysia look for a DSR below 60-70%.
+                  </p>
+                </article>
+              </div>
             </div>
           </div>
         </div>
@@ -798,35 +847,35 @@
     </div>
   </section>
   <!-- Documents You'll Need Section -->
-  <section class="py-16 bg-white">
+  <section class="py-8 sm:py-12 md:py-16">
     <div class="max-w-screen-3xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-center text-[#253B5C] mb-4">What Documents Do I
+      <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center text-gray-900 mb-4">What Documents Do I
         Need to Apply?</h2>
-      <p class="text-center text-base md:text-lg text-[#253B5C] mb-10">Being prepared is the key to fast approval. While
+      <p class="text-center text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 md:mb-10">Being prepared is the key to fast approval. While
         it varies by lender, you will almost always need:</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
         <!-- Proof of Identity -->
         <div
-          class="rounded-2xl p-8 flex flex-col items-center text-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20">
-          <div class="flex items-center gap-4 pb-12">
-            <div class="bg-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-              <img src="assets/images/icon/fiber_smart_record.png" alt="NRIC Icon" class="w-6 h-6 text-white" />
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col items-start md:item-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20 border border-white/20">
+          <div class="flex gap-4  items-center pb-2 sm:pb-4 md:pb-7">
+            <div class="bg-blue-600 rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-2 sm:mb-4">
+              <img src="assets/images/icon/fiber_smart_record.png" alt="NRIC Icon" class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
-            <h3 class="font-semibold text-lg mb-2">Proof of Identity</h3>
+            <h3 class="font-semibold text-sm sm:text-base md:text-lg mb-2">Proof of Identity</h3>
           </div>
-          <p class="font-semibold text-sm">A clear copy of your NRIC (MyKad).</p>
+          <p class="font-semibold text-xs sm:text-sm md:text-sm">A clear copy of your NRIC (MyKad).</p>
         </div>
         <!-- Proof of Income (Salaried Employee) -->
         <div
-          class="rounded-2xl p-8 flex flex-col items-center text-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20">
-          <div class="flex flex-col item-center">
-            <div class="flex items-center gap-4 pb-7">
-              <div class="bg-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                <img src="assets/images/icon/dictionary.png" alt="Salary Slip Icon" class="w-6 h-6 text-white" />
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col items-center text-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20 border border-white/20 ">
+          <div class="flex flex-col item-center justify-center w-full">
+            <div class="flex items-center gap-2 sm:gap-4 pb-2 sm:pb-4 md:pb-7">
+              <div class="bg-blue-600 rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-2 sm:mb-4">
+                <img src="assets/images/icon/dictionary.png" alt="Salary Slip Icon" class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h3 class="font-semibold text-lg mb-2">Proof of Income<br />(Salaried Employee)</h3>
+              <h3 class="font-semibold text-sm sm:text-base md:text-lg mb-2">Proof of Income<br />(Salaried Employee)</h3>
             </div>
-            <ul class="font-semibold text-sm text-left list-disc list-inside space-y-1">
+            <ul class="font-semibold text-xs sm:text-sm md:text-sm text-left list-disc list-inside space-y-1">
               <li>Latest 3-6 months' salary slips.</li>
               <li>Latest 3-6 months' bank statements (showing salary credit).</li>
               <li>Latest EPF (KWSP) statement.</li>
@@ -835,15 +884,15 @@
         </div>
         <!-- Proof of Income (Self-Employed) -->
         <div
-          class="rounded-2xl p-8 flex flex-col items-center text-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20">
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col items-center text-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20 border border-white/20">
           <div class="flex flex-col item-center">
-            <div class="flex items-center gap-4 pb-7">
-              <div class="bg-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                <img src="assets/images/icon/dictionary.png" alt="Self-Employed Icon" class="w-6 h-6 text-white" />
+            <div class="flex items-center gap-2 sm:gap-4 pb-2 sm:pb-4 md:pb-7">
+              <div class="bg-blue-600 rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-2 sm:mb-4">
+                <img src="assets/images/icon/dictionary.png" alt="Self-Employed Icon" class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h3 class="font-semibold text-lg mb-2">Proof of Income<br />(Self-Employed)</h3>
+              <h3 class="font-semibold text-sm sm:text-base md:text-lg mb-2">Proof of Income<br />(Self-Employed)</h3>
             </div>
-            <ul class="font-semibold text-sm text-left list-disc list-inside space-y-1">
+            <ul class="font-semibold text-xs sm:text-sm md:text-sm text-left list-disc list-inside space-y-1">
               <li>Business Registration (SSM) documents.</li>
               <li>Latest 6-12 months' business bank statements.</li>
               <li>Latest Borang B or Borang BE (LHDN income tax return).</li>
@@ -859,11 +908,11 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center lg:items-start">
         <!-- Right Column (Text Content) - Appears first on mobile, second on large screens -->
         <div class="lg:text-left flex flex-col justify-between h-full lg:order-1">
-          <h2 class="animate-on-scroll fade-in-up text-3xl md:text-5xl font-semibold mb-4 text-start"
+          <h2 class="animate-on-scroll fade-in-up text-3xl md:text-5xl font-semibold mb-4 text-center md:text-left"
             style="line-height: 1.5;">
             How to Choose the Right Personal Loan in Malaysia
           </h2>
-          <p class="animate-on-scroll fade-in-up delay-100 text-lg text-gray-600 mb-8 md:mb-12 text-start">
+          <p class="animate-on-scroll fade-in-up delay-100 text-lg text-gray-600 mb-8 md:mb-12 text-center md:text-start">
             Don't just look at the advertised interest rate. Ask these questions:
           </p>
           <div class="text-lg text-gray-600 mb-8 md:mb-12 text-center md:text-start">
