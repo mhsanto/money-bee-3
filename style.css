@@ -404,3 +404,35 @@ overflow-x: hidden;
 .service-provider-card p {
   transition: color 0.3s ease;
 }
+
+.header-bg {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.18) 0, transparent 55%),
+    radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.75) 0, transparent 60%),
+    linear-gradient(135deg, #235286 0%, #163963 50%, #0c213d 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg::before,
+.header-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.12);
+  filter: blur(18px);
+}
+
+.header-bg::before {
+  width: 260px;
+  height: 260px;
+  top: -80px;
+  right: -60px;
+}
+
+.header-bg::after {
+  width: 200px;
+  height: 200px;
+  bottom: -80px;
+  left: -40px;
+}
