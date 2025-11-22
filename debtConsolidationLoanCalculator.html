@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,7 +12,7 @@
       theme: {
         extend: {
           maxWidth: {
-            'screen-3xl': '1660px'
+            "screen-3xl": "1660px",
           },
           fontFamily: {
             manrope: ["Manrope", "sans-serif"],
@@ -23,12 +21,10 @@
       },
     };
   </script>
-  <script src="animations.js"></script>
-
   <title>MoneyBee</title>
 </head>
 
-<body class="bg-gray-100 min-h-screen font-manrope">
+<body class="min-h-screen font-manrope">
   <div class="mx-auto max-w-screen-3xl px-4 px-2 sm:px-0">
     <div class="flex h-16 items-center justify-between">
       <!-- Left: Logo -->
@@ -416,345 +412,110 @@
     </nav>
   </div>
 
-  <!-- Hero Section -->
-
-  <div class="absolute top-48 left-[-4%] z-[-1]">
-    <img src="assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[250px] object-contain" />
-  </div>
-  <div class="absolute top-[-5%] left-0 z-[-1] overflow-hidden">
-    <svg width="300" height="600" viewBox="0 0 441 1089" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g filter="url(#filter0_f_7_6835)">
-        <circle cx="-103.5" cy="544.5" r="213.5" fill="#2B90FF" fill-opacity="0.5" />
-      </g>
-      <defs>
-        <filter id="filter0_f_7_6835" x="-648" y="0" width="1089" height="1089" filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-          <feGaussianBlur stdDeviation="165.5" result="effect1_foregroundBlur_7_6835" />
-        </filter>
-      </defs>
-    </svg>
-  </div>
-
-  <section class="py-16 lg:py-24 relative container mx-auto px-4 sm:px-6 lg:px-8 z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div class="max-w-3xl">
-        <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-loose animate-on-scroll fade-in-up">
-          BNPL and Youth in Malaysia: Building Financial Health Before It's
-          Too Late
-        </h1>
-        <p class="mt-6 text-base text-gray-600 animate-on-scroll fade-in-up delay-100 mb-12">
-          In recent years, Buy Now, Pay Later (BNPL) has become a buzzword in
-          Malaysia’s financial landscape. For young Malaysians, BNPL offers
-          quick gratification — the ability to buy now and worry about
-          payments later. But behind the convenience lies a growing concern:
-          is BNPL quietly driving youth into debt traps?
-        </p>
-        <a href="#"
-          class="inline-block px-8 py-3 text-base font-semibold text-[#050505] bg-[#F9D157] rounded-lg border-b hover:bg-[#ffe176] transition-colors duration-300 animate-on-scroll fade-in-right delay-200 ">
-          Get Your AI-Match </a>
-      </div>
-
-      <div>
-        <img src="./assets/images/person/six-people-raise-hands.png"
-          alt="A group of young Malaysian people smiling and waving"
-          class="animate-on-scroll fade-in-right delay-200 rounded-2xl shadow-xl w-full h-auto object-cover" />
+  <!-- Personal Loan Hero Section -->
+  <section
+    class="relative max-w-screen-3xl mx-auto rounded-2xl  flex items-center overflow-hidden">
+    <div class="animate-on-scroll fade-in-up w-full rounded-3xl shadow-2xl overflow-hidden">
+      <div class="header-bg p-10 md:p-16 text-white relative overflow-hidden"
+        style="background-image: url('assets/images/hero/stars-boxes-patterns.png'), linear-gradient(to bottom,rgba(35, 82, 134, 1),rgba(35, 82, 134, 1)); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <!-- Coins Image -->
+        <div class="absolute bottom-4 md:bottom-[12%] right-4 md:right-[12%] w-full max-w-[200px] md:max-w-[500px] h-auto z-10">
+          <img 
+            src="assets/images/hero/coins.png" 
+            alt="Coins" 
+            class="w-full h-auto max-h-[300px] object-contain object-right-bottom"
+            loading="lazy"
+          >
+        </div>
+        <div class="max-w-full z-10 relative py-12 md:py-[10rem] items-start flex flex-col gap-7">
+          <h1 class="animate-on-scroll fade-in-down text-4xl md:text-6xl font-semibold mb-4">Personal Loan Calculator
+          </h1>
+          <p
+            class="animate-on-scroll fade-in-up delay-100 text-blue-100 text-xs md:text-sm leading-relaxed mb-8 max-w-lg font-light">
+            Use our loan calculator to quickly estimate your monthly repayments, total loan cost, and overall financing
+            plan. Simply enter your loan amount, interest rate, and tenure to see a clear breakdown and make informed
+            borrowing decisions with ease.
+          </p>
+          <button
+            class="animate-on-scroll fade-in-up delay-200 bg-[#facc15] hover:bg-[#eab308]  text-mg  text-black font-bold py-3 px-12 rounded shadow-md transition duration-200">
+            Apply Now
+          </button>
+        </div>
       </div>
     </div>
   </section>
-  <div class="absolute top-[100%] right-0 overflow-hidden z-[-1]">
-    <svg width="498" height="1160" viewBox="0 0 498 1160" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g filter="url(#filter0_f_72_542)">
-        <ellipse cx="587.5" cy="580" rx="256.5" ry="249" fill="#2B90FF" fill-opacity="0.5" />
-      </g>
-      <defs>
-        <filter id="filter0_f_72_542" x="0" y="0" width="1175" height="1160" filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-          <feGaussianBlur stdDeviation="165.5" result="effect1_foregroundBlur_72_542" />
-        </filter>
-      </defs>
-    </svg>
-  </div>
-  <section class="py-8 md:pb-12 lg:pb-16">
-    <div class="max-w-screen-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8">
-        <!-- Header with Title and Navigation -->
-        <div class="flex justify-between items-center mb-6 md:mb-8">
-          <div class="flex flex-col md:flex-row justify-between w-full">
-            <p class="text-sm font-semibold text-gray-500 tracking-widest uppercase animate-on-scroll fade-in-up">
-              ALL BLOGS
-            </p>
-            <h2
-              class="mt-2 text-2xl sm:text-3xl md:text-4xl font-bold text-black animate-on-scroll fade-in-up delay-100">
-              Financial Insights & Highlights
-            </h2>
-          </div>
-          <div class="flex space-x-2 lg:hidden">
-            <button id="blog-prev-btn"
-              class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
-              aria-label="Previous blog">
-              <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-              </svg>
-            </button>
-            <button id="blog-next-btn"
-              class="w-8 h-8 sm:w-10 sm:h-10 bg-white hover:bg-gray-200 text-black rounded-full flex items-center justify-center shadow-lg transition-colors"
-              aria-label="Next blog">
-              <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
 
-        <!-- Carousel Container -->
-        <div class="overflow-hidden">
-          <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 pb-4">
-            <!-- Blog Card 1 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-200 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/person/mask-man.png" alt="Person preparing/serving food"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    BNPL and Youth in Malaysia: Building Financial Health Before It’s Too Late
+  <!-- Loan Calculator Section -->
+  <section id="personal-loan-calculator" class="py-10 md:py-16 lg:py-20 bg-white relative">
 
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    In recent years, Buy Now, Pay Later (BNPL) has become a buzzword in Malaysia’s financial landscape.
-                    For young Malaysians, BNPL offers quick gratification...
-                  </p>
+    <div class="max-w-screen-3xl mx-auto px-4 flex justify-center">
+      <div class="animate-on-scroll fade-in-up w-full max-w-7xl  rounded-3xl overflow-hidden bg-white shadow-md">
+        <div class="bg-white py-12 flex justify-center ">
+          <div class="w-full max-w-lg px-6">
+            <h2 class="text-4xl font-medium text-gray-800 mb-10 text-center tracking-wide ">LOAN CALCULATOR</h2>
+            <form>
+              <div class="mb-6">
+                <label for="date" class="block text-xs font-semibold text-gray-600 mb-2 ml-1">Disbursement Date</label>
+                <div class="relative">
+                  <input type="date" id="date"
+                    class="w-full border border-gray-200 rounded-md py-3 px-4 text-gray-400 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-300 appearance-none"
+                    placeholder="mm/dd/yyyy">
+                  <!-- Custom Calendar Icon overlay if browser default isn't desired, though type="date" usually adds one. 
+                       Using type="text" with onfocus to simulate the exact visual from image if needed. -->
                 </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
               </div>
-            </a>
 
-            <!-- Blog Card 2 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-300 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/blogs/money.png" alt="Malaysian Ringgit banknotes"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Global Economic Outlook 2025 — How Malaysians Can Brace with Good Financial Health
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    The world economy in 2025 is marked by uncertainty. Rising global interest rates, geopolitical
-                    tensions, and supply chain disruptions are weighing...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
+              <!-- Loan Amount -->
+              <div class="mb-6">
+                <label for="amount" class="block text-xs font-semibold text-gray-600 mb-2 ml-1">Loan Amount</label>
+                <input type="text" id="amount"
+                  class="w-full border border-gray-200 rounded-md py-3 px-4 text-gray-700 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-300"
+                  placeholder="Enter Loan Amount">
               </div>
-            </a>
 
-            <!-- Blog Card 3 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-400 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/person/groups-of-people.png" alt="Diverse group of people smiling"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Loan Market in Malaysia — Can AI Platforms Reduce Debt Stress?
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    Malaysia’s credit market is expanding. In Q1 2025, household loans grew 6% year-on-year, while
-                    private sector lending rose 5.5%. Yet, the rise in household ...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
+              <!-- Number of Month -->
+              <div class="mb-6">
+                <label for="months" class="block text-xs font-semibold text-gray-600 mb-2 ml-1">Number of Month</label>
+                <input type="text" id="months"
+                  class="w-full border border-gray-200 rounded-md py-3 px-4 text-gray-700 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-300"
+                  placeholder="Number of Month">
               </div>
-            </a>
 
-            <!-- Blog Card 4 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-500 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/blogs/shadow.png" alt="Malaysian flag with silhouettes of people"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Case Managers After Loan Drawdown — A New Standard for Malaysia’s Loan Market
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    In Malaysia, the borrower’s journey often ends the moment a loan is approved. Traditional lenders
-                    focus on disbursement, not on the borrower’s long-term...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
-            </a>
+              <!-- Interest Rate -->
+              <div class="mb-10">
+                <label for="rate" class="block text-xs font-semibold text-gray-600 mb-2 ml-1">Interest Rate(%)</label>
+                <input type="text" id="rate"
+                  class="w-full border border-gray-200 rounded-md py-3 px-4 text-gray-700 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-300"
+                  placeholder="00.00">
+              </div>
+
+              <!-- Buttons -->
+              <div class="flex gap-4">
+                <button type="button"
+                  class="flex-1 bg-[#224c8a] hover:bg-[#1a3b6e] text-white text-sm font-medium py-3 px-4 rounded-md shadow-sm transition duration-200">
+                  Calculate
+                </button>
+                <button type="button"
+                  class="flex-1 bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 text-sm font-medium py-3 px-4 rounded-md shadow-sm transition duration-200">
+                  Reset
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-
-        <!-- Carousel Container -->
-        <div class="overflow-hidden">
-          <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 pb-4">
-            <!-- Blog Card 1 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-200 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/person/mask-man.png" alt="Person preparing/serving food"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    BNPL and Youth in Malaysia: Building Financial Health Before It’s Too Late
-
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    In recent years, Buy Now, Pay Later (BNPL) has become a buzzword in Malaysia’s financial landscape.
-                    For young Malaysians, BNPL offers quick gratification...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
-              </div>
-            </a>
-
-            <!-- Blog Card 2 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-300 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/blogs/money.png" alt="Malaysian Ringgit banknotes"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Global Economic Outlook 2025 — How Malaysians Can Brace with Good Financial Health
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    The world economy in 2025 is marked by uncertainty. Rising global interest rates, geopolitical
-                    tensions, and supply chain disruptions are weighing...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
-              </div>
-            </a>
-
-            <!-- Blog Card 3 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-400 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/person/groups-of-people.png" alt="Diverse group of people smiling"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Loan Market in Malaysia — Can AI Platforms Reduce Debt Stress?
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    Malaysia’s credit market is expanding. In Q1 2025, household loans grew 6% year-on-year, while
-                    private sector lending rose 5.5%. Yet, the rise in household ...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
-              </div>
-            </a>
-
-            <!-- Blog Card 4 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-500 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/blogs/shadow.png" alt="Malaysian flag with silhouettes of people"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Case Managers After Loan Drawdown — A New Standard for Malaysia’s Loan Market
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    In Malaysia, the borrower’s journey often ends the moment a loan is approved. Traditional lenders
-                    focus on disbursement, not on the borrower’s long-term...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
-            </a>
-          </div>
-        </div>
-
-        <!-- Carousel Container -->
-        <div class="overflow-hidden">
-          <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 pb-4">
-            <!-- Blog Card 1 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-200 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/person/mask-man.png" alt="Person preparing/serving food"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    BNPL and Youth in Malaysia: Building Financial Health Before It’s Too Late
-
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    In recent years, Buy Now, Pay Later (BNPL) has become a buzzword in Malaysia’s financial landscape.
-                    For young Malaysians, BNPL offers quick gratification...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
-              </div>
-            </a>
-
-            <!-- Blog Card 2 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-300 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/blogs/money.png" alt="Malaysian Ringgit banknotes"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Global Economic Outlook 2025 — How Malaysians Can Brace with Good Financial Health
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    The world economy in 2025 is marked by uncertainty. Rising global interest rates, geopolitical
-                    tensions, and supply chain disruptions are weighing...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
-              </div>
-            </a>
-
-            <!-- Blog Card 3 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-400 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/person/groups-of-people.png" alt="Diverse group of people smiling"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Loan Market in Malaysia — Can AI Platforms Reduce Debt Stress?
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    Malaysia’s credit market is expanding. In Q1 2025, household loans grew 6% year-on-year, while
-                    private sector lending rose 5.5%. Yet, the rise in household ...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
-              </div>
-            </a>
-
-            <!-- Blog Card 4 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-500 block">
-              <div
-                class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/blogs/shadow.png" alt="Malaysian flag with silhouettes of people"
-                  class="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover" />
-                <div class="p-3 sm:p-4">
-                  <h3 class="text-sm sm:text-base font-bold mb-2 text-black">
-                    Case Managers After Loan Drawdown — A New Standard for Malaysia’s Loan Market
-                  </h3>
-                  <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    In Malaysia, the borrower’s journey often ends the moment a loan is approved. Traditional lenders
-                    focus on disbursement, not on the borrower’s long-term...
-                  </p>
-                </div>
-                <a href="#" class="underline text-sm" style="color:rgba(28, 156, 254, 1)">See More</a>
-            </a>
-          </div>
-        </div>
-
       </div>
     </div>
+    <!-- Blue Effect SVG -->
+   
+    <!-- Blue Effect SVG -->
+    <div class="absolute top-[1%] left-0 z-2">
+      <img src="assets/images/icon/bluish.png" alt="RM Currency" class="w-full h-[50rem] object-contain" />
+    </div>
+    <div class="absolute top-[10%] right-0 z-2">
+      <img src="assets/images/icon/bluish-right.png" alt="RM Currency" class="w-full h-[50rem] object-contain" />
+    </div>
+    <!-- Blue Effect SVG -->
+   
   </section>
   <!-- Footer Section -->
   <footer style="background: linear-gradient(181.63deg, #D6E9FF 1.47%, #235286 98.72%)" class="text-white py-8 md:py-12">
@@ -873,9 +634,8 @@
     </div>
   </footer>
 
-
+  <script src="animations.js"></script>
   <script src="script.js"></script>
-  </div>
 </body>
 
 </html>
