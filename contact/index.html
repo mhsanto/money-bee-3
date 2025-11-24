@@ -1,324 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="../style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-          maxWidth:{
-            'screen-3xl':'1660px'
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          maxWidth: {
+            'screen-3xl': '1660px'
           },
-            fontFamily: {
-              manrope: ["Manrope", "sans-serif"],
-            },
+          fontFamily: {
+            manrope: ["Manrope", "sans-serif"],
           },
         },
-      };
-    </script>
-    <script src="../animations.js"></script>
-    <title>MoneyBee</title>
-  </head>
-  <body class="bg-gray-100 min-h-screen font-manrope">
-    <!-- Sticky Navigation Wrapper -->
-    <div class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50 nav-wrapper">
+      },
+    };
+  </script>
+  <script src="../animations.js"></script>
+  <title>MoneyBee</title>
+</head>
+
+<body class="bg-gray-100 min-h-screen font-manrope">
+  <!-- Sticky Navigation Wrapper -->
+  <div class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50 nav-wrapper">
     <div class="mx-auto max-w-screen-3xl px-4 px-2 sm:px-0">
       <div class="flex h-16 items-center justify-between">
         <!-- Left: Logo -->
         <a href="../index.html" class="inline-flex items-center gap-2">
-          <img
-            src="../assets/images/header/logo.png"
-            alt="logo"
-            class="h-[40px] w-auto"
-          />
+          <img src="../assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
         </a>
 
         <!-- Middle: Desktop Nav (>=1024px) -->
-        <nav
-          class="hidden lg:flex items-center justify-center gap-2 font-medium"
-        >
+        <nav class="hidden lg:flex items-center justify-center gap-2 font-medium">
           <!-- Loans dropdown -->
           <div class="relative group dropdown-group">
-            <button
-              type="button"
+            <button type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
+              aria-haspopup="menu" aria-expanded="false">
               <span>Loans</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                <path fill-rule="evenodd"
                   d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd"
-                />
+                  clip-rule="evenodd" />
               </svg>
             </button>
             <ul
               class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu"
-            >
+              role="menu">
               <li role="none">
-                <a
-                  href="../loans/personal-loan/index.html"
+                <a href="../loans/personal-loan/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Personal Loan</a
-                >
+                  role="menuitem">Personal Loan</a>
               </li>
               <li role="none">
-                <a
-                  href="../loans/debt-consolidation/index.html"
+                <a href="../loans/debt-consolidation/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Debt Consolidation Loan</a
-                >
+                  role="menuitem">Debt Consolidation Loan</a>
               </li>
               <li role="none">
-                <a
-                  href="../loans/sme-loan/index.html"
+                <a href="../loans/sme-loan/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >SME Loan</a
-                >
+                  role="menuitem">SME Loan</a>
               </li>
               <li role="none">
-                <a
-                  href="../loans/car-loan/index.html"
+                <a href="../loans/car-loan/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Car Loan</a
-                >
+                  role="menuitem">Car Loan</a>
               </li>
               <li role="none">
-                <a
-                  href="../loans/property-loan/index.html"
+                <a href="../loans/property-loan/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Property Loan</a
-                >
+                  role="menuitem">Property Loan</a>
               </li>
               <li role="none">
-                <a
-                  href="../loans/education-loan/index.html"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem"
-                  >Education Loan</a
-                >
+                <a href="../loans/education-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem">Education Loan</a>
               </li>
             </ul>
           </div>
           <div class="relative group dropdown-group">
-            <button
-              type="button"
+            <button type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
+              aria-haspopup="menu" aria-expanded="false">
               <a href="../resourses.html">Resources</a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                <path fill-rule="evenodd"
                   d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd"
-                />
+                  clip-rule="evenodd" />
               </svg>
             </button>
             <ul
               class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu"
-            >
+              role="menu">
               <li role="none">
-                <a
-                  href="../tools/personal-loan-calculator/index.html"
+                <a href="../tools/personal-loan-calculator/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Personal Loan Calculator</a
-                >
+                  role="menuitem">Personal Loan Calculator</a>
               </li>
               <li role="none">
-                <a
-                  href="../tools/debt-consolidation-calculator/index.html"
+                <a href="../tools/debt-consolidation-calculator/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Debt Consolidation Calculator</a
-                >
+                  role="menuitem">Debt Consolidation Calculator</a>
               </li>
               <li role="none">
-                <a
-                  href="../guides/download-bank-statement-online/index.html"
+                <a href="../guides/download-bank-statement-online/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Download Bank Statement</a
-                >
+                  role="menuitem">Download Bank Statement</a>
               </li>
               <li role="none">
-                <a
-                  href="../blog/index.html"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem"
-                  >Blog</a
-                >
+                <a href="../blog/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem">Blog</a>
               </li>
             </ul>
           </div>
           <!-- Financial Health Hub (no dropdown) -->
-          <a href="../financial-health-hub/index.html" class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">Financial Health Hub</a>
+          <a href="../financial-health-hub/index.html"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">Financial Health Hub</a>
 
           <!-- For Lenders (no dropdown) -->
-          <a href="../lenders/index.html" class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">For Lenders</a>
+          <a href="../lenders/index.html"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">For Lenders</a>
 
           <!-- Company dropdown -->
           <div class="relative group dropdown-group">
-            <button
-              type="button"
+            <button type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
+              aria-haspopup="menu" aria-expanded="false">
               <span>Company</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                <path fill-rule="evenodd"
                   d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd"
-                />
+                  clip-rule="evenodd" />
               </svg>
             </button>
             <ul
               class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu"
-            >
+              role="menu">
               <li role="none">
-                <a
-                  href="../company/about/index.html"
+                <a href="../company/about/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >About Us</a
-                >
+                  role="menuitem">About Us</a>
               </li>
               <li role="none">
-                <a
-                  href="../company/islamic-financing/index.html"
+                <a href="../company/islamic-financing/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Islamic Financing</a
-                >
+                  role="menuitem">Islamic Financing</a>
               </li>
               <li role="none">
-                <a
-                  href="../company/legal/compliance-privacy/index.html"
+                <a href="../company/legal/compliance-privacy/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Compliance & Privacy</a
-                >
+                  role="menuitem">Compliance & Privacy</a>
               </li>
               <li role="none">
-                <a
-                  href="../careers/index.html"
+                <a href="../careers/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem"
-                  >Careers</a
-                >
+                  role="menuitem">Careers</a>
               </li>
               <li role="none">
-                <a
-                  href="../contact/index.html"
-                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem"
-                  >Contact</a
-                >
+                <a href="../contact/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem">Contact</a>
               </li>
             </ul>
           </div>
 
           <!-- FAQ (no dropdown) -->
-          <a
-            href="../faqs/index.html"
-            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-            >FAQ</a
-          >
+          <a href="../faqs/index.html"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">FAQ</a>
 
           <!-- Compliance & Privacy (no dropdown) -->
-          <a href="../company/legal/compliance-privacy/index.html" class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">Compliance & Privacy</a>
+          <a href="../company/legal/compliance-privacy/index.html"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">Compliance & Privacy</a>
         </nav>
 
         <!-- Right: Actions -->
         <!-- Desktop (>=1024px): Contact Us button -->
         <div class="hidden lg:flex items-center gap-3">
-          <a
-            href="../contact-us.html"
-            style="background-color: #f9d157"
-            class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition"
-            >Contact Us</a
-          >
+          <a href="../contact-us.html" style="background-color: #f9d157"
+            class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition">Contact Us</a>
         </div>
 
         <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
         <div class="flex lg:hidden items-center gap-2">
-          <a
-            href="../contact-us.html"
-            style="background-color: #f9d157"
-            class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition"
-            >Contact Us</a
-          >
-          <button
-            id="mobileMenuButton"
+          <a href="../contact-us.html" style="background-color: #f9d157"
+            class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition">Contact Us</a>
+          <button id="mobileMenuButton"
             class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition text-black"
-            aria-controls="mobileMenu"
-            aria-expanded="false"
-            aria-label="Toggle menu"
-          >
-            <svg
-              id="iconHamburger"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-5 w-5"
-            >
-              <path
-                d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z"
-              />
+            aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">
+            <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="h-5 w-5">
+              <path d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z" />
             </svg>
-            <svg
-              id="iconClose"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-5 w-5 hidden"
-            >
-              <path
-                fill-rule="evenodd"
+            <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="h-5 w-5 hidden">
+              <path fill-rule="evenodd"
                 d="M6.225 4.811a.75.75 0 0 1 1.06 0L12 9.525l4.715-4.714a.75.75 0 1 1 1.06 1.06L13.06 10.586l4.714 4.715a.75.75 0 1 1-1.06 1.06L12 11.646l-4.715 4.715a.75.75 0 1 1-1.06-1.06l4.714-4.715-4.714-4.715a.75.75 0 0 1 0-1.06z"
-                clip-rule="evenodd"
-              />
+                clip-rule="evenodd" />
             </svg>
           </button>
         </div>
@@ -331,62 +217,28 @@
         <div class="border-b border-gray-200 pb-2">
           <button
             class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-services"
-          >
+            data-target="mobile-services">
             <span class="font-medium">Loans</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
+            <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
                 d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
+                clip-rule="evenodd" />
             </svg>
           </button>
-          <div
-            id="mobile-services"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="../loans/personal-loan/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Personal Loan</a
-            >
-            <a
-              href="../loans/debt-consolidation/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Debt Consolidation Loan</a
-            >
-            <a
-              href="../loans/sme-loan/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >SME Loan</a
-            >
-            <a
-              href="../loans/car-loan/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Car Loan</a
-            >
-            <a
-              href="../loans/property-loan/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Property Loan</a
-            >
-            <a
-              href="../loans/education-loan/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Education Loan</a
-            >
+          <div id="mobile-services" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+            <a href="../loans/personal-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Personal Loan</a>
+            <a href="../loans/debt-consolidation/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Debt Consolidation Loan</a>
+            <a href="../loans/sme-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">SME Loan</a>
+            <a href="../loans/car-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Car Loan</a>
+            <a href="../loans/property-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Property Loan</a>
+            <a href="../loans/education-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Education Loan</a>
           </div>
         </div>
 
@@ -394,337 +246,198 @@
         <div class="border-b border-gray-200 pb-2">
           <button
             class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-resources"
-          >
+            data-target="mobile-resources">
             <span class="font-medium">Resources</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
+            <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
                 d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
+                clip-rule="evenodd" />
             </svg>
           </button>
-          <div
-            id="mobile-resources"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="../tools/personal-loan-calculator/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Personal Loan Calculator</a
-            >
-            <a
-              href="../tools/debt-consolidation-calculator/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Debt Consolidation Calculator</a
-            >
-            <a
-              href="../guides/download-bank-statement-online/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Download Bank Statement</a
-            >
-            <a
-              href="../blog/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Blog</a
-            >
+          <div id="mobile-resources" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+            <a href="../tools/personal-loan-calculator/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Personal Loan Calculator</a>
+            <a href="../tools/debt-consolidation-calculator/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Debt Consolidation
+              Calculator</a>
+            <a href="../guides/download-bank-statement-online/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Download Bank Statement</a>
+            <a href="../blog/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Blog</a>
           </div>
         </div>
 
         <!-- Financial Health Hub (mobile - no dropdown) -->
         <div class="border-b border-gray-200 pb-2">
-          <a href="../financial-health-hub/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Financial Health Hub</a>
+          <a href="../financial-health-hub/index.html"
+            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Financial Health Hub</a>
         </div>
 
         <!-- For Lenders (mobile - no dropdown) -->
         <div class="border-b border-gray-200 pb-2">
-          <a href="../lenders/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">For Lenders</a>
+          <a href="../lenders/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">For
+            Lenders</a>
         </div>
 
         <!-- About Us (mobile) -->
         <div class="border-b border-gray-200 pb-2">
           <button
             class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-about"
-          >
+            data-target="mobile-about">
             <span class="font-medium">Company</span>
-            <svg
-              class="dropdown-arrow h-5 w-5 transition-transform"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
+            <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
                 d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd"
-              />
+                clip-rule="evenodd" />
             </svg>
           </button>
-          <div
-            id="mobile-about"
-            class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1"
-          >
-            <a
-              href="../company/about/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >About Us</a
-            >
-            <a
-              href="../company/islamic-financing/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Islamic Financing</a
-            >
-            <a
-              href="../company/legal/compliance-privacy/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Compliance & Privacy</a
-            >
-            <a
-              href="../careers/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Careers</a
-            >
-            <a
-              href="../contact/index.html"
-              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem"
-              >Contact</a
-            >
+          <div id="mobile-about" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+            <a href="../company/about/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">About Us</a>
+            <a href="../company/islamic-financing/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Islamic Financing</a>
+            <a href="../company/legal/compliance-privacy/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Compliance & Privacy</a>
+            <a href="../careers/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Careers</a>
+            <a href="../contact/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Contact</a>
           </div>
         </div>
 
         <!-- FAQ (mobile - no dropdown) -->
         <div class="border-b border-gray-200 pb-2">
-          <a
-            href="../faqs/index.html"
-            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium"
-            >FAQ</a
-          >
+          <a href="../faqs/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">FAQ</a>
         </div>
 
         <!-- Compliance & Privacy (mobile - no dropdown) -->
         <div class="border-b border-gray-200 pb-2">
-          <a href="../company/legal/compliance-privacy/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Compliance & Privacy</a>
+          <a href="../company/legal/compliance-privacy/index.html"
+            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Compliance & Privacy</a>
         </div>
       </nav>
     </div>
 
-    </div>
+  </div>
 
-    <!-- End Sticky Navigation Wrapper -->
+  <!-- End Sticky Navigation Wrapper -->
 
-    <div class="container mx-auto px-4 py-12 lg:py-24">
-      <div class="flex flex-col lg:flex-row justify-center items-center gap-16">
-        <div class="w-full max-w-lg">
-          <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 animate-on-scroll fade-in-up">
-            Contact us
-          </h1>
-          <p class="text-gray-600 mb-8 animate-on-scroll fade-in-up delay-200">
-            Our friendly team would love to hear from you.
-          </p>
+  <div class="container mx-auto px-4 py-12 lg:py-24">
+    <div class="flex flex-col lg:flex-row justify-center items-center gap-16">
+      <div class="w-full max-w-lg">
+        <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 animate-on-scroll fade-in-up">
+          Contact us
+        </h1>
+        <p class="text-gray-600 mb-8 animate-on-scroll fade-in-up delay-200">
+          Our friendly team would love to hear from you.
+        </p>
 
-          <form action="#" method="POST" class="space-y-6 animate-on-scroll fade-in-up delay-300">
-            <div class="flex flex-col sm:flex-row gap-6">
-              <div class="w-full">
-                <label
-                  for="first-name"
-                  class="block text-sm font-medium text-gray-700"
-                  >First name</label
-                >
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  placeholder="First name"
-                  class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm"
-                />
-              </div>
-              <div class="w-full">
-                <label
-                  for="last-name"
-                  class="block text-sm font-medium text-gray-700"
-                  >Last name</label
-                >
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  placeholder="Last name"
-                  class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm"
-                />
-              </div>
+        <form action="#" method="POST" class="space-y-6 animate-on-scroll fade-in-up delay-300">
+          <div class="flex flex-col sm:flex-row gap-6">
+            <div class="w-full">
+              <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+              <input type="text" name="first-name" id="first-name" placeholder="First name"
+                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm" />
             </div>
-
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700"
-                >Email</label
-              >
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="you@company.com"
-                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm"
-              />
+            <div class="w-full">
+              <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Last name"
+                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm" />
             </div>
+          </div>
 
-            <div>
-              <label
-                for="phone-number"
-                class="block text-sm font-medium text-gray-700"
-                >Phone number</label
-              >
-              <div class="mt-1 flex rounded-lg shadow-sm">
-                <select
-                  id="country-code"
-                  name="country-code"
-                  class="inline-flex items-center px-3 rounded-l-lg border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
-                >
-                  <option>MY +60</option>
-                  <option>US +1</option>
-                  <option>UK +44</option>
-                  <option>BD +880</option>
-                </select>
-                <input
-                  type="text"
-                  name="phone-number"
-                  id="phone-number"
-                  placeholder="Your phone number"
-                  class="block w-full rounded-none rounded-r-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm"
-                />
-              </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" name="email" id="email" placeholder="you@company.com"
+              class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm" />
+          </div>
+
+          <div>
+            <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone number</label>
+            <div class="mt-1 flex rounded-lg shadow-sm">
+              <select id="country-code" name="country-code"
+                class="inline-flex items-center px-3 rounded-l-lg border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                <option>MY +60</option>
+                <option>US +1</option>
+                <option>UK +44</option>
+                <option>BD +880</option>
+              </select>
+              <input type="text" name="phone-number" id="phone-number" placeholder="Your phone number"
+                class="block w-full rounded-none rounded-r-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm" />
             </div>
+          </div>
 
-            <div>
-              <label
-                for="message"
-                class="block text-sm font-medium text-gray-700"
-                >Message</label
-              >
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Leave us a message..."
-                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm"
-              ></textarea>
-            </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Leave us a message..."
+              class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent sm:text-sm"></textarea>
+          </div>
 
-            <div class="flex items-center">
-              <input
-                id="privacy-policy"
-                name="privacy-policy"
-                type="checkbox"
-                class="h-4 w-4 text-yellow-500 border-gray-300 rounded focus:ring-yellow-400"
-              />
-              <label
-                for="privacy-policy"
-                class="ml-3 block text-sm text-gray-800"
-              >
-                You agree to our friendly
-                <a href="#" class="font-medium text-gray-900 underline"
-                  >privacy policy</a
-                >.
-              </label>
-            </div>
+          <div class="flex items-center">
+            <input id="privacy-policy" name="privacy-policy" type="checkbox"
+              class="h-4 w-4 text-yellow-500 border-gray-300 rounded focus:ring-yellow-400" />
+            <label for="privacy-policy" class="ml-3 block text-sm text-gray-800">
+              You agree to our friendly
+              <a href="#" class="font-medium text-gray-900 underline">privacy policy</a>.
+            </label>
+          </div>
 
-            <div>
-              <button
-                type="submit"
-                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-md font-medium text-gray-800 bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
-              >
-                Send message
-              </button>
-            </div>
-          </form>
-        </div>
+          <div>
+            <button type="submit"
+              class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-md font-medium text-gray-800 bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400">
+              Send message
+            </button>
+          </div>
+        </form>
+      </div>
 
-        <div class="w-full max-w-md hidden lg:block">
-          <img
-            src="../assets/images/ourservices/objects/map.png"
-            alt="Map showing office location"
-            class="rounded-2xl shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-300 ease-in-out animate-on-scroll fade-in-up delay-500"
-          />
-        </div>
+      <div class="w-full max-w-md hidden lg:block">
+        <img src="../assets/images/ourservices/objects/map.png" alt="Map showing office location"
+          class="rounded-2xl shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-300 ease-in-out animate-on-scroll fade-in-up delay-500" />
       </div>
     </div>
-    <!-- Terms & Conditions Section -->
-    <section
-      class="min-h-[60vh] h-[60vh] relative bg-transparent w-full mb-16 max-w-screen-3xl mx-auto"
-    >
-      <img
-        src="../assets/images/person/young-businessman.png"
-        alt="Person sitting at a desk"
-        class="w-full h-full object-cover absolute inset-0 blur-sm rounded-xl"
-      />
+  </div>
+  <!-- Terms & Conditions Section -->
+  <section class="min-h-[60vh] h-[60vh] relative bg-transparent w-full mb-16 max-w-screen-3xl mx-auto">
+    <img src="../assets/images/person/young-businessman.png" alt="Person sitting at a desk"
+      class="w-full h-full object-cover absolute inset-0 blur-sm rounded-xl" />
+    <div class="relative z-10 max-w-screen-3xl h-full flex flex-col justify-center items-center">
       <div
-        class="relative z-10 max-w-screen-3xl h-full flex flex-col justify-center items-center"
-      >
-        <div
-          class="rounded-lg h-[60%] w-[60%] flex flex-col justify-center items-center animate-on-scroll fade-in-up mx-auto"
-          style="
+        class="rounded-lg h-[60%] w-[60%] flex flex-col justify-center items-center animate-on-scroll fade-in-up mx-auto"
+        style="
             background: rgba(255, 255, 255, 0.02);
             backdrop-filter: blur(10px);
-          "
-        >
-          <h2 class="text-2xl md:text-5xl font-bold text-white mb-4 animate-on-scroll fade-in-up delay-200">
-            Terms & Conditions
-          </h2>
-          <p class="text-sm md:text-xl text-white mb-6 animate-on-scroll fade-in-up delay-300">
-            Effective Date: 01 Oct 2025
-          </p>
-          <button
-            class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center gap-2 animate-on-scroll fade-in-up delay-500"
-          >
-            <span>Read More</span>
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <mask
-                id="mask0_7_7462"
-                style="mask-type: alpha"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="25"
-                height="25"
-              >
-                <rect width="25" height="25" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_7_7462)">
-                <path
-                  d="M6.66659 18.7497L5.20825 17.2913L15.2083 7.29134H6.24992V5.20801H18.7499V17.708H16.6666V8.74967L6.66659 18.7497Z"
-                  fill="black"
-                  fill-opacity="0.9"
-                />
-              </g>
-            </svg>
-          </button>
-        </div>
+          ">
+        <h2 class="text-2xl md:text-5xl font-bold text-white mb-4 animate-on-scroll fade-in-up delay-200">
+          Terms & Conditions
+        </h2>
+        <p class="text-sm md:text-xl text-white mb-6 animate-on-scroll fade-in-up delay-300">
+          Effective Date: 01 Oct 2025
+        </p>
+        <button
+          class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center gap-2 animate-on-scroll fade-in-up delay-500">
+          <span>Read More</span>
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_7_7462" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
+              height="25">
+              <rect width="25" height="25" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_7_7462)">
+              <path
+                d="M6.66659 18.7497L5.20825 17.2913L15.2083 7.29134H6.24992V5.20801H18.7499V17.708H16.6666V8.74967L6.66659 18.7497Z"
+                fill="black" fill-opacity="0.9" />
+            </g>
+          </svg>
+        </button>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- Footer Section -->
-  <footer style="background: linear-gradient(181.63deg, #D6E9FF 1.47%, #235286 98.72%)" class="text-white py-8 md:py-12">
+  <footer style="background: linear-gradient(181.63deg, #D6E9FF 1.47%, #235286 98.72%)"
+    class="text-white py-8 md:py-12">
     <div class="max-w-screen-3xl mx-auto px-4">
       <div class="flex flex-col md:flex-row md:justify-between gap-8">
         <!-- Left Column: Company Info -->
@@ -747,14 +460,14 @@
             </div>
 
             <div class="flex items-center md:items-start gap-4">
-             <span>
-               <svg class="p-4 w-16 h-16 md:p-0 md:w-12 md:h-12 md:w-8 md:h-8 flex-shrink-0" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M8.00081 10.6663L10.8808 13.0663C13.3341 15.1063 14.5608 16.133 16.0008 16.133C17.4408 16.133 18.6675 15.1063 21.1208 13.0663L24.0008 10.6663M13.3341 26.6663H18.6675C23.6941 26.6663 26.2141 26.6663 27.7741 25.1063C29.3341 23.5463 29.3341 21.0263 29.3341 15.9997C29.3341 10.973 29.3341 8.45301 27.7741 6.89301C26.2141 5.33301 23.6941 5.33301 18.6675 5.33301H13.3341C8.30748 5.33301 5.78748 5.33301 4.22748 6.89301C2.66748 8.45301 2.66748 10.973 2.66748 15.9997C2.66748 21.0263 2.66748 23.5463 4.22748 25.1063C5.78748 26.6663 8.30748 26.6663 13.3341 26.6663Z"
-                  stroke="white" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
-             </span>
+              <span>
+                <svg class="p-4 w-16 h-16 md:p-0 md:w-12 md:h-12 md:w-8 md:h-8 flex-shrink-0" width="32" height="32"
+                  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00081 10.6663L10.8808 13.0663C13.3341 15.1063 14.5608 16.133 16.0008 16.133C17.4408 16.133 18.6675 15.1063 21.1208 13.0663L24.0008 10.6663M13.3341 26.6663H18.6675C23.6941 26.6663 26.2141 26.6663 27.7741 25.1063C29.3341 23.5463 29.3341 21.0263 29.3341 15.9997C29.3341 10.973 29.3341 8.45301 27.7741 6.89301C26.2141 5.33301 23.6941 5.33301 18.6675 5.33301H13.3341C8.30748 5.33301 5.78748 5.33301 4.22748 6.89301C2.66748 8.45301 2.66748 10.973 2.66748 15.9997C2.66748 21.0263 2.66748 23.5463 4.22748 25.1063C5.78748 26.6663 8.30748 26.6663 13.3341 26.6663Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </span>
               <p>support@moneybee.com.my</p>
             </div>
           </div>
@@ -840,6 +553,7 @@
     </div>
   </footer>
 
-    <script src="../script.js"></script>
-  </body>
+  <script src="../script.js"></script>
+</body>
+
 </html>
