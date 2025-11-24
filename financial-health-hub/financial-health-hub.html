@@ -26,10 +26,10 @@
 
 <body class="min-h-screen font-manrope relative">
     <div class="mx-auto max-w-screen-3xl px-4 px-2 sm:px-0">
-        <div class="flex h-16 items-center justify-between">
+        <div class="flex h-16 md:h-20 items-center justify-between">
             <!-- Left: Logo -->
             <a href="index.html" class="inline-flex items-center gap-2">
-                <img src="assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
+                <img src="assets/images/header/logo.png" alt="logo" class="h-8 md:h-10 w-auto" />
             </a>
 
             <!-- Middle: Desktop Nav (>=1024px) -->
@@ -255,17 +255,17 @@
             <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
             <div class="flex lg:hidden items-center gap-2">
                 <a href="contact-us.html" style="background-color: #f9d157"
-                    class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition">Contact
+                    class="px-3 py-1.5 md:px-4 md:py-2 rounded-lg font-semibold text-black text-xs md:text-sm hover:opacity-90 transition">Contact
                     Us</a>
                 <button id="mobileMenuButton"
-                    class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition text-black"
+                    class="inline-flex items-center justify-center h-8 w-8 md:h-10 md:w-10 border border-black/15 hover:border-black/30 transition text-black"
                     aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">
                     <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="h-5 w-5">
+                        class="h-4 w-4 md:h-5 md:w-5">
                         <path d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z" />
                     </svg>
                     <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="h-5 w-5 hidden">
+                        class="h-4 w-4 md:h-5 md:w-5 hidden">
                         <path fill-rule="evenodd"
                             d="M6.225 4.811a.75.75 0 0 1 1.06 0L12 9.525l4.715-4.714a.75.75 0 1 1 1.06 1.06L13.06 10.586l4.714 4.715a.75.75 0 1 1-1.06 1.06L12 11.646l-4.715 4.715a.75.75 0 1 1-1.06-1.06l4.714-4.715-4.714-4.715a.75.75 0 0 1 0-1.06z"
                             clip-rule="evenodd" />
@@ -425,38 +425,331 @@
             </div>
         </nav>
     </div>
-    <!-- 404 Section -->
-    <section class="py-10 sm:py-12 md:py-16 lg:py-16">
-        <div class="relative w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-6 max-w-3xl md:max-w-4xl lg:max-w-screen-3xl">
-            <div class="relative bg-white rounded-[24px] sm:rounded-[30px] lg:rounded-[36px] overflow-hidden">
-                <div
-                    class="relative flex flex-col items-center text-center px-6 sm:px-10 lg:px-16 py-12 sm:py-14 md:py-16">
-                    <p
-                        class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-gray-900 tracking-tight animate-on-scroll fade-in-up">
-                        oops!</p>
-                    <p
-                        class="text-gray-500 text-sm sm:text-base md:text-lg mt-2 animate-on-scroll fade-in-up delay-200">
-                        Page not found</p>
+    <!-- Background Image -->
+    <div class="absolute top-[30rem] left-0 z-[55] max-w-[200px] overflow-hidden">
+        <img src="assets/images/faqs/RM-Faq.png" alt="" class="w-full h-[200px] object-contain" />
+    </div>
 
-                    <!-- Illustration -->
-                    <div class="mt-8 sm:mt-10 w-full flex flex-col items-center animate-on-scroll fade-in-up delay-400">
-                        <div
-                            class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-4 md:gap-6 lg:gap-6">
-                            <img src="assets/images/404/left4.png" alt="4"
-                                class="w-32 h-40 sm:w-36 sm:h-48 md:w-40 md:h-56 lg:w-full lg:h-[500px] object-contain animate-on-scroll fade-in-up delay-600">
-                            <img src="assets/images/404/zero.png" alt="0"
-                                class="w-36 h-44 sm:w-40 sm:h-52 md:w-48 md:h-60 lg:w-full lg:h-[500px] object-contain animate-on-scroll fade-in-up delay-700">
-                            <img src="assets/images/404/right4.png" alt="4"
-                                class="w-32 h-40 sm:w-36 sm:h-48 md:w-40 md:h-56 lg:w-full lg:h-[500px] object-contain animate-on-scroll fade-in-up delay-800">
-                        </div>
-                        <div class="w-full border-t border-gray-900"></div>
-                    </div>
+    <!-- Article Content Section -->
+    <section class="py-12 md:py-16 lg:py-24 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Article Header -->
+            <div class="text-center mb-8 md:mb-12 animate-on-scroll fade-in-up">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Article 1 of 10: Financial Health Hub
+                </h1>
+            </div>
+            <div class="flex items-start justify-center md:justify-start gap-2 mb-6 w-fit px-3 py-1 rounded-lg mx-auto md:mx-0 animate-on-scroll fade-in-up delay-100"
+                style=" background: rgba(243, 243, 243, 1);
+;">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.4607 0.5H13C13 0.224 12.776 0 12.5 0C12.224 0 12 0.224 12 0.5H8C8 0.224 7.776 0 7.5 0C7.224 0 7 0.224 7 0.5H3C3 0.224 2.776 0 2.5 0C2.224 0 2 0.224 2 0.5H1.53925C0.6905 0.5 0 1.1905 0 2.03925V12.9607C0 13.8097 0.6905 14.5 1.53925 14.5H13.4607C14.3095 14.5 15 13.8095 15 12.9607V2.03925C15 1.19025 14.3095 0.5 13.4607 0.5ZM5.826 13.5C5.5655 12.85 5.513 12.1873 5.50325 11.5H7V13.5H5.826ZM7 5.5V7.5H4.5V5.5H7ZM10.5 5.5V7.5H8V5.5H10.5ZM14 5.5V7.5H11.5V5.5H14ZM5 9.5H4.5V8.5H7V10.5H5.5V10C5.5 9.724 5.276 9.5 5 9.5ZM3.5 7.5H1V5.5H3.5V7.5ZM1 8.5H3.5V9.5H1V8.5ZM4.5 10.5V11C4.5 11.7655 4.5 12.5498 4.7195 13.3507C3.35675 12.8735 1.7915 11.3647 1.22175 10.5H4.5ZM8 11.5H10.5V13.5H8V11.5ZM8 10.5V8.5H10.5V10.5H8ZM11.5 8.5H14V10.5H11.5V8.5ZM1.53925 1.5H2C2 1.776 2.224 2 2.5 2C2.776 2 3 1.776 3 1.5H7C7 1.776 7.224 2 7.5 2C7.776 2 8 1.776 8 1.5H12C12 1.776 12.224 2 12.5 2C12.776 2 13 1.776 13 1.5H13.4607C13.758 1.5 14 1.742 14 2.03925V4.5H1V2.03925C1 1.742 1.242 1.5 1.53925 1.5ZM1.53925 13.5C1.242 13.5 1 13.258 1 12.9607V11.8468C1.51 12.4318 2.17125 13.0238 2.87775 13.5H1.53925ZM13.4607 13.5H11.5V11.5H14V12.9607C14 13.258 13.758 13.5 13.4607 13.5Z"
+                        fill="#575757" />
+                </svg>
 
-                    <a href="index.html"
-                        class="mt-8 sm:mt-10 inline-flex items-center justify-center bg-[#f9d157] text-black font-semibold px-6 sm:px-8 py-3 rounded-xl hover:bg-[#f7c739] transition-colors animate-on-scroll fade-in-up delay-1000">
-                        Go To Homepage
-                    </a>
+                <span class="text-gray-600 text-xs sm:text-sm">June 18, 2026</span>
+            </div>
+            <!-- Hero Image -->
+            <div class="mb-8 md:mb-12 animate-on-scroll fade-in-up delay-200">
+                <img src=".../assets/images/article/financila-health.png" alt="Financial Health Hub Article"
+                    class="w-full h-48 sm:h-64 md:h-80 lg:h-[400px] object-cover rounded-xl md:rounded-2xl shadow-lg">
+            </div>
+
+            <!-- Article Title and Content -->
+            <div class="prose prose-sm sm:prose-base md:prose-lg max-w-none animate-on-scroll fade-in-up delay-300">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
+                    Beyond Budgets: Understanding Your "Money Mindset" and How It Shapes Your Future
+                </h2>
+
+                <!-- Article Body -->
+                <p class="text-gray-700 leading-relaxed mb-4 md:mb-6 text-sm sm:text-base">
+                    We've all been told to budget. We create spreadsheets, download apps, and promise ourselves we'll
+                    track every sen. Yet, many of us still find ourselves overspending or avoiding our finances
+                    altogether. Why? Because personal finance is rarely about math. It's about psychology.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed mb-6 md:mb-8 text-sm sm:text-base">
+                    Your "money mindset" is the invisible set of beliefs, emotions, and habits you have about money. It
+                    was shaped by your upbringing, your community, and your personal experiences. Understanding it is
+                    the first, most crucial step to taking real control of your financial life.
+                </p>
+
+                <h2
+                    class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
+                    What's Your Financial Script? Scarcity vs.
+                    Abundance</h2>
+
+                <p class="text-gray-700 leading-relaxed mb-4 md:mb-6 text-sm sm:text-base">
+                    Most of us operate from one of two core mindsets, often without realizing it.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed mb-3 md:mb-4 text-sm sm:text-base">
+                    <strong>The Scarcity Mindset:</strong> This mindset believes there is never enough. It's rooted in
+                    fear—fear of losing a job, fear of unexpected expenses, fear of not being able to provide. People
+                    with a scarcity mindset might be excellent savers, but they are often afraid to invest or spend
+                    money even on things that could improve their lives. They see money as something to be hoarded for
+                    protection.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed mb-6 md:mb-8 text-sm sm:text-base">
+                    <strong>The Abundance Mindset:</strong> This mindset believes there are always opportunities to
+                    create more. It's rooted in confidence and optimism. People with this mindset are more comfortable
+                    with calculated risks, like starting a business or investing in the stock market. They see money as
+                    a tool for growth and opportunity.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed mb-6 md:mb-8 text-sm sm:text-base">
+                    Neither is inherently "good" or "bad," but an extreme scarcity mindset can lead to missed
+                    opportunities, while an unchecked abundance mindset can lead to reckless decisions. The goal is to
+                    find a healthy balance: save diligently (scarcity) but also be open to growing your wealth
+                    (abundance).
+                </p>
+
+                <h2
+                    class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
+                    Identifying Your Emotional Spending
+                    Triggers</h2>
+
+                <p class="text-gray-700 leading-relaxed mb-4 md:mb-6 text-sm sm:text-base">
+                    Do you ever buy something you don't need after a stressful day at work? Or splurge on a fancy meal
+                    to celebrate a small win? That's emotional spending. Your money decisions are being driven by
+                    feelings, not logic.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed mb-3 md:mb-4 text-sm sm:text-base">
+                    Common triggers in our Malaysian context include:
+                </p>
+
+                <ul
+                    class="list-disc pl-4 md:pl-6 mb-4 md:mb-6 text-gray-700 space-y-1 md:space-y-2 text-sm sm:text-base">
+                    <li><strong>Stress:</strong> A terrible traffic jam on the LDP, a demanding boss, or family pressure
+                        can lead to "retail therapy" at the nearest shopping mall.</li>
+                    <li><strong>Social Pressure ("FOMO"):</strong> Seeing friends post photos of their latest
+                        cafe-hopping adventure or overseas trip can create a powerful fear of missing out, prompting you
+                        to spend money you don't have.</li>
+                    <li><strong>Habit & Boredom:</strong> Mindlessly scrolling through Shopee or Lazada while watching
+                        TV has become a national pastime and a major budget-killer.</li>
+                </ul>
+
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 md:p-6 my-6 md:my-8 rounded-r-lg">
+                    <p class="text-blue-800 font-medium text-sm sm:text-base">
+                        <strong>How to Take Control:</strong> The first step is awareness. The next time you feel the
+                        urge to spend, pause and ask yourself: "What am I really feeling right now? Am I buying this
+                        because I need it, or because I'm feeling stressed/bored/envious?" Just asking the question can
+                        be enough to break the cycle.
+                    </p>
                 </div>
+
+                <h2
+                    class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
+                    How to Start Rewriting Your Money Story
+                </h2>
+
+                <p class="text-gray-700 leading-relaxed mb-4 md:mb-6 text-sm sm:text-base">
+                    Shifting your money mindset is a journey, not an overnight fix. Here's how to start:
+                </p>
+
+                <ol
+                    class="list-decimal pl-4 md:pl-6 mb-4 md:mb-6 text-gray-700 space-y-2 md:space-y-3 text-sm sm:text-base">
+                    <li><strong>Acknowledge Your Past:</strong> Think about the first money lessons you learned from
+                        your parents. Were they savers? Spenders? Did they talk openly about money or was it a taboo
+                        topic? Understanding your financial roots helps you understand your present behaviour.</li>
+                    <li><strong>Practice Gratitude:</strong> A core part of shifting from scarcity to abundance is
+                        appreciating what you already have. Take a moment each day to be grateful for your financial
+                        stability, no matter how small.</li>
+                    <li><strong>Educate Yourself:</strong> Fear often comes from a lack of understanding. The more you
+                        learn about personal finance—from how EPF works to the basics of investing—the more confident
+                        and in control you will feel.</li>
+                    <li><strong>Define Your "Why":</strong> Why do you want to be better with money? Is it to provide
+                        for your family? To travel? To retire with peace of mind? A powerful "why" will motivate you to
+                        make better daily decisions.</li>
+                </ol>
+
+                <p class="text-gray-700 leading-relaxed mb-6 md:mb-8 text-sm sm:text-base">
+                    Your financial health starts in your mind. By understanding your personal money mindset, you can
+                    move from being a passenger to being the confident driver of your own financial journey.
+                </p>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 md:p-6 my-6 md:my-8 rounded-r-lg">
+                    <p class="text-yellow-800 text-xs sm:text-sm">
+                        <strong>Disclaimer:</strong> This article is for informational and educational purposes only. It
+                        does not constitute financial, legal, or professional advice. Please consult with a qualified
+                        professional before making any financial decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Articles Section -->
+    <section class="py-12 md:py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-screen-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-8 md:mb-12 lg:mb-16 animate-on-scroll fade-in-up">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    More Articles
+                </h2>
+            </div>
+
+            <!-- Articles Carousel Container -->
+            <div class="relative max-w-6xl mx-auto animate-on-scroll fade-in-up delay-200">
+                <!-- Navigation Arrows -->
+                <button id="prevBtn"
+                    class="absolute left-2 md:left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-4 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
+                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 15L7.5 10L12.5 5" stroke="#374151" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <button id="nextBtn"
+                    class="absolute right-2 md:right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-4 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
+                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="#374151" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- Articles Carousel -->
+                <div class="overflow-hidden">
+                    <div id="articlesCarousel" class="flex transition-transform duration-300 ease-in-out">
+                        <!-- Article 1 -->
+                        <div
+                            class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4 animate-on-scroll fade-in-up delay-300">
+                            <div
+                                class="bg-white rounded-xl md:rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow">
+                                <div
+                                    class="aspect-video bg-gradient-to-br from-orange-400 via-red-500 to-pink-600 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-black/20">
+                                        <img src="../assets/images/blogs/shadow.png" alt="Article 2 Image"
+                                            class="w-full h-full object-cover opacity-80">
+                                    </div>
+
+                                </div>
+                                <div class="p-4 md:p-6">
+                                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3 leading-tight">
+                                        Investment Basics: Growing Your Wealth Over Time
+                                    </h3>
+                                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                                        Demystify the world of investing with this beginner-friendly guide to building
+                                        long-term wealth through smart investment strategies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Article 2 -->
+                        <div
+                            class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4 animate-on-scroll fade-in-up delay-400">
+                            <div
+                                class="bg-white rounded-xl md:rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow">
+                                <div
+                                    class="aspect-video bg-gradient-to-br from-orange-400 via-red-500 to-pink-600 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-black/20">
+                                        <img src="../assets/images/blogs/shadow.png" alt="Article 2 Image"
+                                            class="w-full h-full object-cover opacity-80">
+                                    </div>
+
+                                </div>
+                                <div class="p-4 md:p-6">
+                                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3 leading-tight">
+                                        Investment Basics: Growing Your Wealth Over Time
+                                    </h3>
+                                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                                        Demystify the world of investing with this beginner-friendly guide to building
+                                        long-term wealth through smart investment strategies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Article 3 -->
+                        <div
+                            class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4 animate-on-scroll fade-in-up delay-500">
+                            <div
+                                class="bg-white rounded-xl md:rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow">
+                                <div
+                                    class="aspect-video bg-gradient-to-br from-orange-400 via-red-500 to-pink-600 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-black/20">
+                                        <img src="../assets/images/blogs/shadow.png" alt="Article 2 Image"
+                                            class="w-full h-full object-cover opacity-80">
+                                    </div>
+
+                                </div>
+                                <div class="p-4 md:p-6">
+                                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3 leading-tight">
+                                        Investment Basics: Growing Your Wealth Over Time
+                                    </h3>
+                                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                                        Demystify the world of investing with this beginner-friendly guide to building
+                                        long-term wealth through smart investment strategies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Article 4 -->
+                        <div
+                            class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4 animate-on-scroll fade-in-up delay-600">
+                            <div
+                                class="bg-white rounded-xl md:rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow">
+                                <div
+                                    class="aspect-video bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-black/20">
+                                        <img src="../assets/images/blogs/shadow.png" alt="Article 2 Image"
+                                            class="w-full h-full object-cover opacity-80">
+                                    </div>
+
+                                </div>
+                                <div class="p-4 md:p-6">
+                                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3 leading-tight">
+                                        Smart Debt Management: From Burden to Building Block
+                                    </h3>
+                                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                                        Transform your relationship with debt by learning strategic approaches to pay
+                                        down existing debt while building wealth.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Article 5 -->
+                        <div
+                            class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4 animate-on-scroll fade-in-up delay-700">
+                            <div
+                                class="bg-white rounded-xl md:rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow">
+                                <div
+                                    class="aspect-video bg-gradient-to-br from-teal-400 via-cyan-500 to-blue-600 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-black/20">
+                                        <img src="../assets/images/blogs/shadow.png" alt="Article 2 Image"
+                                            class="w-full h-full object-cover opacity-80">
+                                    </div>
+
+                                </div>
+                                <div class="p-4 md:p-6">
+                                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3 leading-tight">
+                                        Retirement Planning in Your 20s and 30s
+                                    </h3>
+                                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                                        Start building your retirement nest egg early with practical strategies that
+                                        work for young professionals in Malaysia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="flex justify-center items-center gap-2 mt-8 md:mt-12 animate-on-scroll fade-in-up delay-800">
+                <button class="carousel-dot w-2 h-2 md:w-3 md:h-3 rounded-full bg-blue-600 transition-colors"
+                    data-slide="0"></button>
+                <button
+                    class="carousel-dot w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                    data-slide="1"></button>
+                <button
+                    class="carousel-dot w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                    data-slide="2"></button>
             </div>
         </div>
     </section>
@@ -477,7 +770,7 @@
                     </p>
                     <div class="text-white flex flex-col lg:flex-row gap-4 lg:gap-2 items-start mb-2">
                         <div class="flex items-start gap-3 md:gap-4">
-                            <img src="./assets//images/icon/location.png" alt="location"
+                            <img src="../assets//images/icon/location.png" alt="location"
                                 class="p-2 md:p-4 w-12 h-12 md:w-16 md:h-16 flex-shrink-0 object-contain" />
                             <p class="text-xs md:text-sm break-all md:break-words leading-relaxed">
                                 12/F, Menara Symphony, No. 5 Jalan Prof. Khoo Kay, Seksyen 13,
@@ -595,7 +888,153 @@
     <script src="animations.js"></script>
     <script src="script.js"></script>
 
+    <!-- Articles Carousel JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.getElementById('articlesCarousel');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const dots = document.querySelectorAll('.carousel-dot');
 
+            let currentSlide = 0;
+            let itemsPerView = 3; // Default for desktop
+            let totalSlides = 0;
+
+            // Calculate items per view based on screen size
+            function updateItemsPerView() {
+                if (window.innerWidth < 640) {
+                    itemsPerView = 1; // Mobile
+                } else if (window.innerWidth < 1024) {
+                    itemsPerView = 2; // Tablet
+                } else {
+                    itemsPerView = 3; // Desktop
+                }
+
+                const totalItems = carousel.children.length;
+                totalSlides = Math.max(0, totalItems - itemsPerView);
+
+                // Reset to first slide if current slide is out of bounds
+                if (currentSlide > totalSlides) {
+                    currentSlide = 0;
+                }
+
+                updateCarousel();
+                updateDots();
+                updateArticleSizes();
+            }
+
+            // Update carousel position
+            function updateCarousel() {
+                const slideWidth = 100 / itemsPerView;
+                const translateX = -(currentSlide * slideWidth);
+                carousel.style.transform = `translateX(${translateX}%)`;
+
+                // Update button states
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide >= totalSlides;
+
+                // Update button opacity
+                prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
+                nextBtn.style.opacity = currentSlide >= totalSlides ? '0.5' : '1';
+
+                updateArticleSizes();
+            }
+
+            // Update dots
+            function updateDots() {
+                dots.forEach((dot, index) => {
+                    if (index === currentSlide) {
+                        dot.classList.remove('bg-gray-300');
+                        dot.classList.add('bg-blue-600');
+                    } else {
+                        dot.classList.remove('bg-blue-600');
+                        dot.classList.add('bg-gray-300');
+                    }
+                });
+            }
+
+            // Update article sizes
+            function updateArticleSizes() {
+                const articles = carousel.children;
+                for (let i = 0; i < articles.length; i++) {
+                    articles[i].classList.remove('featured-article');
+                }
+
+                // Only apply featured styling if showing multiple items
+                if (itemsPerView > 1) {
+                    const middleOffset = Math.floor(itemsPerView / 2);
+                    const middleIndex = currentSlide + middleOffset;
+                    if (middleIndex < articles.length) {
+                        articles[middleIndex].classList.add('featured-article');
+                    }
+                }
+            }
+
+            // Previous slide
+            prevBtn.addEventListener('click', function () {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateCarousel();
+                    updateDots();
+                    updateArticleSizes();
+                }
+            });
+
+            // Next slide
+            nextBtn.addEventListener('click', function () {
+                if (currentSlide < totalSlides) {
+                    currentSlide++;
+                    updateCarousel();
+                    updateDots();
+                    updateArticleSizes();
+                }
+            });
+
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function () {
+                    currentSlide = index;
+                    updateCarousel();
+                    updateDots();
+                    updateArticleSizes();
+                });
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', updateItemsPerView);
+
+            // Initialize
+            updateItemsPerView();
+
+            // Auto-play functionality (optional)
+            let autoPlayInterval;
+
+            function startAutoPlay() {
+                autoPlayInterval = setInterval(() => {
+                    if (currentSlide < totalSlides) {
+                        currentSlide++;
+                    } else {
+                        currentSlide = 0;
+                    }
+                    updateCarousel();
+                    updateDots();
+                    updateArticleSizes();
+                }, 5000); // Change slide every 5 seconds
+            }
+
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+
+            // Start auto-play
+            startAutoPlay();
+
+            // Pause auto-play on hover
+            const carouselContainer = carousel.parentElement.parentElement;
+            carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+            carouselContainer.addEventListener('mouseleave', startAutoPlay);
+        });
+    </script>
 </body>
 
 </html>

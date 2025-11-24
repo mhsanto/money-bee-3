@@ -21,6 +21,41 @@ overflow-x: hidden;
   }
 }
 
+/* Circuit Animation Keyframes */
+@keyframes circuitFlow {
+  0% {
+    stroke-dashoffset: 100%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  100% {
+    stroke-dashoffset: 0%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes circuitPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes circuitGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 3px #449AD5);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #449AD5) drop-shadow(0 0 20px #449AD5);
+  }
+}
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -481,4 +516,82 @@ overflow-x: hidden;
   .featured-article .aspect-video {
     height: 280px;
   }
+}
+
+/* Circuit Animation Styles */
+.circuit-animation {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.circuit-animation.animate {
+  opacity: 1;
+  animation: circuitGlow 3s ease-in-out forwards;
+}
+
+.circuit-path {
+  stroke: #449AD5;
+  stroke-width: 1.5;
+  fill: none;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  opacity: 0;
+}
+
+.circuit-path.animate {
+  animation: circuitFlow 4s ease-out forwards;
+}
+
+.circuit-path.animate:nth-child(2n) {
+  animation-delay: 0.2s;
+}
+
+.circuit-path.animate:nth-child(3n) {
+  animation-delay: 0.4s;
+}
+
+.circuit-path.animate:nth-child(4n) {
+  animation-delay: 0.6s;
+}
+
+.circuit-path.animate:nth-child(5n) {
+  animation-delay: 0.8s;
+}
+
+.circuit-path.animate:nth-child(6n) {
+  animation-delay: 1s;
+}
+
+.circuit-path.animate:nth-child(7n) {
+  animation-delay: 1.2s;
+}
+
+.circuit-node {
+  fill: #449AD5;
+  opacity: 0;
+  transform-origin: center;
+}
+
+.circuit-node.animate {
+  animation: circuitPulse 2s ease-in-out forwards;
+}
+
+.circuit-node.animate:nth-child(2n) {
+  animation-delay: 0.3s;
+}
+
+.circuit-node.animate:nth-child(3n) {
+  animation-delay: 0.6s;
+}
+
+.circuit-node.animate:nth-child(4n) {
+  animation-delay: 0.9s;
+}
+
+.circuit-node.animate:nth-child(5n) {
+  animation-delay: 1.2s;
+}
+
+.circuit-node.animate:nth-child(6n) {
+  animation-delay: 1.5s;
 }
