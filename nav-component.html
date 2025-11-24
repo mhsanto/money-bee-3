@@ -1,0 +1,313 @@
+<!-- Navigation Component - Include this in all pages -->
+<!-- Sticky Navigation Wrapper -->
+<div class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50 nav-wrapper">
+  <div class="mx-auto max-w-screen-3xl px-4 sm:px-6">
+    <div class="flex h-16 items-center justify-between">
+      <!-- Left: Logo -->
+      <a href="index.html" class="inline-flex items-center gap-2 logo-animation">
+        <img src="assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
+      </a>
+
+      <!-- Middle: Desktop Nav (>=1024px) -->
+      <nav class="hidden lg:flex items-center justify-center gap-2 font-medium">
+        <!-- Our Services dropdown -->
+        <div class="relative group dropdown-group nav-item">
+          <button type="button"
+            class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm nav-link"
+            aria-haspopup="menu" aria-expanded="false">
+            <span>Our Services</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+              class="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <ul
+            class="invisible opacity-0 translate-y-2 transition-all duration-300 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-xl rounded-lg p-2 z-50 dropdown-menu"
+            role="menu">
+            <li role="none">
+              <a href="PersonalLoan.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Personal Loan</a>
+            </li>
+            <li role="none">
+              <a href="debtConsolidation.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Debt Consolidation</a>
+            </li>
+            <li role="none">
+              <a href="smeLoan.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">SME Loan</a>
+            </li>
+            <li role="none">
+              <a href="islamicFinancing.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Islamic Financing</a>
+            </li>
+            <li role="none">
+              <a href="carLoan.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Car Loan</a>
+            </li>
+            <li role="none">
+              <a href="propertyLoan.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Property Loan</a>
+            </li>
+            <li role="none">
+              <a href="educationalLoan.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm dropdown-item"
+                role="menuitem">Education Loan</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resources dropdown -->
+        <div class="relative group dropdown-group nav-item">
+          <button type="button"
+            class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm nav-link"
+            aria-haspopup="menu" aria-expanded="false">
+            <span>Resources</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+              class="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <ul
+            class="invisible opacity-0 translate-y-2 transition-all duration-300 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-xl rounded-lg p-2 z-50 dropdown-menu"
+            role="menu">
+            <li role="none">
+              <a href="blog-grid.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Blog</a>
+            </li>
+            <li role="none">
+              <a href="personalLoanCalculator.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Personal Loan Calculator</a>
+            </li>
+            <li role="none">
+              <a href="debtConsolidationLoanCalculator.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Debt Consolidation Calculator</a>
+            </li>
+            <li role="none">
+              <a href="howToDownloadStatement.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm dropdown-item"
+                role="menuitem">How to Download Bank Statements</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Financial Health Hub -->
+        <a href="financial-health-hub.html" 
+           class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm nav-link nav-item">
+          Financial Health Hub
+        </a>
+
+        <!-- For Lenders -->
+        <a href="forLenders.html" 
+           class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm nav-link nav-item">
+          For Lenders
+        </a>
+
+        <!-- About Us dropdown -->
+        <div class="relative group dropdown-group nav-item">
+          <button type="button"
+            class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm nav-link"
+            aria-haspopup="menu" aria-expanded="false">
+            <span>About Us</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+              class="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <ul
+            class="invisible opacity-0 translate-y-2 transition-all duration-300 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-xl rounded-lg p-2 z-50 dropdown-menu"
+            role="menu">
+            <li role="none">
+              <a href="ourStories.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Our Story</a>
+            </li>
+            <li role="none">
+              <a href="ourServices.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Our Promise</a>
+            </li>
+            <li role="none">
+              <a href="#media"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Media</a>
+            </li>
+            <li role="none">
+              <a href="career.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm border-b border-gray-200 dropdown-item"
+                role="menuitem">Career</a>
+            </li>
+            <li role="none">
+              <a href="contact-us.html"
+                class="block rounded-lg px-3 py-2 hover:bg-yellow-50 hover:text-black text-sm dropdown-item"
+                role="menuitem">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- FAQ -->
+        <a href="faqs.html" 
+           class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm nav-link nav-item">
+          FAQ
+        </a>
+
+        <!-- Compliance & Privacy -->
+        <a href="comliancePrivacy.html" 
+           class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm nav-link nav-item">
+          Compliance & Privacy
+        </a>
+      </nav>
+
+      <!-- Right: Actions -->
+      <!-- Desktop (>=1024px): Contact Us button -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="contact-us.html" 
+           class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition-all duration-300 hover:scale-105 contact-btn"
+           style="background-color: #f9d157">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
+      <div class="flex lg:hidden items-center gap-2">
+        <a href="contact-us.html" 
+           class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition-all duration-300 contact-btn"
+           style="background-color: #f9d157">
+          Contact Us
+        </a>
+        <button id="mobileMenuButton"
+          class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition-all duration-300 text-black hamburger-btn"
+          aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">
+          <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="h-5 w-5 transition-transform duration-300">
+            <path d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z" />
+          </svg>
+          <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="h-5 w-5 hidden transition-transform duration-300">
+            <path fill-rule="evenodd"
+              d="M6.225 4.811a.75.75 0 0 1 1.06 0L12 9.525l4.715-4.714a.75.75 0 1 1 1.06 1.06L13.06 10.586l4.714 4.715a.75.75 0 1 1-1.06 1.06L12 11.646l-4.715 4.715a.75.75 0 1 1-1.06-1.06l4.714-4.715-4.714-4.715a.75.75 0 0 1 0-1.06z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg mobile-menu-container">
+    <nav class="container mx-auto px-4 py-4 space-y-2">
+      <!-- Our Services (mobile) -->
+      <div class="border-b border-gray-200 pb-2 mobile-nav-item">
+        <button
+          class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-yellow-50 rounded-lg transition-all duration-300"
+          data-target="mobile-services">
+          <span class="font-medium">Our Services</span>
+          <svg class="dropdown-arrow h-5 w-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div id="mobile-services" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1 animate-slide-down">
+          <a href="PersonalLoan.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Personal Loan</a>
+          <a href="debtConsolidation.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Debt Consolidation</a>
+          <a href="smeLoan.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">SME Loan</a>
+          <a href="islamicFinancing.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Islamic Financing</a>
+          <a href="carLoan.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Car Loan</a>
+          <a href="propertyLoan.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Property Loan</a>
+          <a href="educationalLoan.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Education Loan</a>
+        </div>
+      </div>
+
+      <!-- Resources (mobile) -->
+      <div class="border-b border-gray-200 pb-2 mobile-nav-item">
+        <button
+          class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-yellow-50 rounded-lg transition-all duration-300"
+          data-target="mobile-resources">
+          <span class="font-medium">Resources</span>
+          <svg class="dropdown-arrow h-5 w-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div id="mobile-resources" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1 animate-slide-down">
+          <a href="blog-grid.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Blog</a>
+          <a href="personalLoanCalculator.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Personal Loan Calculator</a>
+          <a href="debtConsolidationLoanCalculator.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Debt Consolidation Calculator</a>
+          <a href="howToDownloadStatement.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">How to Download Bank Statements</a>
+        </div>
+      </div>
+
+      <!-- Financial Health Hub (mobile) -->
+      <div class="border-b border-gray-200 pb-2 mobile-nav-item">
+        <a href="financial-health-hub.html" 
+           class="block w-full px-3 py-2 hover:bg-yellow-50 rounded-lg transition-all duration-300 font-medium">
+          Financial Health Hub
+        </a>
+      </div>
+
+      <!-- For Lenders (mobile) -->
+      <div class="border-b border-gray-200 pb-2 mobile-nav-item">
+        <a href="forLenders.html" 
+           class="block w-full px-3 py-2 hover:bg-yellow-50 rounded-lg transition-all duration-300 font-medium">
+          For Lenders
+        </a>
+      </div>
+
+      <!-- About Us (mobile) -->
+      <div class="border-b border-gray-200 pb-2 mobile-nav-item">
+        <button
+          class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-yellow-50 rounded-lg transition-all duration-300"
+          data-target="mobile-about">
+          <span class="font-medium">About Us</span>
+          <svg class="dropdown-arrow h-5 w-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div id="mobile-about" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1 animate-slide-down">
+          <a href="ourStories.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Our Story</a>
+          <a href="ourServices.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Our Promise</a>
+          <a href="#media" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Media</a>
+          <a href="career.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Career</a>
+          <a href="contact-us.html" class="block rounded-lg px-3 py-2 hover:bg-yellow-50 text-sm mobile-dropdown-link">Contact</a>
+        </div>
+      </div>
+
+      <!-- FAQ (mobile) -->
+      <div class="border-b border-gray-200 pb-2 mobile-nav-item">
+        <a href="faqs.html" 
+           class="block w-full px-3 py-2 hover:bg-yellow-50 rounded-lg transition-all duration-300 font-medium">
+          FAQ
+        </a>
+      </div>
+
+      <!-- Compliance & Privacy (mobile) -->
+      <div class="pb-2 mobile-nav-item">
+        <a href="comliancePrivacy.html" 
+           class="block w-full px-3 py-2 hover:bg-yellow-50 rounded-lg transition-all duration-300 font-medium">
+          Compliance & Privacy
+        </a>
+      </div>
+    </nav>
+  </div>
+</div>
