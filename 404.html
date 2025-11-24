@@ -113,7 +113,7 @@
                     <button type="button"
                         class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
                         aria-haspopup="menu" aria-expanded="false">
-                        <a href="financial.html">Financial Health Hub</a>
+                        <a href="financial-health-hub/index.html">Financial Health Hub</a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                             class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
                             <path fill-rule="evenodd"
@@ -131,39 +131,9 @@
                     </ul>
                 </div>
 
-                <!-- For Lenders dropdown -->
-                <div class="relative group dropdown-group">
-                    <button type="button"
-                        class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                        aria-haspopup="menu" aria-expanded="false">
-                        <span>For Lenders</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <ul class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 shadow-lg rounded-lg p-2 z-50"
-                        style="background: rgba(255, 255, 255, 0.22); border: 0.5px solid rgba(255, 255, 255, 1); backdrop-filter: blur(16px);"
-                        role="menu">
-                        <li role="none">
-                            <a href="#why-us"
-                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                                role="menuitem">Why Us?</a>
-                        </li>
-                        <li role="none">
-                            <a href="#risk-tools"
-                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                                role="menuitem">Risk Tools</a>
-                        </li>
-                        <li role="none">
-                            <a href="#contact-business-development"
-                                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Contact
-                                Business Development Manager</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- For Lenders (no dropdown) -->
+                <a href="lenders/index.html"
+                    class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">For Lenders</a>
 
                 <!-- About Us dropdown -->
                 <div class="relative group dropdown-group">
@@ -346,27 +316,10 @@
                 </div>
             </div>
 
-            <!-- For Lenders (mobile) -->
+            <!-- For Lenders (mobile - no dropdown) -->
             <div class="border-b border-gray-200 pb-2">
-                <button
-                    class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-                    data-target="mobile-lenders">
-                    <span class="font-medium">For Lenders</span>
-                    <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <div id="mobile-lenders" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-                    <a href="#why-us" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Why
-                        Us?</a>
-                    <a href="#risk-tools" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Risk Tools</a>
-                    <a href="#contact-business-development" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                        role="menuitem">Contact Business Development Manager</a>
-                </div>
+                <a href="lenders/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">For
+                    Lenders</a>
             </div>
 
             <!-- About Us (mobile) -->
