@@ -344,21 +344,20 @@
 
   <!-- Hero Section -->
   <section id="hero"
-    class="relative max-w-screen-3xl mx-auto rounded-2xl min-h-screen lg:min-h-[700px] flex items-center  overflow-hidden"
-    style="background-color: rgba(35, 82, 134, 1);">
-    <div class="absolute inset-y-0 right-0 lg:top-[42%] w-full lg:w-1/2">
-      <div class="h-[80%]  w-[full] bg-cover bg-center"
+    class="relative max-w-screen-3xl mx-auto rounded-2xl min-h-[80vh] lg:min-h-[700px] flex items-center  overflow-hidden bg-[rgba(35,82,134,1)] mr-2 ml-2 ">
+    <div class="absolute inset-y-0 right-0 w-full lg:w-1/2">
+      <div class="h-full w-[97%] mx-auto rounded-3xl sm:rounded-none sm:w-full bg-cover bg-center"
         style="background-image: url('./../../assets/images/hero/car-loan.png');">
       </div>
     </div>
 
     <div class="relative z-10 w-full p-8 md:p-16 lg:p-24 xl:py-32 text-white">
 
-      <div class="flex flex-col pb-[8rem] gap-4">
-        <p class="animate-on-scroll fade-in-up text-4xl md:text-7xl font-semibold  mb-6 ">
+      <div class="flex flex-col pb-[4rem] sm:pb-[8rem] gap-4">
+        <p class="animate-on-scroll fade-in-up text-5xl md:text-7xl font-semibold  mb-6 ">
           Smart Car Loan Financing
         </p>
-        <p class="animate-on-scroll fade-in-up delay-100 text-4xl md:text-7xl font-semibold  ]">
+        <p class="animate-on-scroll fade-in-up delay-100 text-5xl md:text-7xl font-semibold  ]">
           (with a Full-Term Partner)
 
         </p>
@@ -542,37 +541,52 @@
   </section>
 
   <!-- A Malaysian's Guide to Personal Loans Section -->
-  <section class="py-12 md:py-16 lg:py-20 relative">
-    <div class="absolute top-4 left-0 z-[-1]">
-      <img src="../../assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[150px] object-contain" />
+  <section class="py-8 sm:py-12 md:py-16 lg:py-20 relative overflow-hidden">
+    <!-- Background RM Currency Images - Responsive positioning -->
+    <div class="hidden sm:absolute top-2 sm:top-4 left-0 z-[-1] opacity-60 sm:opacity-100">
+      <img src="../../assets/images/icon/RM.png" alt="RM Currency"
+        class="w-20 h-20 sm:w-32 sm:h-32 md:w-full md:h-[150px] object-contain" />
     </div>
-    <div class="absolute top-[52%] left-0 z-[-1]">
-      <img src="../../assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[150px] object-contain" />
+    <div class="hideen sm:absolute top-[45%] sm:top-[52%] left-0 z-[-1] opacity-40 sm:opacity-100">
+      <img src="../../assets/images/icon/RM.png" alt="RM Currency"
+        class="w-16 h-16 sm:w-24 sm:h-24 md:w-full md:h-[150px] object-contain" />
     </div>
-    <div class="max-w-screen-3xl mx-auto px-4">
-      <div class="grid grid-cols-1 lg:grid-cols-[1.5fr_2fr] gap-8 items-center">
+
+    <div class="max-w-screen-3xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.5fr_2fr] gap-6 sm:gap-8 lg:gap-12 items-center">
         <!-- Left Column: Content -->
-        <div class="animate-on-scroll fade-in-left">
-          <div class="flex flex-col gap-4 lg:gap-6">
-            <h2 class="text-3xl md:text-4xl xl:text-5xl font-medium text-gray-900 max-w-2xl pb-4"
-              style="line-height: 1.4;">
+        <div class="animate-on-scroll fade-in-left order-2 lg:order-1">
+          <div class="flex flex-col gap-3 sm:gap-4 lg:gap-6">
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-medium text-gray-900 max-w-2xl pb-2 sm:pb-4 leading-tight"
+              style="line-height: 1.3;">
               Your Guide to Getting a Car Loan (Hire-Purchase) in Malaysia
             </h2>
-
           </div>
-          <p class="text-base md:text-md text-gray-600 mb-8 leading-tight md:w-[70%]"></p>
-          For most Malaysians, buying a car is the second-biggest purchase after a home. Understanding how a "pinjaman
-          kereta" (car loan) works is essential. In Malaysia, most car loans are technically "Hire-Purchase"
-          agreements.
+
+          <!-- Fixed paragraph structure -->
+          <p
+            class="text-sm sm:text-base md:text-md text-gray-600 mb-4 sm:mb-6 md:mb-8 leading-relaxed sm:leading-tight w-full md:w-[85%] lg:w-[70%]">
+            For most Malaysians, buying a car is the second-biggest purchase after a home. Understanding how a "pinjaman
+            kereta" (car loan) works is essential. In Malaysia, most car loans are technically "Hire-Purchase"
+            agreements.
           </p>
-          <h4 class="font-semibold text-lg mb-4">What is a Hire-Purchase (HP) Agreement?</h4>
-          <p>A Hire-Purchase agreement is different from a standard loan.</p>
-          <ol class="text-base md:text-md text-gray-600 mb-8 leading-tight list-decimal list-inside space-y-2">
-            <li>You (the "hirer") pay a down payment, which is typically 10% of the car's price.</li>
-            <li>The bank (the "owner") pays the remaining 90% to the car dealer.</li>
-            <li>The bank legally owns the car, and you hire (rent) it from them by making monthly payments.</li>
-            <li>Once you make the final payment, ownership of the car is officially transferred to you.</li>
+
+          <h4 class="font-semibold text-base sm:text-lg mb-3 sm:mb-4 text-gray-900">What is a Hire-Purchase (HP)
+            Agreement?</h4>
+          <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">A Hire-Purchase agreement is different from a
+            standard loan.</p>
+
+          <ol
+            class="text-sm sm:text-base md:text-md text-gray-600 mb-6 sm:mb-8 leading-relaxed sm:leading-tight list-decimal list-inside space-y-2 sm:space-y-3 pl-2">
+            <li class="pl-2">You (the "hirer") pay a down payment, which is typically 10% of the car's price.</li>
+            <li class="pl-2">The bank (the "owner") pays the remaining 90% to the car dealer.</li>
+            <li class="pl-2">The bank legally owns the car, and you hire (rent) it from them by making monthly payments.
+            </li>
+            <li class="pl-2">Once you make the final payment, ownership of the car is officially transferred to you.
+            </li>
           </ol>
+
           <!-- RM Coin Icon -->
           <div class="flex justify-center lg:justify-start">
             <div class="relative">
@@ -582,42 +596,46 @@
         </div>
 
         <!-- Right Column: Image with Overlay -->
-        <div class="animate-on-scroll fade-in-right relative">
+        <div class="animate-on-scroll fade-in-right relative order-1 lg:order-2">
+          <!-- Responsive gradient background -->
           <img src="./../../assets/images/gradient/gradient.png" alt="Gradient background"
-            class="absolute left-[-8rem] md:left-[-13rem] w-full h-full object-cover z-[-1]" />
-          <div class="relative h-64 md:h-80 lg:h-[600px] rounded-2xl overflow-hidden w-full">
-            <!-- Gradient Background -->
+            class="absolute left-[-4rem] sm:left-[-6rem] md:left-[-8rem] lg:left-[-13rem] w-full h-full object-cover z-[-1] opacity-80 sm:opacity-100" />
+
+          <div
+            class="relative h-auto sm:h-auto md:h-auto lg:h-[600px] rounded-xl sm:rounded-2xl overflow-hidden w-full">
             <!-- Background Image -->
             <img src="./../../assets/images/ourservices/objects/giving-car-key.png"
               alt="Two professionals in discussion about personal loans" class="w-full h-full object-cover" />
 
-            <!-- Overlay Box -->
+            <!-- Responsive Overlay Box -->
             <div
-              class="absolute bottom-2 sm:bottom-4 md:bottom-6 left-2 sm:left-4 md:left-[15%] right-2 sm:right-4 md:right-6 backdrop-blur-sm border border-white/10 rounded-xl p-3 sm:p-4 md:p-6 max-w-full sm:max-w-md md:max-w-md">
-              <h3 class="text-base sm:text-lg md:text-xl lg:text-base font-bold text-white mb-3 sm:mb-4">
+              class="absolute bottom-2 sm:bottom-4 md:bottom-6 left-2 sm:left-4 md:left-6 lg:left-[15%] right-2 sm:right-4 md:right-6 backdrop-blur-sm border border-white/10 rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 lg:p-6 max-w-full sm:max-w-sm md:max-w-md">
+              <h3
+                class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-base font-bold text-white mb-2 sm:mb-3 md:mb-4">
                 Key Terms to Know:
               </h3>
               <div class="space-y-1 sm:space-y-2">
-                <ul class="text-white text-xs sm:text-xs md:text-sm space-y-1 ml-3 sm:ml-4">
+                <ul class="text-white text-xs sm:text-sm md:text-sm space-y-1 sm:space-y-2 ml-2 sm:ml-3 md:ml-4">
                   <li class="flex items-start">
-                    <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
-                    Down Payment: The 10% (or more) you must pay upfront.</span>
+                    <span class="text-yellow-500 mr-1 sm:mr-2 text-xs sm:text-sm">•</span>
+                    <span class="text-xs sm:text-sm">Down Payment: The 10% (or more) you must pay upfront.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
-                    <span> Margin of Finance: The 90% (or less) that the bank will finance.</span>
+                    <span class="text-yellow-500 mr-1 sm:mr-2 text-xs sm:text-sm">•</span>
+                    <span class="text-xs sm:text-sm">Margin of Finance: The 90% (or less) that the bank will
+                      finance.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
-                    <span> Flat Interest Rate: Car loans in Malaysia use a "flat" interest rate. This means the interest
-                      is
-                      calculated on the original loan amount (the 90%) and stays the same for the entire tenure. This
-                      is different from the "reducing balance" rate used for home loans.</span>
+                    <span class="text-yellow-500 mr-1 sm:mr-2 text-xs sm:text-sm">•</span>
+                    <span class="text-xs sm:text-sm">Flat Interest Rate: Car loans in Malaysia use a "flat" interest
+                      rate. This means the interest is calculated on the original loan amount (the 90%) and stays the
+                      same for the entire tenure. This is different from the "reducing balance" rate used for home
+                      loans.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
-                    <span> Tenure: The loan period, typically from 5 to 9 years. A 9-year loan is very common, but
-                      remember: a longer tenure means you pay much more in total interest.</span>
+                    <span class="text-yellow-500 mr-1 sm:mr-2 text-xs sm:text-sm">•</span>
+                    <span class="text-xs sm:text-sm">Tenure: The loan period, typically from 5 to 9 years. A 9-year loan
+                      is very common, but remember: a longer tenure means you pay much more in total interest.</span>
                   </li>
                 </ul>
               </div>
@@ -774,7 +792,7 @@
       </div>
 
       <!-- Providers Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center  h-[450px] ">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center h-auto  md:h-[450px] ">
         <!-- Local Banks & Islamic Banks with SME -->
         <div
           class="animate-on-scroll fade-in-up delay-100 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[300px]  flex flex-col overflow-hidden">
@@ -1135,7 +1153,7 @@
               class="animate-on-scroll fade-in-right delay-100 text-xl p-4 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
               <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400">1</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400 min-h-[60px] min-w-[60px]">1</span>
                 <span class="text-gray-700 font-medium group-hover:text-black">Start with our online enquiry form or
                   chat via WhatsApp/AI.</span>
               </div>
@@ -1147,7 +1165,7 @@
               class="animate-on-scroll fade-in-right delay-200 text-xl p-4 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
               <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400">2</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400 min-h-[60px] min-w-[60px]">2</span>
                 <span class="text-gray-700 max-w-xl  font-medium group-hover:text-black">Our AI engine matches your
                   profile to Islamic financing options.</span>
               </div>
@@ -1160,7 +1178,7 @@
               class="animate-on-scroll fade-in-right delay-300 text-xl p-4 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
               <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400">3</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400 min-h-[60px] min-w-[60px]">3</span>
                 <span class="text-gray-700 max-w-xl  font-medium group-hover:text-black">Human review ensures fair
                   consideration, especially in non-standard cases.</span>
               </div>
@@ -1173,7 +1191,7 @@
               class="animate-on-scroll fade-in-right delay-400 text-xl p-4 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
               <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400">4</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400 min-h-[60px] min-w-[60px]">4</span>
                 <span class="text-gray-700 max-w-xl  font-medium group-hover:text-black">Choose your preferred option
                   and submit required documents.</span>
               </div>
@@ -1186,7 +1204,7 @@
               class="animate-on-scroll fade-in-right delay-500 text-xl p-4 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
               <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400">5</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400 min-h-[60px] min-w-[60px]">5</span>
                 <span class="text-gray-700 max-w-xl  font-medium group-hover:text-black">Lender evaluates under
                   Shariah-compliant contract (e.g. Tawarruq, Murabahah).</span>
               </div>
@@ -1199,7 +1217,7 @@
               class="animate-on-scroll fade-in-right delay-600 text-xl p-4 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
               <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400">6</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400 min-h-[60px] min-w-[60px]">6</span>
                 <span class="text-gray-700 max-w-xl  font-medium group-hover:text-black">Upon approval, funds are
                   disbursed according to Shariah contract structure.</span>
               </div>
@@ -1212,7 +1230,7 @@
               class="animate-on-scroll fade-in-right delay-700 text-xl p-4 rounded-lg flex flex-col group hover:bg-yellow-100 transition-colors duration-300">
               <div class="flex items-center">
                 <span
-                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400">7</span>
+                  class="bg-gray-300 text-black rounded-full w-16 h-16 flex items-center justify-center mr-2 font-bold group-hover:bg-yellow-400 min-h-[60px] min-w-[60px]">7</span>
                 <span class="text-gray-700 max-w-xl  font-medium group-hover:text-black">Post-financing, Case Manager
                   monitors your financial status and provides support.</span>
               </div>
