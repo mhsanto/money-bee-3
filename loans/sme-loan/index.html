@@ -26,878 +26,983 @@
 
 <body class="min-h-screen font-manrope">
   <div class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50 nav-wrapper">
-    <div class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50 nav-wrapper">
-      <div class="mx-auto max-w-screen-3xl px-4 px-2 sm:px-0">
-        <div class="flex h-16 items-center justify-between">
-          <!-- Left: Logo -->
-          <a href="../../index.html" class="inline-flex items-center gap-2">
-            <img src="../../assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
-          </a>
+    <div class="mx-auto max-w-screen-3xl px-4 px-2 sm:px-0">
+      <div class="flex h-16 items-center justify-between">
+        <!-- Left: Logo -->
+        <a href="../../index.html" class="inline-flex items-center gap-2">
+          <img src="../../assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
+        </a>
 
-          <!-- Middle: Desktop Nav (>=1024px) -->
-          <nav class="hidden lg:flex items-center justify-center gap-2 font-medium">
-            <!-- Loans dropdown -->
-            <div class="relative group dropdown-group">
-              <button type="button"
-                class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                aria-haspopup="menu" aria-expanded="false">
-                <span>Loans</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                  class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                  <path fill-rule="evenodd"
-                    d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                    clip-rule="evenodd" />
-                </svg>
-              </button>
-              <ul
-                class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-                role="menu">
-                <li role="none">
-                  <a href="../../loans/personal-loan/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Personal Loan</a>
-                </li>
-                <li role="none">
-                  <a href="../../loans/debt-consolidation/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Debt Consolidation Loan</a>
-                </li>
-                <li role="none">
-                  <a href="../../loans/sme-loan/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">SME
-                    Loan</a>
-                </li>
-                <li role="none">
-                  <a href="../../loans/car-loan/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Car
-                    Loan</a>
-                </li>
-                <li role="none">
-                  <a href="../../loans/property-loan/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Property Loan</a>
-                </li>
-                <li role="none">
-                  <a href="../../loans/education-loan/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Education Loan</a>
-                </li>
-              </ul>
-            </div>
-            <div class="relative group dropdown-group">
-              <button type="button"
-                class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                aria-haspopup="menu" aria-expanded="false">
-                <a href="../../resourses.html">Resources</a>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                  class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                  <path fill-rule="evenodd"
-                    d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                    clip-rule="evenodd" />
-                </svg>
-              </button>
-              <ul
-                class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-                role="menu">
-                <li role="none">
-                  <a href="../../tools/personal-loan-calculator/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Personal Loan Calculator</a>
-                </li>
-                <li role="none">
-                  <a href="../../tools/debt-consolidation-calculator/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Debt Consolidation Calculator</a>
-                </li>
-                <li role="none">
-                  <a href="../../guides/download-bank-statement-online/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Download Bank Statement</a>
-                </li>
-                <li role="none">
-                  <a href="../../blog/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                    role="menuitem">Blog</a>
-                </li>
-              </ul>
-            </div>
-            <!-- Financial Health Hub (no dropdown) -->
-            <a href="../../financial-health-hub/index.html"
-              class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">Financial Health Hub</a>
-
-            <!-- For Lenders (no dropdown) -->
-            <a href="../../lenders/index.html"
-              class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">For Lenders</a>
-
-            <!-- Company dropdown -->
-            <div class="relative group dropdown-group">
-              <button type="button"
-                class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-                aria-haspopup="menu" aria-expanded="false">
-                <span>Company</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                  class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                  <path fill-rule="evenodd"
-                    d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                    clip-rule="evenodd" />
-                </svg>
-              </button>
-              <ul
-                class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-                role="menu">
-                <li role="none">
-                  <a href="../../company/about/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">About Us</a>
-                </li>
-                <li role="none">
-                  <a href="../../company/islamic-financing/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Islamic Financing</a>
-                </li>
-                <li role="none">
-                  <a href="../../company/legal/compliance-privacy/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Compliance & Privacy</a>
-                </li>
-                <li role="none">
-                  <a href="../../careers/index.html"
-                    class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                    role="menuitem">Careers</a>
-                </li>
-                <li role="none">
-                  <a href="../../contact/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                    role="menuitem">Contact</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- FAQ (no dropdown) -->
-            <a href="../../faqs/index.html"
-              class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">FAQ</a>
-
-            <!-- Compliance & Privacy (no dropdown) -->
-            <a href="../../company/legal/compliance-privacy/index.html"
-              class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">Compliance & Privacy</a>
-          </nav>
-
-          <!-- Right: Actions -->
-          <!-- Desktop (>=1024px): Contact Us button -->
-          <div class="hidden lg:flex items-center gap-3">
-            <a href="contact-us.html" style="background-color: #f9d157"
-              class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition">Contact Us</a>
-          </div>
-
-          <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
-          <div class="flex lg:hidden items-center gap-2">
-            <a href="contact-us.html" style="background-color: #f9d157"
-              class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition">Contact Us</a>
-            <button id="mobileMenuButton"
-              class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition text-black"
-              aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">
-              <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                class="h-5 w-5">
-                <path d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z" />
-              </svg>
-              <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                class="h-5 w-5 hidden">
+        <!-- Middle: Desktop Nav (>=1024px) -->
+        <nav class="hidden lg:flex items-center justify-center gap-2 font-medium">
+          <!-- Our Services dropdown -->
+          <div class="relative group dropdown-group">
+            <button type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu" aria-expanded="false">
+              <span>Loans</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
                 <path fill-rule="evenodd"
-                  d="M6.225 4.811a.75.75 0 0 1 1.06 0L12 9.525l4.715-4.714a.75.75 0 1 1 1.06 1.06L13.06 10.586l4.714 4.715a.75.75 0 1 1-1.06 1.06L12 11.646l-4.715 4.715a.75.75 0 1 1-1.06-1.06l4.714-4.715-4.714-4.715a.75.75 0 0 1 0-1.06z"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
                   clip-rule="evenodd" />
               </svg>
             </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu">
+              <li role="none">
+                <a href="../../loans/personal-loan/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Personal Loan</a>
+              </li>
+              <li role="none">
+                <a href="../../loans/debt-consolidation/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Debt Consolidation Loan</a>
+              </li>
+              <li role="none">
+                <a href="../../loans/sme-loan/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">SME Loan</a>
+              </li>
+              <li role="none">
+                <a href="../../loans/car-loan/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Car Loan</a>
+              </li>
+              <li role="none">
+                <a href="../../loans/property-loan/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Property Loan</a>
+              </li>
+              <li role="none">
+                <a href="../../loans/education-loan/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Education Loan</a>
+              </li>
+            </ul>
           </div>
+          <div class="relative group dropdown-group">
+            <button type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu" aria-expanded="false">
+              <a href="../../resourses.html">Resources</a>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu">
+              <li role="none">
+                <a href="../../tools/personal-loan-calculator/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Personal Loan Calculator</a>
+              </li>
+              <li role="none">
+                <a href="../../tools/debt-consolidation-calculator/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Debt Consolidation Calculator</a>
+              </li>
+              <li role="none">
+                <a href="../../guides/download-bank-statement-online/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Download Bank Statement</a>
+              </li>
+              <li role="none">
+                <a href="../../blog/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Financial Health Hub (no dropdown) -->
+          <a href="../../financial-health-hub/index.html"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">Financial Health Hub</a>
+
+          <!-- For Lenders (no dropdown) -->
+          <a href="../../lenders/index.html"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">For Lenders</a>
+
+          <!-- Company dropdown -->
+          <div class="relative group dropdown-group">
+            <button type="button"
+              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
+              aria-haspopup="menu" aria-expanded="false">
+              <span>Company</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <ul
+              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
+              role="menu">
+              <li role="none">
+                <a href="../../company/about/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">About Us</a>
+              </li>
+              <li role="none">
+                <a href="../../company/islamic-financing/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Islamic Financing</a>
+              </li>
+              <li role="none">
+                <a href="../../company/legal/compliance-privacy/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Compliance & Privacy</a>
+              </li>
+              <li role="none">
+                <a href="../../careers/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Careers</a>
+              </li>
+              <li role="none">
+                <a href="../../contact/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                  role="menuitem">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- FAQ (no dropdown) -->
+          <a href="../../faqs/index.html"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">FAQ</a>
+
+          <!-- Compliance & Privacy (no dropdown) -->
+          <a href="../../company/legal/compliance-privacy/index.html"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">Compliance & Privacy</a>
+        </nav>
+
+        <!-- Right: Actions -->
+        <!-- Desktop (>=1024px): Contact Us button -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="../../contact-us.html" style="background-color: #f9d157"
+            class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition">Contact Us</a>
+        </div>
+
+        <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
+        <div class="flex lg:hidden items-center gap-2">
+          <a href="../../contact-us.html" style="background-color: #f9d157"
+            class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition">Contact Us</a>
+          <button id="mobileMenuButton"
+            class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition text-black"
+            aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">
+            <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="h-5 w-5">
+              <path d="M3.75 6.75h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5zm0 4.5h16.5v1.5H3.75v-1.5z" />
+            </svg>
+            <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="h-5 w-5 hidden">
+              <path fill-rule="evenodd"
+                d="M6.225 4.811a.75.75 0 0 1 1.06 0L12 9.525l4.715-4.714a.75.75 0 1 1 1.06 1.06L13.06 10.586l4.714 4.715a.75.75 0 1 1-1.06 1.06L12 11.646l-4.715 4.715a.75.75 0 1 1-1.06-1.06l4.714-4.715-4.714-4.715a.75.75 0 0 1 0-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
         </div>
       </div>
-      <!-- Mobile Menu (hidden by default) -->
-      <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
-        <nav class="container mx-auto px-4 py-4 space-y-2">
-          <!-- Loans (mobile) -->
-          <div class="border-b border-gray-200 pb-2">
-            <button
-              class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-              data-target="mobile-loans">
-              <span class="font-medium">Loans</span>
-              <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-            <div id="mobile-loans" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-              <a href="../../loans/personal-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                role="menuitem">Personal Loan</a>
-              <a href="../../loans/debt-consolidation/index.html"
-                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Debt Consolidation Loan</a>
-              <a href="../../loans/sme-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                role="menuitem">SME Loan</a>
-              <a href="../../loans/car-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                role="menuitem">Car Loan</a>
-              <a href="../../loans/property-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                role="menuitem">Property Loan</a>
-              <a href="../../loans/education-loan/index.html"
-                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Education Loan</a>
-            </div>
+    </div>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
+      <nav class="container mx-auto px-4 py-4 space-y-2">
+        <!-- Our Services (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-services">
+            <span class="font-medium">Loans</span>
+            <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="mobile-services" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+            <a href="../../loans/personal-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Personal Loan</a>
+            <a href="../../loans/debt-consolidation/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Debt Consolidation Loan</a>
+            <a href="../../loans/sme-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">SME Loan</a>
+            <a href="../../loans/car-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Car Loan</a>
+            <a href="../../loans/property-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Property Loan</a>
+            <a href="../../loans/education-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Education Loan</a>
           </div>
+        </div>
 
-          <!-- Resources (mobile) -->
-          <div class="border-b border-gray-200 pb-2">
-            <button
-              class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-              data-target="mobile-resources">
-              <span class="font-medium">Resources</span>
-              <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-            <div id="mobile-resources" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-              <a href="../../tools/personal-loan-calculator/index.html"
-                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Personal Loan Calculator</a>
-              <a href="../../tools/debt-consolidation-calculator/index.html"
-                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Debt Consolidation
-                Calculator</a>
-              <a href="../../guides/download-bank-statement-online/index.html"
-                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Download Bank Statement</a>
-              <a href="../../blog/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                role="menuitem">Blog</a>
-            </div>
+        <!-- Resources (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-resources">
+            <span class="font-medium">Resources</span>
+            <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="mobile-resources" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+            <a href="../../tools/personal-loan-calculator/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Personal Loan Calculator</a>
+            <a href="../../tools/debt-consolidation-calculator/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Debt Consolidation
+              Calculator</a>
+            <a href="../../guides/download-bank-statement-online/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Download Bank Statement</a>
+            <a href="../../blog/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Blog</a>
           </div>
+        </div>
 
-          <!-- Financial Health Hub (mobile - no dropdown) -->
-          <div class="border-b border-gray-200 pb-2">
-            <a href="../../financial-health-hub/index.html"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Financial Health Hub</a>
-          </div>
+        <!-- Financial Health Hub (mobile - no dropdown) -->
+        <div class="border-b border-gray-200 pb-2">
+          <a href="../../financial-health-hub/index.html"
+            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Financial Health Hub</a>
+        </div>
 
-          <!-- For Lenders (mobile - no dropdown) -->
-          <div class="border-b border-gray-200 pb-2">
-            <a href="../../lenders/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">For
-              Lenders</a>
-          </div>
+        <!-- For Lenders (mobile - no dropdown) -->
+        <div class="border-b border-gray-200 pb-2">
+          <a href="../../lenders/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">For
+            Lenders</a>
+        </div>
 
-          <!-- Company (mobile) -->
-          <div class="border-b border-gray-200 pb-2">
-            <button
-              class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-              data-target="mobile-company">
-              <span class="font-medium">Company</span>
-              <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-            <div id="mobile-company" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-              <a href="../../company/about/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                role="menuitem">About Us</a>
-              <a href="../../company/islamic-financing/index.html"
-                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Islamic Financing</a>
-              <a href="../../company/legal/compliance-privacy/index.html"
-                class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Compliance & Privacy</a>
-              <a href="../../careers/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                role="menuitem">Careers</a>
-              <a href="../../contact/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                role="menuitem">Contact</a>
-            </div>
-          </div>
-
-          <!-- FAQ (mobile - no dropdown) -->
-          <div class="border-b border-gray-200 pb-2">
-            <a href="../../faqs/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">FAQ</a>
-          </div>
-
-          <!-- Compliance & Privacy (mobile - no dropdown) -->
-          <div class="border-b border-gray-200 pb-2">
+        <!-- Company (mobile) -->
+        <div class="border-b border-gray-200 pb-2">
+          <button
+            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+            data-target="mobile-about">
+            <span class="font-medium">Company</span>
+            <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="mobile-about" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+            <a href="../../company/about/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">About Us</a>
+            <a href="../../company/islamic-financing/index.html"
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Islamic Financing</a>
             <a href="../../company/legal/compliance-privacy/index.html"
-              class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Compliance & Privacy</a>
+              class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Compliance & Privacy</a>
+            <a href="../../careers/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Careers</a>
+            <a href="../../contact/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+              role="menuitem">Contact</a>
           </div>
-        </nav>
+        </div>
+
+        <!-- FAQ (mobile - no dropdown) -->
+        <div class="border-b border-gray-200 pb-2">
+          <a href="../../faqs/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">FAQ</a>
+        </div>
+
+        <!-- Compliance & Privacy (mobile - no dropdown) -->
+        <div class="border-b border-gray-200 pb-2">
+          <a href="../../company/legal/compliance-privacy/index.html"
+            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Compliance & Privacy</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
+    <nav class="container mx-auto px-4 py-4 space-y-2">
+      <!-- Loans (mobile) -->
+      <div class="border-b border-gray-200 pb-2">
+        <button
+          class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+          data-target="mobile-services">
+          <span class="font-medium">Loans</span>
+          <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div id="mobile-services" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+          <a href="../personal-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+            role="menuitem">Personal Loan</a>
+          <a href="../debt-consolidation/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+            role="menuitem">Debt Consolidation Loan</a>
+          <a href="../sme-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+            role="menuitem">SME Loan</a>
+          <a href="../car-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+            role="menuitem">Car Loan</a>
+          <a href="index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Property
+            Loan</a>
+          <a href="../education-loan/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+            role="menuitem">Education Loan</a>
+        </div>
+      </div>
+
+      <!-- Resources (mobile) -->
+      <div class="border-b border-gray-200 pb-2">
+        <button
+          class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+          data-target="mobile-resources">
+          <span class="font-medium">Resources</span>
+          <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div id="mobile-resources" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+          <a href="../../tools/personal-loan-calculator/index.html"
+            class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Personal Loan Calculator</a>
+          <a href="../../tools/debt-consolidation-calculator/index.html"
+            class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Debt Consolidation
+            Calculator</a>
+          <a href="../../guides/download-bank-statement-online/index.html"
+            class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Download Bank Statement</a>
+          <a href="../../blog/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+            role="menuitem">Blog</a>
+        </div>
+      </div>
+
+      <!-- Financial Health Hub (mobile - no dropdown) -->
+      <div class="border-b border-gray-200 pb-2">
+        <a href="../../financial.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Financial Health
+          Hub</a>
+      </div>
+
+      <!-- For Lenders (mobile - no dropdown) -->
+      <div class="border-b border-gray-200 pb-2">
+        <a href="../../lenders/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">For
+          Lenders</a>
+      </div>
+
+      <!-- Company (mobile) -->
+      <div class="border-b border-gray-200 pb-2">
+        <button
+          class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
+          data-target="mobile-about">
+          <span class="font-medium">Company</span>
+          <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div id="mobile-about" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
+          <a href="../../company/about/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+            role="menuitem">About Us</a>
+          <a href="../../company/islamic-financing/index.html"
+            class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Islamic Financing</a>
+          <a href="../../company/legal/compliance-privacy/index.html"
+            class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm" role="menuitem">Compliance & Privacy</a>
+          <a href="../../careers/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+            role="menuitem">Careers</a>
+          <a href="../../contact/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+            role="menuitem">Contact</a>
+        </div>
+      </div>
+
+      <!-- FAQ (mobile - no dropdown) -->
+      <div class="border-b border-gray-200 pb-2">
+        <a href="../../faqs/index.html" class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">FAQ</a>
+      </div>
+
+      <!-- Compliance & Privacy (mobile - no dropdown) -->
+      <div class="border-b border-gray-200 pb-2">
+        <a href="../../company/legal/compliance-privacy/index.html"
+          class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Compliance & Privacy</a>
+      </div>
+    </nav>
+  </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero"
+    class="relative max-w-screen-3xl mx-auto rounded-2xl min-h-[80vh] lg:min-h-[700px] flex items-center  overflow-hidden sm:bg-[rgba(35,82,134,1)]">
+    <div class="absolute inset-y-0 right-0 w-full lg:w-1/2">
+      <div class="h-full w-[97%] mx-auto rounded-3xl sm:rounded-none sm:w-full bg-cover bg-center"
+        style="background-image: url('./../../assets/images/hero/person-cooking.png');">
       </div>
     </div>
 
-    <!-- Hero Section -->
-    <section id="hero"
-      class="relative max-w-screen-3xl mx-auto rounded-2xl min-h-[80vh] lg:min-h-[700px] flex items-center  overflow-hidden sm:bg-[rgba(35,82,134,1)]">
-      <div class="absolute inset-y-0 right-0 w-full lg:w-1/2">
-        <div class="h-full w-[97%] mx-auto rounded-3xl sm:rounded-none sm:w-full bg-cover bg-center"
-          style="background-image: url('./../../assets/images/hero/person-cooking.png');">
+    <div class="relative z-10 w-full p-8 md:p-16 lg:p-24 xl:py-32 text-white">
+
+      <div class="flex flex-col sm:pb-[4rem] md:pb-[8rem] gap-4 mb-8">
+        <p class="text-5xl md:text-7xl font-semibold  mb-6 animate-on-scroll fade-in-up">
+          SME Business Loans (Malaysia)
+        </p>
+        <p class="text-5xl md:text-7xl font-semibold  ] animate-on-scroll fade-in-up delay-100">
+          with AI-Powered Risk Analysis
+        </p>
+      </div>
+
+      <a href="../../careers/apply/index.html"
+        class="inline-block px-12 py-3 text-base font-semibold text-[#050505] bg-[#F9D157] rounded-lg border-b hover:bg-[#ffe176] transition-colors duration-300 shadow-xl animate-on-scroll fade-in-up delay-200">
+        Apply Now
+      </a>
+    </div>
+  </section>
+  <!-- A Smarter, Safer Way to Borrow (How It Works) -->
+  <section id="how-it-works" class="py-16 relative">
+    <div class="absolute bottom-[25%] left-0 z-[-2]">
+      <img src="../../assets/images/icon/bluish.png" alt="RM Currency" class="w-full h-[50rem] object-contain" />
+    </div>
+    <!-- Background Image -->
+    <div class="absolute bottom-[0] right-0 z-2 max-w-[280px] overflow-hidden">
+      <img src="../../assets/images/icon/RM-right.png" alt="" class="w-full h-[240px] object-contain" />
+    </div>
+    <!-- Blue Effect SVG -->
+
+    <div class="max-w-screen-3xl mx-auto px-4">
+      <div
+        class="relative z-10 rounded-3xl border border-white/30 bg-white/15 backdrop-blur-lg px-6 py-10 shadow-lg md:px-10 md:py-12 md:backdrop-blur-xl lg:rounded-none lg:border-0 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:px-0 lg:py-0">
+        <h2 id="how-it-works-title"
+          class="animate-on-scroll fade-in-up text-3xl md:text-4xl font- text-gray-900 mb-8 text-center text-3xl md:text-4xl font-semibold">
+          The Moneybee Difference: A Loan & a Partner
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <!-- Left: Steps list -->
+          <ol class="space-y-5">
+            <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-100">
+              <span class="flex-none text-3xl font-bold text-blue-800 tabular-nums">01</span>
+              <div class="flex-1">
+                <div
+                  class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
+                  <div class="flex gap-3 flex-col">
+                    <img src="./../../assets/images/icon/magnifying.png" alt="AI-Powered Match" width="60"
+                      height="60" />
+                    <h3 class="font-semibold text-gray-900 text-xl">
+                      AI-Powered Match
+                    </h3>
+                    <p class="text-gray-600">
+                      In 5 minutes, our AI scans thousands of loan options from licensed lenders to find your perfect
+                      fit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-200">
+              <span class="flex-none text-3xl font-bold text-blue-800 tabular-nums">02</span>
+              <div class="flex-1">
+                <div
+                  class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
+                  <div class="flex gap-3 flex-col">
+                    <img src="./../../assets/images/icon/human-expert.png" alt="Human Expert Review" width="60"
+                      height="60" />
+                    <h3 class="font-semibold text-gray-900 text-xl mt-2">Human Expert Review</h3>
+                    <p class="text-gray-600">An expert reviews your AI-match to ensure every detail is correct and
+                      answers your questions.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-400">
+              <span class="flex-none text-3xl font-bold text-blue-800 tabular-nums">03</span>
+              <div class="flex-1">
+                <div
+                  class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
+                  <div class="flex gap-3 flex-col">
+                    <img src="./../../assets/images/icon/case-manager.png" alt="Case Manager Support" width="60"
+                      height="60" />
+                    <h3 class="font-semibold text-gray-900 text-xl mt-2">Case Manager Support</h3>
+                    <p class="text-gray-600">After drawdown, your dedicated Case Manager helps you manage payments and
+                      looks for new offers.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+          <!-- Right: Image with overlays -->
+          <div class="relative h-[100%] md:h-[100%] w-full">
+            <img src="./../../assets/images/smarter-way-to-borrow/image1.jpeg"
+              alt="Consultation with financial charts overlay" class="absolute inset-0 w-full h-full object-contain" />
+
+          </div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- Target Customer Options Section -->
+  <section class="py-16 relative overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute bottom-[0%] right-0 z-[-1] max-w-[280px] overflow-hidden">
+      <img src="../../assets/images/icon/RM-right.png" alt="RM Currency" class="w-full h-[250px] object-contain" />
+    </div>
+    <!-- Blue Effect SVG -->
+    <div class="absolute top-[-5%] left-0 z-[-1] overflow-hidden">
+      <svg width="300" height="600" viewBox="0 0 441 1089" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_7_6835)">
+          <circle cx="-103.5" cy="544.5" r="213.5" fill="#2B90FF" fill-opacity="0.5" />
+        </g>
+        <defs>
+          <filter id="filter0_f_7_6835" x="-648" y="0" width="1089" height="1089" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="165.5" result="effect1_foregroundBlur_7_6835" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <div class="absolute bottom-0 right-[-8%] z-[-1] max-w-[50%] overflow-hidden">
+      <svg width="674" height="400" viewBox="0 0 674 1347" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_7_6791)">
+          <circle cx="673.5" cy="673.5" r="342.5" fill="#2B90FF" fill-opacity="0.5" />
+        </g>
+        <defs>
+          <filter id="filter0_f_7_6791" x="0" y="0" width="1347" height="1347" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="165.5" result="effect1_foregroundBlur_7_6791" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <div class="absolute top-4 left-0 z-[-1]">
+      <img src="../../assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[250px] object-contain" />
+    </div>
+    <div class="max-w-screen-3xl mx-auto px-4 bg-white/10 backdrop-blur-md">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 animate-on-scroll fade-in-up">
+          Target Customer Groups
+        </h2>
+        <p class="text-lg text-gray-600 max-w-5xl mx-auto mb-12 pb-16 animate-on-scroll fade-in-up delay-100">
+          Our SME Loan is built for Malaysian businesses that are ready to grow, stabilize, or optimize
+          operations—especially those who may have difficulty getting traditional loans easily. These include
+        </p>
+      </div>
 
-      <div class="relative z-10 w-full p-8 md:p-16 lg:p-24 xl:py-32 text-white">
-
-        <div class="flex flex-col sm:pb-[4rem] md:pb-[8rem] gap-4 mb-8">
-          <p class="text-5xl md:text-7xl font-semibold  mb-6 animate-on-scroll fade-in-up">
-            SME Business Loans (Malaysia)
-          </p>
-          <p class="text-5xl md:text-7xl font-semibold  ] animate-on-scroll fade-in-up delay-100">
-            with AI-Powered Risk Analysis
+      <!-- Grid Layout for Customer Groups -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[8rem] items-center justify-center">
+        <div class="transition duration-300 border border-white/20 animate-on-scroll fade-in-up delay-100">
+          <div class="flex justify-center mb-4">
+            <img src="../../assets/images/financial/icons/micro-small.png"
+              alt="Micro, Small & Medium Enterprises (MSMEs)" class="w-16 h-16 object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-black text-center mb-4">
+            Micro, Small & Medium Enterprises (MSMEs)
+          </h3>
+          <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
+            Businesses with revenue and employee counts within SME definitions of Malaysia (per SME Corp /
+            RinggitPlus).
           </p>
         </div>
 
-        <a href="../../careers/apply/index.html"
-          class="inline-block px-12 py-3 text-base font-semibold text-[#050505] bg-[#F9D157] rounded-lg border-b hover:bg-[#ffe176] transition-colors duration-300 shadow-xl animate-on-scroll fade-in-up delay-200">
-          Apply Now
-        </a>
-      </div>
-    </section>
-    <!-- A Smarter, Safer Way to Borrow (How It Works) -->
-    <section id="how-it-works" class="py-16 relative">
-      <div class="absolute bottom-[25%] left-0 z-[-2]">
-        <img src="../../assets/images/icon/bluish.png" alt="RM Currency" class="w-full h-[50rem] object-contain" />
-      </div>
-      <!-- Background Image -->
-      <div class="absolute bottom-[0] right-0 z-2 max-w-[280px] overflow-hidden">
-        <img src="../../assets/images/icon/RM-right.png" alt="" class="w-full h-[240px] object-contain" />
-      </div>
-      <!-- Blue Effect SVG -->
+        <!-- Startups -->
+        <div class="animate-on-scroll fade-in-up delay-200 transition duration-300 border border-white/20">
+          <div class="flex justify-center mb-4">
+            <img src="../../assets/images/financial/icons/startups.png" alt="Startups"
+              class="w-16 h-16 object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-black text-center mb-4">
+            Startups
+          </h3>
+          <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
+            Young Businesses needing working capital or small assets but lacking long credit history.
+          </p>
+        </div>
 
-      <div class="max-w-screen-3xl mx-auto px-4">
+        <!-- Businesses wanting to scale -->
+        <div class="animate-on-scroll fade-in-up delay-300 transition duration-300 border border-white/20">
+          <div class="flex justify-center mb-4">
+            <img src="../../assets/images/financial/icons/business.png" alt="Businesses wanting to scale"
+              class="w-16 h-16 object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-black text-center mb-4">
+            Businesses wanting to scale
+          </h3>
+          <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
+            e.g. expand production, buy machinery, hire staff, open new branches.
+          </p>
+        </div>
+
+        <!-- Underserved SMEs -->
+        <div class="animate-on-scroll fade-in-up delay-400 transition duration-300 border border-white/20">
+          <div class="flex justify-center mb-4">
+            <img src="../../assets/images/financial/icons/underserved.png" alt="Underserved SMEs"
+              class="w-16 h-16 object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-black text-center mb-4">
+            Underserved SMEs
+          </h3>
+          <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
+            those with limited collateral or marginal credit history.
+          </p>
+        </div>
+
+        <!-- Existing SMEs aiming for modernization -->
+        <div class="animate-on-scroll fade-in-up delay-500 transition duration-300 border border-white/20">
+          <div class="flex justify-center mb-4">
+            <img src="../../assets/images/financial/icons/existing-sme.png" alt="Existing SMEs aiming for modernization"
+              class="w-16 h-16 object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-black text-center mb-4">
+            Existing SMEs aiming for modernization
+          </h3>
+          <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
+            investing in digital transformation, automation, technology upgrades.
+          </p>
+        </div>
+
+        <!-- Bumiputera -->
+        <div class="animate-on-scroll fade-in-up delay-600 transition duration-300 border border-white/20">
+          <div class="flex justify-center mb-4">
+            <img src="../../assets/images/financial/icons/bumiputera.png" alt="Bumiputera"
+              class="w-16 h-16 object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-black text-center mb-4">
+            Bumiputera
+          </h3>
+          <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
+            often eligible for certain government-backed financing schemes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- A Malaysian's Guide to Personal Loans Section -->
+  <section class="py-12 md:py-16 lg:py-20 relative">
+    <div class="absolute top-4 left-0 z-[-1]">
+      <img src="../../assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[150px] object-contain" />
+    </div>
+    <div class="absolute top-[52%] left-0 z-[-1]">
+      <img src="../../assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[150px] object-contain" />
+    </div>
+    <div class="max-w-screen-3xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.5fr_2fr] gap-8 items-center">
+        <!-- Left Column: Content -->
+        <div class="animate-on-scroll fade-in-left">
+          <div class="flex flex-col gap-4 lg:gap-6">
+            <h2 class="text-3xl md:text-4xl xl:text-5xl font-semibold text-gray-900 max-w-2xl pb-4"
+              style="line-height: 1.4;">
+              A Malaysian Entrepreneur's Guide to SME & Business Loans
+
+          </div>
+          <p class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed md:w-[70%]">
+            Small and Medium Enterprises (SMEs) are the backbone of the Malaysian economy. But for many entrepreneurs,
+            securing the right "pinjaman perniagaan" (business loan) is the biggest hurdle to growth. This guide
+            covers
+            the basics of SME loans in Malaysia.
+
+          </p>
+          <!-- RM Coin Icon -->
+          <div class="flex justify-center lg:justify-start">
+            <div class="relative">
+              <!-- <img src="../../assets/images/icon/RM.png" alt="RM Malaysian Ringgit Coin" class="w-32 h-32 md:w-40 md:h-40 object-contain opacity-20 hover:opacity-40 transition-opacity duration-300" /> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Image with Overlay -->
+        <div class="animate-on-scroll fade-in-right relative">
+          <img src="./../../assets/images/gradient/gradient.png" alt="Gradient background"
+            class="absolute left-[-8rem] md:left-[-13rem] w-full h-full object-cover z-[-1]" />
+          <div class="relative h-64 md:h-80 lg:h-[600px] rounded-2xl overflow-hidden w-full">
+            <!-- Gradient Background -->
+            <!-- Background Image -->
+            <img src="./../../assets/images/person/woman-with-packages.png"
+              alt="Two professionals in discussion about personal loans" class="w-full h-full object-cover" />
+
+            <!-- Overlay Box -->
+            <div
+              class="absolute bottom-2 sm:bottom-4 md:bottom-6 left-2 sm:left-4 md:left-[15%] right-2 sm:right-4 md:right-6 backdrop-blur-sm border border-white/10 rounded-xl p-3 sm:p-4 md:p-6 max-w-full sm:max-w-sm md:max-w-md">
+              <h3 class="text-base sm:text-lg md:text-xl lg:text-base font-bold text-white mb-3 sm:mb-4">
+                What is an SME Loan?
+              </h3>
+              <p class="text-white text-xs sm:text-xs md:text-sm leading-relaxed mb-3 sm:mb-4">
+                An SME loan is a financing product designed specifically for businesses, not individuals. It's used to
+                fund business activities, such as:
+              </p>
+              <div class="space-y-1 sm:space-y-2">
+                <ul class="text-white text-xs sm:text-xs md:text-sm space-y-1 ml-3 sm:ml-4">
+                  <li class="flex items-start">
+                    <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
+                    <span>Working Capital: Paying for day-to-day operations, like purchasing inventory (stock), paying
+                      salaries, or managing cash flow while waiting for client payments.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
+                    <span>Asset Acquisition: Buying new equipment, machinery, a company vehicle, or a commercial
+                      property..</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
+                    <span>Business Expansion: Funding growth, such as opening a new retail branch, launching a new
+                      product, or entering a new market..</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Financial Terms Section -->
+  <section class="py-12 md:py-16 lg:py-20">
+    <div class="max-w-screen-3xl mx-auto px-4">
+      <div class="grid grid-cols-1 items-center gap-8 md:gap-12 lg:gap-16 lg:grid-cols-[1.1fr_1fr]">
+        <!-- Left Column: Image -->
+        <figure class="order-1">
+          <div class="relative rounded-[15px] overflow-hidden shadow-2xl shadow-black/40">
+            <img src="./../../assets/images/person/woman-with-computer.png"
+              alt="Professional woman at a desk, reviewing documents" loading="lazy"
+              class="w-full full sm:h-[420px] lg:h-[520px] object-cover" />
+          </div>
+          <figcaption class="sr-only">Who is Eligible for an SME Loan in Malaysia?   </figcaption>
+        </figure>
+
+        <!-- Right Column: Term Details -->
+        <div class="order-2">
+          <h2 id="terms-title"
+            class="mt-6 text-3xl lg:text-[2.8rem] font-semibold leading-tight text-center md:text-left">Who is
+            Eligible
+            for an SME Loan in Malaysia? </h2>
+          <div class="mt-6  text-base font-medium :text-lg leading-tight space-y-4">
+            <p>Eligibility is more complex than for a personal loan. Lenders will look at your business's health. The
+              minimum requirements usually include:</p>
+            <ul class="list-lower-alpha list-inside space-y-2 pl-4 text-start">
+              <li>SSM Registration: Your business must be registered with the Companies Commission of Malaysia
+                (Suruhanjaya Syarikat Malaysia, or SSM).</li>
+              <li>Are paying high interest (like 18–20% p.a.) on credit card balances and are only able to pay the
+                minimum.</li>
+              <li>Business Bank Statements: You must provide your latest 6-12 months of company bank statements.
+                Lenders
+                use this to verify your monthly revenue and cash flow.</li>
+              <li>Director's Information: The company directors' NRIC and credit history (CCRIS/CTOS) will also be
+                checked.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-16 md:py-20 lg:py-24">
+    <div class="max-w-screen-3xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center lg:items-start">
+        <!-- Right Column (Text Content) - Appears first on mobile, second on large screens -->
+        <div class="lg:text-left flex flex-col justify-between h-full lg:order-1">
+          <h2 class="animate-on-scroll fade-in-up text-3xl md:text-5xl font-bold text-gray-900 mb-4 text-start">
+            The Challenge for Malaysian SMEs
+          </h2>
+          <p class="animate-on-scroll fade-in-up delay-100 text-lg text-gray-600 mb-8 md:mb-12 text-start">
+            Many great SMEs get rejected by traditional banks. Why?
+          <div class="text-lg text-gray-600 mb-8 md:mb-12 text-center md:text-start">
+            <div
+              class="animate-on-scroll fade-in-left delay-200 flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4">
+              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27 13.4999C27.4142 13.4999 27.75 13.1641 27.75 12.7499C27.75 12.3357 27.4142 11.9999 27 11.9999V12.7499V13.4999ZM21 11.9999C20.5858 11.9999 20.25 12.3357 20.25 12.7499C20.25 13.1641 20.5858 13.4999 21 13.4999V12.7499V11.9999ZM27 22.4999C27.4142 22.4999 27.75 22.1641 27.75 21.7499C27.75 21.3357 27.4142 20.9999 27 20.9999V21.7499V22.4999ZM21 20.9999C20.5858 20.9999 20.25 21.3357 20.25 21.7499C20.25 22.1641 20.5858 22.4999 21 22.4999V21.7499V20.9999ZM27 26.9999C27.4142 26.9999 27.75 26.6641 27.75 26.2499C27.75 25.8357 27.4142 25.4999 27 25.4999V26.2499V26.9999ZM21 25.4999C20.5858 25.4999 20.25 25.8357 20.25 26.2499C20.25 26.6641 20.5858 26.9999 21 26.9999V26.2499V25.4999ZM15 13.5C15.4142 13.5 15.75 13.1642 15.75 12.75C15.75 12.3357 15.4142 12 15 12V12.75V13.5ZM9 12C8.58579 12 8.25 12.3357 8.25 12.75C8.25 13.1642 8.58579 13.5 9 13.5V12.75V12ZM12.75 9.74993C12.75 9.33572 12.4142 8.99993 12 8.99993C11.5858 8.99993 11.25 9.33571 11.25 9.74993H12H12.75ZM11.25 15.7499C11.25 16.1641 11.5858 16.4999 12 16.4999C12.4142 16.4999 12.75 16.1641 12.75 15.7499H12H11.25ZM14.7803 22.2803C15.0732 21.9874 15.0732 21.5125 14.7803 21.2197C14.4874 20.9268 14.0126 20.9268 13.7197 21.2197L14.25 21.75L14.7803 22.2803ZM9.21969 25.7196C8.9268 26.0125 8.9268 26.4874 9.21969 26.7803C9.51258 27.0732 9.98746 27.0732 10.2803 26.7803L9.75002 26.25L9.21969 25.7196ZM10.2803 21.2196C9.98744 20.9267 9.51256 20.9267 9.21967 21.2196C8.92678 21.5125 8.92678 21.9874 9.21967 22.2803L9.75 21.75L10.2803 21.2196ZM13.7197 26.7803C14.0125 27.0732 14.4874 27.0732 14.7803 26.7803C15.0732 26.4874 15.0732 26.0125 14.7803 25.7196L14.25 26.2499L13.7197 26.7803ZM18 33V32.25C14.4433 32.25 11.8512 32.2484 9.8704 31.9821C7.91121 31.7187 6.6628 31.2087 5.72703 30.273L5.1967 30.8033L4.66637 31.3336C5.9273 32.5946 7.545 33.183 9.67053 33.4687C11.7745 33.7516 14.4857 33.75 18 33.75V33ZM3 18H2.25C2.25 21.5143 2.24841 24.2255 2.53128 26.3295C2.81704 28.455 3.40544 30.0727 4.66637 31.3336L5.1967 30.8033L5.72703 30.273C4.79126 29.3372 4.28131 28.0888 4.0179 26.1296C3.75159 24.1488 3.75 21.5567 3.75 18H3ZM33 18H32.25C32.25 21.5567 32.2484 24.1488 31.9821 26.1296C31.7187 28.0888 31.2087 29.3372 30.273 30.273L30.8033 30.8033L31.3336 31.3336C32.5946 30.0727 33.183 28.455 33.4687 26.3295C33.7516 24.2255 33.75 21.5143 33.75 18H33ZM18 33V33.75C21.5143 33.75 24.2255 33.7516 26.3295 33.4687C28.455 33.183 30.0727 32.5946 31.3336 31.3336L30.8033 30.8033L30.273 30.273C29.3372 31.2087 28.0888 31.7187 26.1296 31.9821C24.1488 32.2484 21.5567 32.25 18 32.25V33ZM18 3V3.75C21.5567 3.75 24.1488 3.75159 26.1296 4.0179C28.0888 4.28131 29.3372 4.79126 30.273 5.72703L30.8033 5.1967L31.3336 4.66637C30.0727 3.40544 28.455 2.81704 26.3295 2.53128C24.2255 2.24841 21.5143 2.25 18 2.25V3ZM33 18H33.75C33.75 14.4857 33.7516 11.7745 33.4687 9.67053C33.183 7.545 32.5946 5.9273 31.3336 4.66637L30.8033 5.1967L30.273 5.72703C31.2087 6.6628 31.7187 7.91121 31.9821 9.8704C32.2484 11.8512 32.25 14.4433 32.25 18H33ZM18 3V2.25C14.4857 2.25 11.7745 2.24841 9.67053 2.53128C7.545 2.81704 5.9273 3.40544 4.66637 4.66637L5.1967 5.1967L5.72703 5.72703C6.6628 4.79126 7.91121 4.28131 9.8704 4.0179C11.8512 3.75159 14.4433 3.75 18 3.75V3ZM3 18H3.75C3.75 14.4433 3.75159 11.8512 4.0179 9.8704C4.28131 7.91121 4.79126 6.6628 5.72703 5.72703L5.1967 5.1967L4.66637 4.66637C3.40544 5.9273 2.81704 7.545 2.53128 9.67053C2.24841 11.7745 2.25 14.4857 2.25 18H3ZM27 12.7499V11.9999H21V12.7499V13.4999H27V12.7499ZM27 21.7499V20.9999H21V21.7499V22.4999H27V21.7499ZM27 26.2499V25.4999H21V26.2499V26.9999H27V26.2499ZM15 12.75V12H12V12.75V13.5H15V12.75ZM12 12.75V12H9V12.75V13.5L12 13.5V12.75ZM12 9.74993H11.25L11.25 12.75H12L12.75 12.75L12.75 9.74993H12ZM12 12.75H11.25V15.7499H12H12.75V12.75H12ZM14.25 21.75L13.7197 21.2197L11.4697 23.4696L12 24L12.5303 24.5303L14.7803 22.2803L14.25 21.75ZM12 24L11.4697 23.4696L9.21969 25.7196L9.75002 26.25L10.2803 26.7803L12.5303 24.5303L12 24ZM9.75 21.75L9.21967 22.2803L11.4697 24.5303L12 24L12.5303 23.4696L10.2803 21.2196L9.75 21.75ZM12 24L11.4697 24.5303L13.7197 26.7803L14.25 26.2499L14.7803 25.7196L12.5303 23.4696L12 24Z"
+                    fill="black" />
+                </svg>
+              </span>
+              <div>
+                <p class="font-bold">Messy" Bank Statements:</p>
+                <ul class="list-disc list-inside text-sm">
+                  <li>Cash-based businesses or those with irregular income may look "high-risk" to an algorithm.</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-300">
+              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M33 33H18C10.9289 33 7.3934 33 5.1967 30.8033C3 28.6066 3 25.0711 3 18V3M28.5003 10.5L23.8232 16.3896C23.1068 17.2918 22.7486 17.7428 22.3374 17.9627C21.7051 18.3007 20.9495 18.3171 20.3031 18.0069C19.8827 17.8052 19.5052 17.3701 18.7502 16.5C17.9953 15.6298 17.6178 15.1948 17.1974 14.993C16.551 14.6828 15.7954 14.6993 15.1631 15.0373C14.7519 15.2571 14.3937 15.7082 13.6773 16.6103L9 22.5"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </span>
+              <div>
+                <p class="font-bold">Lack of Collateral</p>
+                <ul class="list-disc list-inside text-sm">
+                  <li>Many new businesses don't have property or assets to pledge for a secured loan.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-400">
+              <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M28.5 18.75C28.9142 18.75 29.25 18.4142 29.25 18C29.25 17.5858 28.9142 17.25 28.5 17.25V18V18.75ZM22.5 17.25C22.0858 17.25 21.75 17.5858 21.75 18C21.75 18.4142 22.0858 18.75 22.5 18.75V18V17.25ZM28.5 14.25C28.9142 14.25 29.25 13.9142 29.25 13.5C29.25 13.0858 28.9142 12.75 28.5 12.75V13.5V14.25ZM21 12.75C20.5858 12.75 20.25 13.0858 20.25 13.5C20.25 13.9142 20.5858 14.25 21 14.25V13.5V12.75ZM28.5 23.25C28.9142 23.25 29.25 22.9142 29.25 22.5C29.25 22.0858 28.9142 21.75 28.5 21.75V22.5V23.25ZM24 21.75C23.5858 21.75 23.25 22.0858 23.25 22.5C23.25 22.9142 23.5858 23.25 24 23.25V22.5V21.75ZM16.5 13.5H15.75C15.75 14.7426 14.7426 15.75 13.5 15.75V16.5V17.25C15.5711 17.25 17.25 15.5711 17.25 13.5H16.5ZM13.5 16.5V15.75C12.2574 15.75 11.25 14.7426 11.25 13.5H10.5H9.75C9.75 15.5711 11.4289 17.25 13.5 17.25V16.5ZM10.5 13.5H11.25C11.25 12.2574 12.2574 11.25 13.5 11.25V10.5V9.75C11.4289 9.75 9.75 11.4289 9.75 13.5H10.5ZM13.5 10.5V11.25C14.7426 11.25 15.75 12.2574 15.75 13.5H16.5H17.25C17.25 11.4289 15.5711 9.75 13.5 9.75V10.5ZM19.5 22.5H18.75C18.75 23.3806 18.7115 23.7233 18.3102 24.0138C18.0632 24.1926 17.6244 24.3842 16.8359 24.5261C16.0532 24.6669 14.9772 24.75 13.5 24.75V25.5V26.25C15.0228 26.25 16.1968 26.1652 17.1016 26.0024C18.0006 25.8406 18.6868 25.5929 19.1898 25.2289C20.2885 24.4335 20.25 23.2762 20.25 22.5H19.5ZM13.5 25.5V24.75C12.0228 24.75 10.9468 24.6669 10.1641 24.5261C9.3756 24.3842 8.93682 24.1926 8.68977 24.0138C8.28849 23.7233 8.25 23.3806 8.25 22.5H7.5H6.75C6.75 23.2762 6.71151 24.4335 7.81023 25.2289C8.31318 25.5929 8.9994 25.8406 9.89844 26.0024C10.8032 26.1652 11.9772 26.25 13.5 26.25V25.5ZM7.5 22.5H8.25C8.25 22.1087 8.58671 21.5525 9.59277 21.0495C10.554 20.5689 11.9343 20.25 13.5 20.25V19.5V18.75C11.752 18.75 10.1323 19.1027 8.92195 19.7079C7.75643 20.2906 6.75 21.2345 6.75 22.5H7.5ZM13.5 19.5V20.25C15.0657 20.25 16.446 20.5689 17.4072 21.0495C18.4133 21.5525 18.75 22.1087 18.75 22.5H19.5H20.25C20.25 21.2345 19.2436 20.2906 18.0781 19.7079C16.8677 19.1027 15.248 18.75 13.5 18.75V19.5ZM15 6V6.75H21V6V5.25H15V6ZM21 30V29.25H15V30V30.75H21V30ZM15 30V29.25C12.1504 29.25 10.0886 29.2484 8.5163 29.037C6.96559 28.8285 6.00379 28.4284 5.28769 27.7123L4.75736 28.2426L4.22703 28.773C5.26829 29.8142 6.59938 30.2928 8.31643 30.5236C10.0119 30.7516 12.1928 30.75 15 30.75V30ZM3 18H2.25C2.25 20.8072 2.24841 22.9881 2.47636 24.6836C2.70721 26.4006 3.18577 27.7317 4.22703 28.773L4.75736 28.2426L5.28769 27.7123C4.57159 26.9962 4.17147 26.0344 3.96298 24.4837C3.75159 22.9114 3.75 20.8496 3.75 18H3ZM33 18H32.25C32.25 20.8496 32.2484 22.9114 32.037 24.4837C31.8285 26.0344 31.4284 26.9962 30.7123 27.7123L31.2426 28.2426L31.773 28.773C32.8142 27.7317 33.2928 26.4006 33.5236 24.6836C33.7516 22.9881 33.75 20.8072 33.75 18H33ZM21 30V30.75C23.8072 30.75 25.9881 30.7516 27.6836 30.5236C29.4006 30.2928 30.7317 29.8142 31.773 28.773L31.2426 28.2426L30.7123 27.7123C29.9962 28.4284 29.0344 28.8285 27.4837 29.037C25.9114 29.2484 23.8496 29.25 21 29.25V30ZM21 6V6.75C23.8496 6.75 25.9114 6.75159 27.4837 6.96298C29.0344 7.17147 29.9962 7.57159 30.7123 8.28769L31.2426 7.75736L31.773 7.22703C30.7317 6.18577 29.4006 5.70721 27.6836 5.47636C25.9881 5.24841 23.8072 5.25 21 5.25V6ZM33 18H33.75C33.75 15.1928 33.7516 13.0119 33.5236 11.3164C33.2928 9.59938 32.8142 8.26829 31.773 7.22703L31.2426 7.75736L30.7123 8.28769C31.4284 9.00379 31.8285 9.96559 32.037 11.5163C32.2484 13.0886 32.25 15.1504 32.25 18H33ZM15 6V5.25C12.1928 5.25 10.0119 5.24841 8.31643 5.47636C6.59938 5.70721 5.26829 6.18577 4.22703 7.22703L4.75736 7.75736L5.28769 8.28769C6.00379 7.57159 6.96559 7.17147 8.5163 6.96298C10.0886 6.75159 12.1504 6.75 15 6.75V6ZM3 18H3.75C3.75 15.1504 3.75159 13.0886 3.96298 11.5163C4.17147 9.96559 4.57159 9.00379 5.28769 8.28769L4.75736 7.75736L4.22703 7.22703C3.18577 8.26829 2.70721 9.59938 2.47636 11.3164C2.24841 13.0119 2.25 15.1928 2.25 18H3ZM28.5 18V17.25H22.5V18V18.75H28.5V18ZM28.5 13.5V12.75H21V13.5V14.25H28.5V13.5ZM28.5 22.5V21.75H24V22.5V23.25H28.5V22.5Z"
+                    fill="black" />
+                </svg>
+              </span>
+              <div>
+                <p class="font-bold">Poor CCRIS/CTOS</p>
+                <ul class="list-disc list-inside text-sm">
+                  <li>
+                    The director's personal credit history might unfairly impact the business's application.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="font-semibold text-sm" style="line-height: 1.7;">This is precisely why our Hybrid AI+Human model
+              is so critical for SMEs. A pure AI might reject a good business with lumpy cash flow. Our human experts
+              can step in, understand the business model, and present a stronger case to the lender. Our AI-powered
+              risk
+              analysis also helps lenders see the true potential and risk, giving you a fairer chance at approval.</p>
+          </div>
+        </div>
+        <!-- Left Column: Calculator Image - Appears second on mobile, first on large screens -->
+        <div class="animate-on-scroll scale-in flex justify-center lg:order-2">
+          <img src="../../assets/images/ourservices/objects/pen-paper.png" alt="Eligibility Requirements"
+            class="w-full h-auto object-contain max-w-sm lg:max-w-full" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Providers Section -->
+  <section class="py-16 md:py-20 lg:py-24 relative">
+    <div class="max-w-screen-3xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 animate-on-scroll fade-in-up">
+          Service Providers
+        </h2>
+        <p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+          We partner with institutions that provide SME financing, including conventional and Islamic modes, to give
+          you
+          options
+        </p>
+      </div>
+
+      <!-- Providers Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center ">
+        <!-- Local Banks & Islamic Banks with SME -->
         <div
-          class="relative z-10 rounded-3xl border border-white/30 bg-white/15 backdrop-blur-lg px-6 py-10 shadow-lg md:px-10 md:py-12 md:backdrop-blur-xl lg:rounded-none lg:border-0 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:px-0 lg:py-0">
-          <h2 id="how-it-works-title"
-            class="animate-on-scroll fade-in-up text-3xl md:text-4xl font- text-gray-900 mb-8 text-center text-3xl md:text-4xl font-semibold">
-            The Moneybee Difference: A Loan & a Partner
-          </h2>
-
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <!-- Left: Steps list -->
-            <ol class="space-y-5">
-              <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-100">
-                <span class="flex-none text-3xl font-bold text-blue-800 tabular-nums">01</span>
-                <div class="flex-1">
-                  <div
-                    class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
-                    <div class="flex gap-3 flex-col">
-                      <img src="./../../assets/images/icon/magnifying.png" alt="AI-Powered Match" width="60"
-                        height="60" />
-                      <h3 class="font-semibold text-gray-900 text-xl">
-                        AI-Powered Match
-                      </h3>
-                      <p class="text-gray-600">
-                        In 5 minutes, our AI scans thousands of loan options from licensed lenders to find your perfect
-                        fit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-200">
-                <span class="flex-none text-3xl font-bold text-blue-800 tabular-nums">02</span>
-                <div class="flex-1">
-                  <div
-                    class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
-                    <div class="flex gap-3 flex-col">
-                      <img src="./../../assets/images/icon/human-expert.png" alt="Human Expert Review" width="60"
-                        height="60" />
-                      <h3 class="font-semibold text-gray-900 text-xl mt-2">Human Expert Review</h3>
-                      <p class="text-gray-600">An expert reviews your AI-match to ensure every detail is correct and
-                        answers your questions.</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-400">
-                <span class="flex-none text-3xl font-bold text-blue-800 tabular-nums">03</span>
-                <div class="flex-1">
-                  <div
-                    class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
-                    <div class="flex gap-3 flex-col">
-                      <img src="./../../assets/images/icon/case-manager.png" alt="Case Manager Support" width="60"
-                        height="60" />
-                      <h3 class="font-semibold text-gray-900 text-xl mt-2">Case Manager Support</h3>
-                      <p class="text-gray-600">After drawdown, your dedicated Case Manager helps you manage payments and
-                        looks for new offers.</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ol>
-
-            <!-- Right: Image with overlays -->
-            <div class="relative h-[100%] md:h-[100%] w-full">
-              <img src="./../../assets/images/smarter-way-to-borrow/image1.jpeg"
-                alt="Consultation with financial charts overlay"
-                class="absolute inset-0 w-full h-full object-contain" />
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Target Customer Options Section -->
-    <section class="py-16 relative overflow-hidden">
-      <!-- Background Image -->
-      <div class="absolute bottom-[0%] right-0 z-[-1] max-w-[280px] overflow-hidden">
-        <img src="../../assets/images/icon/RM-right.png" alt="RM Currency" class="w-full h-[250px] object-contain" />
-      </div>
-      <!-- Blue Effect SVG -->
-      <div class="absolute top-[-5%] left-0 z-[-1] overflow-hidden">
-        <svg width="300" height="600" viewBox="0 0 441 1089" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_f_7_6835)">
-            <circle cx="-103.5" cy="544.5" r="213.5" fill="#2B90FF" fill-opacity="0.5" />
-          </g>
-          <defs>
-            <filter id="filter0_f_7_6835" x="-648" y="0" width="1089" height="1089" filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="165.5" result="effect1_foregroundBlur_7_6835" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-      <div class="absolute bottom-0 right-[-8%] z-[-1] max-w-[50%] overflow-hidden">
-        <svg width="674" height="400" viewBox="0 0 674 1347" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_f_7_6791)">
-            <circle cx="673.5" cy="673.5" r="342.5" fill="#2B90FF" fill-opacity="0.5" />
-          </g>
-          <defs>
-            <filter id="filter0_f_7_6791" x="0" y="0" width="1347" height="1347" filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="165.5" result="effect1_foregroundBlur_7_6791" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-      <div class="absolute top-4 left-0 z-[-1]">
-        <img src="../../assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[250px] object-contain" />
-      </div>
-      <div class="max-w-screen-3xl mx-auto px-4 bg-white/10 backdrop-blur-md">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 animate-on-scroll fade-in-up">
-            Target Customer Groups
-          </h2>
-          <p class="text-lg text-gray-600 max-w-5xl mx-auto mb-12 pb-16 animate-on-scroll fade-in-up delay-100">
-            Our SME Loan is built for Malaysian businesses that are ready to grow, stabilize, or optimize
-            operations—especially those who may have difficulty getting traditional loans easily. These include
-          </p>
-        </div>
-
-        <!-- Grid Layout for Customer Groups -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[8rem] items-center justify-center">
-          <div class="transition duration-300 border border-white/20 animate-on-scroll fade-in-up delay-100">
-            <div class="flex justify-center mb-4">
-              <img src="../../assets/images/financial/icons/micro-small.png"
-                alt="Micro, Small & Medium Enterprises (MSMEs)" class="w-16 h-16 object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-black text-center mb-4">
-              Micro, Small & Medium Enterprises (MSMEs)
-            </h3>
-            <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
-              Businesses with revenue and employee counts within SME definitions of Malaysia (per SME Corp /
-              RinggitPlus).
-            </p>
-          </div>
-
-          <!-- Startups -->
-          <div class="animate-on-scroll fade-in-up delay-200 transition duration-300 border border-white/20">
-            <div class="flex justify-center mb-4">
-              <img src="../../assets/images/financial/icons/startups.png" alt="Startups"
-                class="w-16 h-16 object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-black text-center mb-4">
-              Startups
-            </h3>
-            <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
-              Young Businesses needing working capital or small assets but lacking long credit history.
-            </p>
-          </div>
-
-          <!-- Businesses wanting to scale -->
-          <div class="animate-on-scroll fade-in-up delay-300 transition duration-300 border border-white/20">
-            <div class="flex justify-center mb-4">
-              <img src="../../assets/images/financial/icons/business.png" alt="Businesses wanting to scale"
-                class="w-16 h-16 object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-black text-center mb-4">
-              Businesses wanting to scale
-            </h3>
-            <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
-              e.g. expand production, buy machinery, hire staff, open new branches.
-            </p>
-          </div>
-
-          <!-- Underserved SMEs -->
-          <div class="animate-on-scroll fade-in-up delay-400 transition duration-300 border border-white/20">
-            <div class="flex justify-center mb-4">
-              <img src="../../assets/images/financial/icons/underserved.png" alt="Underserved SMEs"
-                class="w-16 h-16 object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-black text-center mb-4">
-              Underserved SMEs
-            </h3>
-            <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
-              those with limited collateral or marginal credit history.
-            </p>
-          </div>
-
-          <!-- Existing SMEs aiming for modernization -->
-          <div class="animate-on-scroll fade-in-up delay-500 transition duration-300 border border-white/20">
-            <div class="flex justify-center mb-4">
-              <img src="../../assets/images/financial/icons/existing-sme.png"
-                alt="Existing SMEs aiming for modernization" class="w-16 h-16 object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-black text-center mb-4">
-              Existing SMEs aiming for modernization
-            </h3>
-            <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
-              investing in digital transformation, automation, technology upgrades.
-            </p>
-          </div>
-
-          <!-- Bumiputera -->
-          <div class="animate-on-scroll fade-in-up delay-600 transition duration-300 border border-white/20">
-            <div class="flex justify-center mb-4">
-              <img src="../../assets/images/financial/icons/bumiputera.png" alt="Bumiputera"
-                class="w-16 h-16 object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-black text-center mb-4">
-              Bumiputera
-            </h3>
-            <p class="text-gray-700 text-sm text-center lg:max-w-[400px] mx-auto">
-              often eligible for certain government-backed financing schemes.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- A Malaysian's Guide to Personal Loans Section -->
-    <section class="py-12 md:py-16 lg:py-20 relative">
-      <div class="absolute top-4 left-0 z-[-1]">
-        <img src="../../assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[150px] object-contain" />
-      </div>
-      <div class="absolute top-[52%] left-0 z-[-1]">
-        <img src="../../assets/images/icon/RM.png" alt="RM Currency" class="w-full h-[150px] object-contain" />
-      </div>
-      <div class="max-w-screen-3xl mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-[1.5fr_2fr] gap-8 items-center">
-          <!-- Left Column: Content -->
-          <div class="animate-on-scroll fade-in-left">
-            <div class="flex flex-col gap-4 lg:gap-6">
-              <h2 class="text-3xl md:text-4xl xl:text-5xl font-semibold text-gray-900 max-w-2xl pb-4"
-                style="line-height: 1.4;">
-                A Malaysian Entrepreneur's Guide to SME & Business Loans
-
-            </div>
-            <p class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed md:w-[70%]">
-              Small and Medium Enterprises (SMEs) are the backbone of the Malaysian economy. But for many entrepreneurs,
-              securing the right "pinjaman perniagaan" (business loan) is the biggest hurdle to growth. This guide
-              covers
-              the basics of SME loans in Malaysia.
-
-            </p>
-            <!-- RM Coin Icon -->
-            <div class="flex justify-center lg:justify-start">
-              <div class="relative">
-                <!-- <img src="../../assets/images/icon/RM.png" alt="RM Malaysian Ringgit Coin" class="w-32 h-32 md:w-40 md:h-40 object-contain opacity-20 hover:opacity-40 transition-opacity duration-300" /> -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Column: Image with Overlay -->
-          <div class="animate-on-scroll fade-in-right relative">
-            <img src="./../../assets/images/gradient/gradient.png" alt="Gradient background"
-              class="absolute left-[-8rem] md:left-[-13rem] w-full h-full object-cover z-[-1]" />
-            <div class="relative h-64 md:h-80 lg:h-[600px] rounded-2xl overflow-hidden w-full">
-              <!-- Gradient Background -->
-              <!-- Background Image -->
-              <img src="./../../assets/images/person/woman-with-packages.png"
-                alt="Two professionals in discussion about personal loans" class="w-full h-full object-cover" />
-
-              <!-- Overlay Box -->
-              <div
-                class="absolute bottom-2 sm:bottom-4 md:bottom-6 left-2 sm:left-4 md:left-[15%] right-2 sm:right-4 md:right-6 backdrop-blur-sm border border-white/10 rounded-xl p-3 sm:p-4 md:p-6 max-w-full sm:max-w-sm md:max-w-md">
-                <h3 class="text-base sm:text-lg md:text-xl lg:text-base font-bold text-white mb-3 sm:mb-4">
-                  What is an SME Loan?
-                </h3>
-                <p class="text-white text-xs sm:text-xs md:text-sm leading-relaxed mb-3 sm:mb-4">
-                  An SME loan is a financing product designed specifically for businesses, not individuals. It's used to
-                  fund business activities, such as:
-                </p>
-                <div class="space-y-1 sm:space-y-2">
-                  <ul class="text-white text-xs sm:text-xs md:text-sm space-y-1 ml-3 sm:ml-4">
-                    <li class="flex items-start">
-                      <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
-                      <span>Working Capital: Paying for day-to-day operations, like purchasing inventory (stock), paying
-                        salaries, or managing cash flow while waiting for client payments.</span>
-                    </li>
-                    <li class="flex items-start">
-                      <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
-                      <span>Asset Acquisition: Buying new equipment, machinery, a company vehicle, or a commercial
-                        property..</span>
-                    </li>
-                    <li class="flex items-start">
-                      <span class="text-yellow-500 mr-1 sm:mr-2">•</span>
-                      <span>Business Expansion: Funding growth, such as opening a new retail branch, launching a new
-                        product, or entering a new market..</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Key Financial Terms Section -->
-    <section class="py-12 md:py-16 lg:py-20">
-      <div class="max-w-screen-3xl mx-auto px-4">
-        <div class="grid grid-cols-1 items-center gap-8 md:gap-12 lg:gap-16 lg:grid-cols-[1.1fr_1fr]">
-          <!-- Left Column: Image -->
-          <figure class="order-1">
-            <div class="relative rounded-[15px] overflow-hidden shadow-2xl shadow-black/40">
-              <img src="./../../assets/images/person/woman-with-computer.png"
-                alt="Professional woman at a desk, reviewing documents" loading="lazy"
-                class="w-full full sm:h-[420px] lg:h-[520px] object-cover" />
-            </div>
-            <figcaption class="sr-only">Who is Eligible for an SME Loan in Malaysia?   </figcaption>
-          </figure>
-
-          <!-- Right Column: Term Details -->
-          <div class="order-2">
-            <h2 id="terms-title"
-              class="mt-6 text-3xl lg:text-[2.8rem] font-semibold leading-tight text-center md:text-left">Who is
-              Eligible
-              for an SME Loan in Malaysia? </h2>
-            <div class="mt-6  text-base font-medium :text-lg leading-tight space-y-4">
-              <p>Eligibility is more complex than for a personal loan. Lenders will look at your business's health. The
-                minimum requirements usually include:</p>
-              <ul class="list-lower-alpha list-inside space-y-2 pl-4 text-start">
-                <li>SSM Registration: Your business must be registered with the Companies Commission of Malaysia
-                  (Suruhanjaya Syarikat Malaysia, or SSM).</li>
-                <li>Are paying high interest (like 18–20% p.a.) on credit card balances and are only able to pay the
-                  minimum.</li>
-                <li>Business Bank Statements: You must provide your latest 6-12 months of company bank statements.
-                  Lenders
-                  use this to verify your monthly revenue and cash flow.</li>
-                <li>Director's Information: The company directors' NRIC and credit history (CCRIS/CTOS) will also be
-                  checked.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-16 md:py-20 lg:py-24">
-      <div class="max-w-screen-3xl mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center lg:items-start">
-          <!-- Right Column (Text Content) - Appears first on mobile, second on large screens -->
-          <div class="lg:text-left flex flex-col justify-between h-full lg:order-1">
-            <h2 class="animate-on-scroll fade-in-up text-3xl md:text-5xl font-bold text-gray-900 mb-4 text-start">
-              The Challenge for Malaysian SMEs
-            </h2>
-            <p class="animate-on-scroll fade-in-up delay-100 text-lg text-gray-600 mb-8 md:mb-12 text-start">
-              Many great SMEs get rejected by traditional banks. Why?
-            <div class="text-lg text-gray-600 mb-8 md:mb-12 text-center md:text-start">
-              <div
-                class="animate-on-scroll fade-in-left delay-200 flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4">
-                <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M27 13.4999C27.4142 13.4999 27.75 13.1641 27.75 12.7499C27.75 12.3357 27.4142 11.9999 27 11.9999V12.7499V13.4999ZM21 11.9999C20.5858 11.9999 20.25 12.3357 20.25 12.7499C20.25 13.1641 20.5858 13.4999 21 13.4999V12.7499V11.9999ZM27 22.4999C27.4142 22.4999 27.75 22.1641 27.75 21.7499C27.75 21.3357 27.4142 20.9999 27 20.9999V21.7499V22.4999ZM21 20.9999C20.5858 20.9999 20.25 21.3357 20.25 21.7499C20.25 22.1641 20.5858 22.4999 21 22.4999V21.7499V20.9999ZM27 26.9999C27.4142 26.9999 27.75 26.6641 27.75 26.2499C27.75 25.8357 27.4142 25.4999 27 25.4999V26.2499V26.9999ZM21 25.4999C20.5858 25.4999 20.25 25.8357 20.25 26.2499C20.25 26.6641 20.5858 26.9999 21 26.9999V26.2499V25.4999ZM15 13.5C15.4142 13.5 15.75 13.1642 15.75 12.75C15.75 12.3357 15.4142 12 15 12V12.75V13.5ZM9 12C8.58579 12 8.25 12.3357 8.25 12.75C8.25 13.1642 8.58579 13.5 9 13.5V12.75V12ZM12.75 9.74993C12.75 9.33572 12.4142 8.99993 12 8.99993C11.5858 8.99993 11.25 9.33571 11.25 9.74993H12H12.75ZM11.25 15.7499C11.25 16.1641 11.5858 16.4999 12 16.4999C12.4142 16.4999 12.75 16.1641 12.75 15.7499H12H11.25ZM14.7803 22.2803C15.0732 21.9874 15.0732 21.5125 14.7803 21.2197C14.4874 20.9268 14.0126 20.9268 13.7197 21.2197L14.25 21.75L14.7803 22.2803ZM9.21969 25.7196C8.9268 26.0125 8.9268 26.4874 9.21969 26.7803C9.51258 27.0732 9.98746 27.0732 10.2803 26.7803L9.75002 26.25L9.21969 25.7196ZM10.2803 21.2196C9.98744 20.9267 9.51256 20.9267 9.21967 21.2196C8.92678 21.5125 8.92678 21.9874 9.21967 22.2803L9.75 21.75L10.2803 21.2196ZM13.7197 26.7803C14.0125 27.0732 14.4874 27.0732 14.7803 26.7803C15.0732 26.4874 15.0732 26.0125 14.7803 25.7196L14.25 26.2499L13.7197 26.7803ZM18 33V32.25C14.4433 32.25 11.8512 32.2484 9.8704 31.9821C7.91121 31.7187 6.6628 31.2087 5.72703 30.273L5.1967 30.8033L4.66637 31.3336C5.9273 32.5946 7.545 33.183 9.67053 33.4687C11.7745 33.7516 14.4857 33.75 18 33.75V33ZM3 18H2.25C2.25 21.5143 2.24841 24.2255 2.53128 26.3295C2.81704 28.455 3.40544 30.0727 4.66637 31.3336L5.1967 30.8033L5.72703 30.273C4.79126 29.3372 4.28131 28.0888 4.0179 26.1296C3.75159 24.1488 3.75 21.5567 3.75 18H3ZM33 18H32.25C32.25 21.5567 32.2484 24.1488 31.9821 26.1296C31.7187 28.0888 31.2087 29.3372 30.273 30.273L30.8033 30.8033L31.3336 31.3336C32.5946 30.0727 33.183 28.455 33.4687 26.3295C33.7516 24.2255 33.75 21.5143 33.75 18H33ZM18 33V33.75C21.5143 33.75 24.2255 33.7516 26.3295 33.4687C28.455 33.183 30.0727 32.5946 31.3336 31.3336L30.8033 30.8033L30.273 30.273C29.3372 31.2087 28.0888 31.7187 26.1296 31.9821C24.1488 32.2484 21.5567 32.25 18 32.25V33ZM18 3V3.75C21.5567 3.75 24.1488 3.75159 26.1296 4.0179C28.0888 4.28131 29.3372 4.79126 30.273 5.72703L30.8033 5.1967L31.3336 4.66637C30.0727 3.40544 28.455 2.81704 26.3295 2.53128C24.2255 2.24841 21.5143 2.25 18 2.25V3ZM33 18H33.75C33.75 14.4857 33.7516 11.7745 33.4687 9.67053C33.183 7.545 32.5946 5.9273 31.3336 4.66637L30.8033 5.1967L30.273 5.72703C31.2087 6.6628 31.7187 7.91121 31.9821 9.8704C32.2484 11.8512 32.25 14.4433 32.25 18H33ZM18 3V2.25C14.4857 2.25 11.7745 2.24841 9.67053 2.53128C7.545 2.81704 5.9273 3.40544 4.66637 4.66637L5.1967 5.1967L5.72703 5.72703C6.6628 4.79126 7.91121 4.28131 9.8704 4.0179C11.8512 3.75159 14.4433 3.75 18 3.75V3ZM3 18H3.75C3.75 14.4433 3.75159 11.8512 4.0179 9.8704C4.28131 7.91121 4.79126 6.6628 5.72703 5.72703L5.1967 5.1967L4.66637 4.66637C3.40544 5.9273 2.81704 7.545 2.53128 9.67053C2.24841 11.7745 2.25 14.4857 2.25 18H3ZM27 12.7499V11.9999H21V12.7499V13.4999H27V12.7499ZM27 21.7499V20.9999H21V21.7499V22.4999H27V21.7499ZM27 26.2499V25.4999H21V26.2499V26.9999H27V26.2499ZM15 12.75V12H12V12.75V13.5H15V12.75ZM12 12.75V12H9V12.75V13.5L12 13.5V12.75ZM12 9.74993H11.25L11.25 12.75H12L12.75 12.75L12.75 9.74993H12ZM12 12.75H11.25V15.7499H12H12.75V12.75H12ZM14.25 21.75L13.7197 21.2197L11.4697 23.4696L12 24L12.5303 24.5303L14.7803 22.2803L14.25 21.75ZM12 24L11.4697 23.4696L9.21969 25.7196L9.75002 26.25L10.2803 26.7803L12.5303 24.5303L12 24ZM9.75 21.75L9.21967 22.2803L11.4697 24.5303L12 24L12.5303 23.4696L10.2803 21.2196L9.75 21.75ZM12 24L11.4697 24.5303L13.7197 26.7803L14.25 26.2499L14.7803 25.7196L12.5303 23.4696L12 24Z"
-                      fill="black" />
-                  </svg>
-                </span>
-                <div>
-                  <p class="font-bold">Messy" Bank Statements:</p>
-                  <ul class="list-disc list-inside text-sm">
-                    <li>Cash-based businesses or those with irregular income may look "high-risk" to an algorithm.</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-300">
-                <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M33 33H18C10.9289 33 7.3934 33 5.1967 30.8033C3 28.6066 3 25.0711 3 18V3M28.5003 10.5L23.8232 16.3896C23.1068 17.2918 22.7486 17.7428 22.3374 17.9627C21.7051 18.3007 20.9495 18.3171 20.3031 18.0069C19.8827 17.8052 19.5052 17.3701 18.7502 16.5C17.9953 15.6298 17.6178 15.1948 17.1974 14.993C16.551 14.6828 15.7954 14.6993 15.1631 15.0373C14.7519 15.2571 14.3937 15.7082 13.6773 16.6103L9 22.5"
-                      stroke="black" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                </span>
-                <div>
-                  <p class="font-bold">Lack of Collateral</p>
-                  <ul class="list-disc list-inside text-sm">
-                    <li>Many new businesses don't have property or assets to pledge for a secured loan.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row items-start mb-4 animate-on-scroll fade-in-left delay-400">
-                <span class="mr-3 p-4 rounded-xl flex-shrink-0" style="background-color: rgba(249, 209, 87, 1)">
-                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M28.5 18.75C28.9142 18.75 29.25 18.4142 29.25 18C29.25 17.5858 28.9142 17.25 28.5 17.25V18V18.75ZM22.5 17.25C22.0858 17.25 21.75 17.5858 21.75 18C21.75 18.4142 22.0858 18.75 22.5 18.75V18V17.25ZM28.5 14.25C28.9142 14.25 29.25 13.9142 29.25 13.5C29.25 13.0858 28.9142 12.75 28.5 12.75V13.5V14.25ZM21 12.75C20.5858 12.75 20.25 13.0858 20.25 13.5C20.25 13.9142 20.5858 14.25 21 14.25V13.5V12.75ZM28.5 23.25C28.9142 23.25 29.25 22.9142 29.25 22.5C29.25 22.0858 28.9142 21.75 28.5 21.75V22.5V23.25ZM24 21.75C23.5858 21.75 23.25 22.0858 23.25 22.5C23.25 22.9142 23.5858 23.25 24 23.25V22.5V21.75ZM16.5 13.5H15.75C15.75 14.7426 14.7426 15.75 13.5 15.75V16.5V17.25C15.5711 17.25 17.25 15.5711 17.25 13.5H16.5ZM13.5 16.5V15.75C12.2574 15.75 11.25 14.7426 11.25 13.5H10.5H9.75C9.75 15.5711 11.4289 17.25 13.5 17.25V16.5ZM10.5 13.5H11.25C11.25 12.2574 12.2574 11.25 13.5 11.25V10.5V9.75C11.4289 9.75 9.75 11.4289 9.75 13.5H10.5ZM13.5 10.5V11.25C14.7426 11.25 15.75 12.2574 15.75 13.5H16.5H17.25C17.25 11.4289 15.5711 9.75 13.5 9.75V10.5ZM19.5 22.5H18.75C18.75 23.3806 18.7115 23.7233 18.3102 24.0138C18.0632 24.1926 17.6244 24.3842 16.8359 24.5261C16.0532 24.6669 14.9772 24.75 13.5 24.75V25.5V26.25C15.0228 26.25 16.1968 26.1652 17.1016 26.0024C18.0006 25.8406 18.6868 25.5929 19.1898 25.2289C20.2885 24.4335 20.25 23.2762 20.25 22.5H19.5ZM13.5 25.5V24.75C12.0228 24.75 10.9468 24.6669 10.1641 24.5261C9.3756 24.3842 8.93682 24.1926 8.68977 24.0138C8.28849 23.7233 8.25 23.3806 8.25 22.5H7.5H6.75C6.75 23.2762 6.71151 24.4335 7.81023 25.2289C8.31318 25.5929 8.9994 25.8406 9.89844 26.0024C10.8032 26.1652 11.9772 26.25 13.5 26.25V25.5ZM7.5 22.5H8.25C8.25 22.1087 8.58671 21.5525 9.59277 21.0495C10.554 20.5689 11.9343 20.25 13.5 20.25V19.5V18.75C11.752 18.75 10.1323 19.1027 8.92195 19.7079C7.75643 20.2906 6.75 21.2345 6.75 22.5H7.5ZM13.5 19.5V20.25C15.0657 20.25 16.446 20.5689 17.4072 21.0495C18.4133 21.5525 18.75 22.1087 18.75 22.5H19.5H20.25C20.25 21.2345 19.2436 20.2906 18.0781 19.7079C16.8677 19.1027 15.248 18.75 13.5 18.75V19.5ZM15 6V6.75H21V6V5.25H15V6ZM21 30V29.25H15V30V30.75H21V30ZM15 30V29.25C12.1504 29.25 10.0886 29.2484 8.5163 29.037C6.96559 28.8285 6.00379 28.4284 5.28769 27.7123L4.75736 28.2426L4.22703 28.773C5.26829 29.8142 6.59938 30.2928 8.31643 30.5236C10.0119 30.7516 12.1928 30.75 15 30.75V30ZM3 18H2.25C2.25 20.8072 2.24841 22.9881 2.47636 24.6836C2.70721 26.4006 3.18577 27.7317 4.22703 28.773L4.75736 28.2426L5.28769 27.7123C4.57159 26.9962 4.17147 26.0344 3.96298 24.4837C3.75159 22.9114 3.75 20.8496 3.75 18H3ZM33 18H32.25C32.25 20.8496 32.2484 22.9114 32.037 24.4837C31.8285 26.0344 31.4284 26.9962 30.7123 27.7123L31.2426 28.2426L31.773 28.773C32.8142 27.7317 33.2928 26.4006 33.5236 24.6836C33.7516 22.9881 33.75 20.8072 33.75 18H33ZM21 30V30.75C23.8072 30.75 25.9881 30.7516 27.6836 30.5236C29.4006 30.2928 30.7317 29.8142 31.773 28.773L31.2426 28.2426L30.7123 27.7123C29.9962 28.4284 29.0344 28.8285 27.4837 29.037C25.9114 29.2484 23.8496 29.25 21 29.25V30ZM21 6V6.75C23.8496 6.75 25.9114 6.75159 27.4837 6.96298C29.0344 7.17147 29.9962 7.57159 30.7123 8.28769L31.2426 7.75736L31.773 7.22703C30.7317 6.18577 29.4006 5.70721 27.6836 5.47636C25.9881 5.24841 23.8072 5.25 21 5.25V6ZM33 18H33.75C33.75 15.1928 33.7516 13.0119 33.5236 11.3164C33.2928 9.59938 32.8142 8.26829 31.773 7.22703L31.2426 7.75736L30.7123 8.28769C31.4284 9.00379 31.8285 9.96559 32.037 11.5163C32.2484 13.0886 32.25 15.1504 32.25 18H33ZM15 6V5.25C12.1928 5.25 10.0119 5.24841 8.31643 5.47636C6.59938 5.70721 5.26829 6.18577 4.22703 7.22703L4.75736 7.75736L5.28769 8.28769C6.00379 7.57159 6.96559 7.17147 8.5163 6.96298C10.0886 6.75159 12.1504 6.75 15 6.75V6ZM3 18H3.75C3.75 15.1504 3.75159 13.0886 3.96298 11.5163C4.17147 9.96559 4.57159 9.00379 5.28769 8.28769L4.75736 7.75736L4.22703 7.22703C3.18577 8.26829 2.70721 9.59938 2.47636 11.3164C2.24841 13.0119 2.25 15.1928 2.25 18H3ZM28.5 18V17.25H22.5V18V18.75H28.5V18ZM28.5 13.5V12.75H21V13.5V14.25H28.5V13.5ZM28.5 22.5V21.75H24V22.5V23.25H28.5V22.5Z"
-                      fill="black" />
-                  </svg>
-                </span>
-                <div>
-                  <p class="font-bold">Poor CCRIS/CTOS</p>
-                  <ul class="list-disc list-inside text-sm">
-                    <li>
-                      The director's personal credit history might unfairly impact the business's application.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <p class="font-semibold text-sm" style="line-height: 1.7;">This is precisely why our Hybrid AI+Human model
-                is so critical for SMEs. A pure AI might reject a good business with lumpy cash flow. Our human experts
-                can step in, understand the business model, and present a stronger case to the lender. Our AI-powered
-                risk
-                analysis also helps lenders see the true potential and risk, giving you a fairer chance at approval.</p>
-            </div>
-          </div>
-          <!-- Left Column: Calculator Image - Appears second on mobile, first on large screens -->
-          <div class="animate-on-scroll scale-in flex justify-center lg:order-2">
-            <img src="../../assets/images/ourservices/objects/pen-paper.png" alt="Eligibility Requirements"
-              class="w-full h-auto object-contain max-w-sm lg:max-w-full" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Service Providers Section -->
-    <section class="py-16 md:py-20 lg:py-24 relative">
-      <div class="max-w-screen-3xl mx-auto px-4">
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-          <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 animate-on-scroll fade-in-up">
-            Service Providers
-          </h2>
-          <p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
-            We partner with institutions that provide SME financing, including conventional and Islamic modes, to give
-            you
-            options
-          </p>
-        </div>
-
-        <!-- Providers Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center ">
-          <!-- Local Banks & Islamic Banks with SME -->
+          class="animate-on-scroll fade-in-up delay-100 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
           <div
-            class="animate-on-scroll fade-in-up delay-100 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
-            <div
-              class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+            class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+          </div>
+          <div class="flex flex-col gap-6 py-12 relative z-10">
+            <div class="flex justify-center mb-12">
+              <img src="../../assets/images/financial/icons/local-banks.png" alt="Local Banks & Islamic Banks with SME"
+                class="w-16 h-14 md:w-20 md:h-16 lg:w-24 lg:h-20 object-contain" />
             </div>
-            <div
-              class="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
-            </div>
-            <div class="flex flex-col gap-6 py-12 relative z-10">
-              <div class="flex justify-center mb-12">
-                <img src="../../assets/images/financial/icons/local-banks.png"
-                  alt="Local Banks & Islamic Banks with SME"
-                  class="w-16 h-14 md:w-20 md:h-16 lg:w-24 lg:h-20 object-contain" />
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-center mb-4 text-gray-900 group-hover:text-white px-4">
-                  Local Banks & Islamic Banks with SME
-                </h3>
-                <p
-                  class="text-gray-700 text-center leading-relaxed group-hover:text-white px-4 flex-grow lg:max-w-[400px] mx-auto">
-                  Business loan products (term loans, working capital, equipment financing).
-                </p>
-              </div>
+            <div>
+              <h3 class="text-2xl font-bold text-center mb-4 text-gray-900 group-hover:text-white px-4">
+                Local Banks & Islamic Banks with SME
+              </h3>
+              <p
+                class="text-gray-700 text-center leading-relaxed group-hover:text-white px-4 flex-grow lg:max-w-[400px] mx-auto">
+                Business loan products (term loans, working capital, equipment financing).
+              </p>
             </div>
           </div>
+        </div>
 
-          <!-- SME-focused banks & development institutions -->
+        <!-- SME-focused banks & development institutions -->
+        <div
+          class="animate-on-scroll fade-in-up delay-200 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
           <div
-            class="animate-on-scroll fade-in-up delay-200 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
-            <div
-              class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+            class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+          </div>
+          <div class="flex flex-col gap-6 py-12 relative z-10">
+            <div class="flex justify-center mb-12">
+              <img src="../../assets/images/financial/icons/sme-focused.png"
+                alt="SME-focused banks & development institutions"
+                class="w-16 h-14 md:w-20 md:h-16 lg:w-24 lg:h-20 object-contain" />
             </div>
-            <div
-              class="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
-            </div>
-            <div class="flex flex-col gap-6 py-12 relative z-10">
-              <div class="flex justify-center mb-12">
-                <img src="../../assets/images/financial/icons/sme-focused.png"
-                  alt="SME-focused banks & development institutions"
-                  class="w-16 h-14 md:w-20 md:h-16 lg:w-24 lg:h-20 object-contain" />
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-center mb-4 text-gray-900 group-hover:text-white px-4">
-                  SME-focused banks & development institutions
-                </h3>
-                <p
-                  class="text-gray-700 text-center leading-relaxed group-hover:text-white px-4 flex-grow lg:max-w-[400px] mx-auto">
-                  Banks or organizations dedicated to supporting SME growth through tailored financing and development
-                  programs.
-                </p>
-              </div>
+            <div>
+              <h3 class="text-2xl font-bold text-center mb-4 text-gray-900 group-hover:text-white px-4">
+                SME-focused banks & development institutions
+              </h3>
+              <p
+                class="text-gray-700 text-center leading-relaxed group-hover:text-white px-4 flex-grow lg:max-w-[400px] mx-auto">
+                Banks or organizations dedicated to supporting SME growth through tailored financing and development
+                programs.
+              </p>
             </div>
           </div>
+        </div>
 
-          <!-- Digital SME -->
+        <!-- Digital SME -->
+        <div
+          class="animate-on-scroll fade-in-up delay-300 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
           <div
-            class="animate-on-scroll fade-in-up delay-300 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-8 px-6 md:py-10 md:px-8 lg:py-12 lg:px-10 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[350px] md:min-h-[400px] lg:min-h-[450px] flex flex-col overflow-hidden">
-            <div
-              class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+            class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+          </div>
+          <div class="flex flex-col gap-6 py-12 relative z-10">
+            <div class="flex justify-center mb-12">
+              <img src="../../assets/images/financial/icons/digital-sme.png" alt="Digital SME"
+                class="w-16 h-14 md:w-20 md:h-16 lg:w-24 lg:h-20 object-contain" />
             </div>
-            <div
-              class="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
-            </div>
-            <div class="flex flex-col gap-6 py-12 relative z-10">
-              <div class="flex justify-center mb-12">
-                <img src="../../assets/images/financial/icons/digital-sme.png" alt="Digital SME"
-                  class="w-16 h-14 md:w-20 md:h-16 lg:w-24 lg:h-20 object-contain" />
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-center mb-4 text-gray-900 group-hover:text-white px-4">
-                  Digital SME
-                </h3>
-                <p
-                  class="text-gray-700 text-center leading-relaxed group-hover:text-white px-4 flex-grow lg:max-w-[400px] mx-auto">
-                  Fintech lenders who provide faster, lighter-collateral loans (e.g. micro-financing). Funding Societies
-                </p>
-              </div>
+            <div>
+              <h3 class="text-2xl font-bold text-center mb-4 text-gray-900 group-hover:text-white px-4">
+                Digital SME
+              </h3>
+              <p
+                class="text-gray-700 text-center leading-relaxed group-hover:text-white px-4 flex-grow lg:max-w-[400px] mx-auto">
+                Fintech lenders who provide faster, lighter-collateral loans (e.g. micro-financing). Funding Societies
+              </p>
             </div>
           </div>
+        </div>
 
-          <!-- Government-backed funds -->
+        <!-- Government-backed funds -->
+        <div
+          class="animate-on-scroll fade-in-up delay-400 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden lg:col-start-2">
           <div
-            class="animate-on-scroll fade-in-up delay-400 relative bg-white/10 backdrop-blur-[80px] border border-[rgba(35,82,134,0.2)] rounded-xl py-4 px-4 md:py-6 md:px-6 lg:py-8 lg:px-8 hover:bg-[rgba(35,82,134,1)] hover:text-white transition-all duration-300 group min-h-[250px] md:min-h-[280px] lg:min-h-[300px] flex flex-col overflow-hidden lg:col-start-2">
-            <div
-              class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+            class="absolute top-0 right-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
+          </div>
+          <div class="flex flex-col gap-6 py-12 relative z-10">
+            <div class="flex justify-center mb-12">
+              <img src="../../assets/images/financial/icons/government-backed.png" alt="Government-backed funds"
+                class="w-16 h-14 md:w-20 md:h-16 lg:w-24 lg:h-20 object-contain" />
             </div>
-            <div
-              class="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/30 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 group-hover:bg-white/20 transition-all duration-300">
-            </div>
-            <div class="flex flex-col gap-6 py-12 relative z-10">
-              <div class="flex justify-center mb-12">
-                <img src="../../assets/images/financial/icons/government-backed.png" alt="Government-backed funds"
-                  class="w-16 h-14 md:w-20 md:h-16 lg:w-24 lg:h-20 object-contain" />
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-center mb-4 text-gray-900 group-hover:text-white px-4">
-                  Government-backed funds
-                </h3>
-                <p
-                  class="text-gray-700 text-center leading-relaxed group-hover:text-white px-4 flex-grow lg:max-w-[400px] mx-auto">
-                  Guarantee schemes (CGC, SJPP, BNM SME Funds) to reduce risk for lenders and improve access for you.
-                </p>
-              </div>
+            <div>
+              <h3 class="text-2xl font-bold text-center mb-4 text-gray-900 group-hover:text-white px-4">
+                Government-backed funds
+              </h3>
+              <p
+                class="text-gray-700 text-center leading-relaxed group-hover:text-white px-4 flex-grow lg:max-w-[400px] mx-auto">
+                Guarantee schemes (CGC, SJPP, BNM SME Funds) to reduce risk for lenders and improve access for you.
+              </p>
             </div>
           </div>
         </div>
       </div>
-  </div>
+    </div>
+    </div>
 
-  <p class="text-base md:text-md text-gray-600 max-w-5xl mx-auto mt-8 text-center">
-    Each lender is fully licensed and regulated, ensuring you are always protected and have access to the best SME
-    financing options in Malaysia.
-  </p>
-  </div>
+    <p class="text-base md:text-md text-gray-600 max-w-5xl mx-auto mt-8 text-center">
+      Each lender is fully licensed and regulated, ensuring you are always protected and have access to the best SME
+      financing options in Malaysia.
+    </p>
+    </div>
   </section>
   <!-- Payment Calculator Section -->
   <section class="py-16 md:py-20 lg:py-24 relative overflow-hidden ">
