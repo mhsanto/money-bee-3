@@ -117,30 +117,30 @@ const animatedSections = new Set();
 
 function animateCircuit(sectionId) {
     if (animatedSections.has(sectionId)) return; // Only animate once per section
-    
+
     const section = document.getElementById(sectionId);
     if (!section) return;
-    
+
     const circuitAnimation = section.querySelector('.circuit-animation');
     const circuitPaths = section.querySelectorAll('.circuit-path');
     const circuitNodes = section.querySelectorAll('.circuit-node');
-    
+
     if (circuitAnimation) {
         circuitAnimation.classList.add('animate');
-        
+
         // Add animate class to paths and nodes with slight delay for better effect
         setTimeout(() => {
             circuitPaths.forEach(path => {
                 path.classList.add('animate');
             });
         }, 200);
-        
+
         setTimeout(() => {
             circuitNodes.forEach(node => {
                 node.classList.add('animate');
             });
         }, 800);
-        
+
         animatedSections.add(sectionId);
     }
 }
@@ -172,14 +172,14 @@ const circuitObserver = new IntersectionObserver((entries) => {
 document.addEventListener('DOMContentLoaded', () => {
     // Start animations immediately
     startCircuitAnimations();
-    
+
     const howItWorksSection = document.getElementById('how-it-works');
     const smartFinancingSection = document.getElementById('smart-financing');
-    
+
     if (howItWorksSection) {
         circuitObserver.observe(howItWorksSection);
     }
-    
+
     if (smartFinancingSection) {
         circuitObserver.observe(smartFinancingSection);
     }
