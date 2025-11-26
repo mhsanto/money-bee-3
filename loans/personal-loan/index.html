@@ -783,10 +783,11 @@
       <p class="text-center text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 md:mb-10">Being prepared is the
         key to fast approval. While
         it varies by lender, you will almost always need:</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+      <!-- <div class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8"> -->
+      <div class="flex flex-wrap gap-4 md:gap-6 lg:gap-8 justify-center">
         <!-- Proof of Identity -->
         <div
-          class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col items-start md:item-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20 border border-white/20">
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col items-start md:item-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20 border border-white/20 flex-1 text-center max-w-[28rem] w-full min-w-[300px] p-[1.5rem]">
           <div class="flex gap-4  items-center pb-2 sm:pb-4 md:pb-7">
             <div
               class="bg-blue-600 rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-2 sm:mb-4">
@@ -800,7 +801,7 @@
         <!-- Proof of Income (Salaried Employee) -->
         <div
           class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col items-center text-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20 border border-white/20 ">
-          <div class="flex flex-col item-center justify-center w-full">
+          <div class="flex flex-col item-center justify-center w-full flex-1 min-w-[300px]">
             <div class="flex items-center gap-2 sm:gap-4 pb-2 sm:pb-4 md:pb-7">
               <div
                 class="bg-blue-600 rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-2 sm:mb-4">
@@ -819,8 +820,8 @@
         </div>
         <!-- Proof of Income (Self-Employed) -->
         <div
-          class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col items-center text-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20 border border-white/20">
-          <div class="flex flex-col item-center">
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col items-center text-center transition-shadow duration-300 group hover:shadow-lg hover:shadow-black/20 border border-white/20 flex-1">
+          <div class="flex flex-col item-center min-w-[300px]">
             <div class="flex items-center gap-2 sm:gap-4 pb-2 sm:pb-4 md:pb-7">
               <div
                 class="bg-blue-600 rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-2 sm:mb-4">
@@ -1095,7 +1096,7 @@
     </div>
 
     <div class="max-w-screen-3xl mx-auto px-4 bg-white/10 backdrop-blur-[20px]">
-      <div class="grid grid-cols-1 lg:grid-cols-2  items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-7">
         <!-- Left Column: Calculator Image -->
         <div class="flex justify-center">
           <img src="../../assets/images/ourservices/objects/calculator.png" alt="Payment Calculator"
