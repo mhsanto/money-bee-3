@@ -788,7 +788,7 @@
 
         updateCarousel();
         updateDots();
-        updateArticleSizes();
+        // updateArticleSizes(); - removed as featured styling is no longer used
       }
 
       // Update carousel position
@@ -805,7 +805,7 @@
         prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
         nextBtn.style.opacity = currentSlide >= totalSlides ? '0.5' : '1';
 
-        updateArticleSizes();
+        // updateArticleSizes(); - removed as featured styling is no longer used
       }
 
       // Update dots
@@ -821,21 +821,9 @@
         });
       }
 
-      // Update article sizes
+      // Update article sizes - removed featured styling for equal heights
       function updateArticleSizes() {
-        const articles = carousel.children;
-        for (let i = 0; i < articles.length; i++) {
-          articles[i].classList.remove('featured-article');
-        }
-
-        // Only apply featured styling if showing multiple items
-        if (itemsPerView > 1) {
-          const middleOffset = Math.floor(itemsPerView / 2);
-          const middleIndex = currentSlide + middleOffset;
-          if (middleIndex < articles.length) {
-            articles[middleIndex].classList.add('featured-article');
-          }
-        }
+        // No longer applying featured-article class to maintain equal card heights
       }
 
       // Previous slide
@@ -844,7 +832,7 @@
           currentSlide--;
           updateCarousel();
           updateDots();
-          updateArticleSizes();
+          // updateArticleSizes(); - removed as featured styling is no longer used
         }
       });
 
@@ -854,7 +842,7 @@
           currentSlide++;
           updateCarousel();
           updateDots();
-          updateArticleSizes();
+          // updateArticleSizes(); - removed as featured styling is no longer used
         }
       });
 
@@ -864,7 +852,7 @@
           currentSlide = index;
           updateCarousel();
           updateDots();
-          updateArticleSizes();
+          // updateArticleSizes(); - removed as featured styling is no longer used
         });
       });
 
@@ -886,7 +874,7 @@
           }
           updateCarousel();
           updateDots();
-          updateArticleSizes();
+          // updateArticleSizes(); - removed as featured styling is no longer used
         }, 5000); // Change slide every 5 seconds
       }
 

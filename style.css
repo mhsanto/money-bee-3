@@ -472,51 +472,7 @@ overflow-x: hidden;
   left: -40px;
 }
 
-/* Featured Article Styles for Carousel */
-.featured-article .bg-white {
-  min-height: 420px;
-  transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 640px) {
-  .featured-article .bg-white {
-    min-height: 380px;
-  }
-}
-
-@media (min-width: 768px) {
-  .featured-article .bg-white {
-    min-height: 450px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .featured-article .bg-white {
-    min-height: 480px;
-  }
-}
-
-.featured-article .aspect-video {
-  height: 240px;
-}
-
-@media (max-width: 640px) {
-  .featured-article .aspect-video {
-    height: 200px;
-  }
-}
-
-@media (min-width: 768px) {
-  .featured-article .aspect-video {
-    height: 260px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .featured-article .aspect-video {
-    height: 280px;
-  }
-}
+/* Featured Article Styles for Carousel - Removed to ensure equal card heights */
 
 /* Circuit Animation Styles */
 .circuit-animation {
