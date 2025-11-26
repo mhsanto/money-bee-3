@@ -29,7 +29,7 @@
     <div class="mx-auto max-w-screen-3xl px-4 px-2 sm:px-0">
       <div class="flex h-16 items-center justify-between">
         <!-- Left: Logo -->
-        <a href="index.html" class="inline-flex items-center gap-2">
+        <a href="../../index.html" class="inline-flex items-center gap-2">
           <img src="../../assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
         </a>
 
@@ -88,7 +88,7 @@
             <button type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
               aria-haspopup="menu" aria-expanded="false">
-              <a href="resourses.html">Resources</a>
+              <span>Resources</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                 class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -120,39 +120,20 @@
               </li>
             </ul>
           </div>
-          <!-- Financial Health Hub dropdown -->
-          <div class="relative group dropdown-group">
-            <button type="button"
-              class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
-              aria-haspopup="menu" aria-expanded="false">
-              <a href="../../financial-health-hub/index.html">Financial Health Hub</a>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-            <ul
-              class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
-              role="menu">
-              <li role="none">
-                <a href="#knowledge-sharing" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-                  role="menuitem">Knowledge Sharing</a>
-              </li>
-            </ul>
-          </div>
+          <!-- Financial Health Hub (no dropdown) -->
+          <a href="../../financial-health-hub/index.html"
+            class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">Financial Health Hub</a>
 
           <!-- For Lenders -->
           <a href="../../lenders/index.html"
             class="hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm">For Lenders</a>
 
-          <!-- About Us dropdown -->
+          <!-- Company dropdown -->
           <div class="relative group dropdown-group">
             <button type="button"
               class="inline-flex items-center gap-1 hover:text-black transition hover:bg-black/5 rounded-lg px-3 py-2 text-sm"
               aria-haspopup="menu" aria-expanded="false">
-              <span>About Us</span>
+              <span>Company</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                 class="h-4 w-4 transition-transform group-hover:rotate-180" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -164,27 +145,27 @@
               class="invisible opacity-0 translate-y-2 transition-all duration-200 absolute left-1/2 -translate-x-1/2 mt-3 min-w-52 bg-white shadow-lg rounded-lg p-2 z-50"
               role="menu">
               <li role="none">
-                <a href="#our-story"
+                <a href="../../company/about/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem">Our Story</a>
+                  role="menuitem">About Us</a>
               </li>
               <li role="none">
-                <a href="#our-promise"
+                <a href="../../company/islamic-financing/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem">Our
-                  Promise</a>
+                  role="menuitem">Islamic Financing</a>
               </li>
               <li role="none">
-                <a href="#media" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem">Media</a>
-              </li>
-              <li role="none">
-                <a href="career.html"
+                <a href="../../company/legal/compliance-privacy/index.html"
                   class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
-                  role="menuitem">Career</a>
+                  role="menuitem">Compliance & Privacy</a>
               </li>
               <li role="none">
-                <a href="#contact" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
+                <a href="../../careers/index.html"
+                  class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm border-b border-gray-200"
+                  role="menuitem">Careers</a>
+              </li>
+              <li role="none">
+                <a href="../../contact/index.html" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
                   role="menuitem">Contact</a>
               </li>
             </ul>
@@ -230,13 +211,13 @@
         <!-- Right: Actions -->
         <!-- Desktop (>=1024px): Contact Us button -->
         <div class="hidden lg:flex items-center gap-3">
-          <a href="contact-us.html" style="background-color: #f9d157"
+          <a href="../../contact/index.html" style="background-color: #f9d157"
             class="px-6 py-2.5 rounded-lg font-semibold text-black hover:opacity-90 transition">Contact Us</a>
         </div>
 
         <!-- Mobile/Tablet (<1024px): Contact Us button + hamburger -->
         <div class="flex lg:hidden items-center gap-2">
-          <a href="contact-us.html" style="background-color: #f9d157"
+          <a href="../../contact/index.html" style="background-color: #f9d157"
             class="px-4 py-2 rounded-lg font-semibold text-black text-sm hover:opacity-90 transition">Contact Us</a>
           <button id="mobileMenuButton"
             class="inline-flex items-center justify-center h-10 w-10 border border-black/15 hover:border-black/30 transition text-black"
@@ -313,23 +294,10 @@
           </div>
         </div>
 
-        <!-- Financial Health Hub (mobile) -->
+        <!-- Financial Health Hub (mobile - no dropdown) -->
         <div class="border-b border-gray-200 pb-2">
-          <button
-            class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 hover:bg-black/5 rounded-lg transition"
-            data-target="mobile-health">
-            <span class="font-medium">Financial Health Hub</span>
-            <svg class="dropdown-arrow h-5 w-5 transition-transform" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.172l3.71-2.94a.75.75 0 1 1 .94 1.16l-4.25 3.37a.75.75 0 0 1-.94 0l-4.25-3.37a.75.75 0 0 1 .02-1.16z"
-                clip-rule="evenodd" />
-            </svg>
-          </button>
-          <div id="mobile-health" class="mobile-dropdown-content hidden pl-6 mt-2 space-y-1">
-            <a href="#knowledge-sharing" class="block rounded-lg px-3 py-2 hover:bg-black/5 text-sm"
-              role="menuitem">Knowledge Sharing</a>
-          </div>
+          <a href="../../financial-health-hub/index.html"
+            class="block px-3 py-2 hover:bg-black/5 rounded-lg font-medium">Financial Health Hub</a>
         </div>
 
         <!-- For Lenders (mobile) -->

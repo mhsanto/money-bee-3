@@ -145,7 +145,15 @@ function animateCircuit(sectionId) {
     }
 }
 
-// Intersection Observer for circuit animation
+// Start circuit animations immediately on page load
+function startCircuitAnimations() {
+    const sections = ['how-it-works', 'smart-financing'];
+    sections.forEach(sectionId => {
+        animateCircuit(sectionId);
+    });
+}
+
+// Intersection Observer for circuit animation (backup for any additional animations)
 const circuitObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -162,6 +170,9 @@ const circuitObserver = new IntersectionObserver((entries) => {
 
 // Observe both sections with circuit animations
 document.addEventListener('DOMContentLoaded', () => {
+    // Start animations immediately
+    startCircuitAnimations();
+    
     const howItWorksSection = document.getElementById('how-it-works');
     const smartFinancingSection = document.getElementById('smart-financing');
     
