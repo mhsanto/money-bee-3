@@ -187,17 +187,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // FAQ Toggle
 function toggleFAQ(element) {
-    const answer = element.nextElementSibling;
     const icon = element.querySelector("svg path");
 
-    const faqItem = element.closest('.faq-item');
-    faqItem.classList.add('scale-110');
-    setTimeout(() => {
-        faqItem.classList.remove('scale-110');
-    }, 300);
+    // Find all sibling elements with faq-answer class
+    const container = element.parentElement;
+    const answers = container.querySelectorAll('.faq-answer');
 
-    answer.classList.toggle("expanded");
-    if (answer.classList.contains("expanded")) {
+    // Toggle expanded class on all answer elements
+    answers.forEach(answer => {
+        answer.classList.toggle("expanded");
+    });
+
+    // Check if any answer is expanded to determine icon state
+    const isExpanded = Array.from(answers).some(answer => answer.classList.contains("expanded"));
+
+    if (isExpanded) {
         // expanded, minus
         icon.setAttribute(
             "d",
