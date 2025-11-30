@@ -824,7 +824,7 @@
     </section>
     <!-- Footer Section -->
     <footer
-        style="background: linear-gradient(181.63deg, rgba(214, 233, 255, 0.9) 1.47%, rgba(35, 82, 134, 0.8) 98.72%), url('assets/images/footer/Footer.jpg') center/cover; background-size: cover; background-position: center;"
+        style="background: linear-gradient(181.63deg, rgba(214, 233, 255, 0.9) 1.47%, rgba(35, 82, 134, 0.8) 98.72%), url('../../../assets/images/footer/Footer.jpg') center/cover; background-size: cover; background-position: center;"
         class="text-white py-8 md:py-12">
         <div class="max-w-screen-3xl mx-auto px-4">
             <div class="flex flex-col md:flex-row md:justify-between gap-8">
@@ -833,15 +833,15 @@
                     <a href="../../../index.html" class="inline-flex items-center gap-2 mb-8">
                         <img src="../../../assets/images/header/logo.png" alt="logo" class="h-[40px] w-auto" />
                     </a>
-                    <p class="text-white mb-16">
+                    <p class="text-white mb-16 max-w-sm text-lg">
                         See Your Whole Financial Picture In One Place, Alongside A Smarter
                         Approach To Investing And Real Human.
                     </p>
-                    <div class="text-white flex flex-col lg:flex-row gap-2 items-start mb-2">
+                    <div class="text-white flex flex-col lg:flex-row gap-3 md:gap-7 items-start mb-2">
                         <div class="flex items-start gap-4">
                             <img src="./../../../assets//images/icon/location.png" alt="location"
-                                class="p-4 w-16 h-16 md:p-0 md:w-12 md:h-12 md:w-8 flex-shrink-0 object-contain" />
-                            <p class="text-sm break-all md:break-words">
+                                class="p-4 w-16 h-16 md:p-0 md:w-6 md:h-auto flex-shrink-0 object-contain" />
+                            <p class="text-sm break-all md:break-words max-w-[260px] font-normal">
                                 12/F, Menara Symphony, No. 5 Jalan Prof. Khoo Kay, Seksyen 13,
                                 Petaling, 46200, Selangor, Malaysia
                             </p>
@@ -849,14 +849,16 @@
 
                         <div class="flex items-center md:items-start gap-4">
                             <span>
-                                <svg class="p-4 w-16 h-16 md:p-0 md:w-12 md:h-12 md:w-8 md:h-8 flex-shrink-0" width="32"
+                                <svg class="p-4 w-16 h-16 md:p-0 md:w-6 md:h-auto md:h-8 flex-shrink-0" width="32"
                                     height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M8.00081 10.6663L10.8808 13.0663C13.3341 15.1063 14.5608 16.133 16.0008 16.133C17.4408 16.133 18.6675 15.1063 21.1208 13.0663L24.0008 10.6663M13.3341 26.6663H18.6675C23.6941 26.6663 26.2141 26.6663 27.7741 25.1063C29.3341 23.5463 29.3341 21.0263 29.3341 15.9997C29.3341 10.973 29.3341 8.45301 27.7741 6.89301C26.2141 5.33301 23.6941 5.33301 18.6675 5.33301H13.3341C8.30748 5.33301 5.78748 5.33301 4.22748 6.89301C2.66748 8.45301 2.66748 10.973 2.66748 15.9997C2.66748 21.0263 2.66748 23.5463 4.22748 25.1063C5.78748 26.6663 8.30748 26.6663 13.3341 26.6663Z"
                                         stroke="white" stroke-width="1.5" stroke-linecap="round" />
                                 </svg>
                             </span>
-                            <p class="font-normal"><a href="mailto:support@moneybee.com.my" class="text-white hover:text-white transition">support@moneybee.com.my</a></p>
+                            <p class="font-normal"><a href="mailto:support@moneybee.com.my"
+                                    class="text-white hover:text-white transition text-lg">support@moneybee.com.my</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -864,40 +866,43 @@
                 <div class="animate-on-scroll fade-in-up delay-200 md:w-1/2 lg:w-1/3 flex flex-col md:flex-row gap-8">
                     <!-- Middle Column: Menu -->
                     <div>
-                        <h3 class="text-lg font-semibold mb-4">Menu</h3>
-                        <ul class="space-y-2">
+                        <h3 class="text-xl font-bold mb-4">Menu</h3>
+                        <ul class="space-y-4">
                             <li>
-                                <a href="../../../index.html" class="text-white hover:text-white transition">Home</a>
+                                <a href="../../../index.html"
+                                    class="text-white hover:text-white transition text-lg">Home</a>
                             </li>
                             <li>
                                 <a href="../../../company/about/index.html"
-                                    class="text-white hover:text-white transition">About Us</a>
+                                    class="text-white hover:text-white transition text-lg">About Us</a>
                             </li>
                             <li>
-                                <a href="../../../ourServices.html" class="text-white hover:text-white transition">Our
+                                <a href="../../../ourServices.html"
+                                    class="text-white hover:text-white transition text-lg">Our
                                     Services</a>
                             </li>
                             <li>
                                 <a href="../../../financial-health-hub/index.html"
-                                    class="text-white hover:text-white transition">Financial Health Hub</a>
+                                    class="text-white hover:text-white transition text-lg">Financial Health Hub</a>
                             </li>
                         </ul>
                     </div>
                     <!-- Right Column: Features -->
                     <div>
-                        <h3 class="text-lg font-semibold mb-4">Features</h3>
+                        <h3 class="text-xl font-bold mb-4">Features</h3>
                         <ul class="space-y-2">
                             <li>
-                                <a href="../../../lenders/index.html" class="text-white hover:text-white transition">For
+                                <a href="../../../lenders/index.html"
+                                    class="text-white hover:text-white transition text-lg">For
                                     Lenders</a>
                             </li>
                             <li>
                                 <a href="../../../faqs/index.html"
-                                    class="text-white hover:text-white transition">FAQ</a>
+                                    class="text-white hover:text-white transition text-lg">FAQ</a>
                             </li>
                             <li>
                                 <a href="../../../company/legal/compliance-privacy/index.html"
-                                    class="text-white hover:text-white transition">Compliance And Privacy</a>
+                                    class="text-white hover:text-white transition text-lg">Compliance And Privacy</a>
                             </li>
                         </ul>
                     </div>
@@ -906,9 +911,9 @@
             <!-- Bottom Bar -->
             <div class="border-t border-white mt-8 pt-8 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                 <div class="flex space-x-6 justify-center md:justify-start mb-4 md:mb-0">
-                    <a href="#terms" class="text-white hover:text-white transition">Terms</a>
-                    <a href="#privacy" class="text-white hover:text-white transition">Privacy</a>
-                    <a href="#privacy" class="text-white hover:text-white transition">Cookies</a>
+                    <a href="#terms" class="text-white hover:text-white transition text-lg">Terms</a>
+                    <a href="#privacy" class="text-white hover:text-white transition text-lg">Privacy</a>
+                    <a href="#privacy" class="text-white hover:text-white transition text-lg">Cookies</a>
                 </div>
                 <div class="text-white text-center">© 2025 Moneybee Sdn. Bhd.</div>
                 <div class="flex justify-center md:justify-end space-x-4">
@@ -951,4 +956,3 @@
 </body>
 
 </html>
-
