@@ -375,7 +375,7 @@
           payments later. But behind the convenience lies a growing concern:
           is BNPL quietly driving youth into debt traps?
         </p>
-        <a href="#"
+        <a href="../contact/index.html"
           class="inline-block px-8 py-3 text-base font-semibold text-[#050505] bg-[#F9D157] rounded-lg border-b hover:bg-[#ffe176] transition-colors duration-300 animate-on-scroll fade-in-right delay-200 ">
           Get Your AI-Match </a>
       </div>
@@ -405,7 +405,7 @@
   <section class="py-8 md:py-12 lg:py-16">
     <div class="max-w-screen-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="rounded-lg py-6 px-4 sm:py-8 sm:px-6 lg:py-12 lg:px-8">
-        <!-- Header with Title -->
+        <!-- Header with Title and Search -->
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 md:mb-12 gap-4">
           <div>
             <p class="text-sm font-semibold text-gray-500 tracking-widest uppercase animate-on-scroll fade-in-up">
@@ -416,10 +416,37 @@
               Financial Insights & Highlights
             </h2>
           </div>
+          <!-- Search Bar -->
+          <div class="w-full md:w-auto animate-on-scroll fade-in-up delay-200">
+            <form id="blogSearchForm" class="relative flex items-center">
+              <input type="text" id="blogSearchInput" placeholder="Search blogs..."
+                class="w-full md:w-72 border border-gray-300 rounded-lg py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <button type="submit"
+                class="absolute right-0 top-0 h-full px-3 text-white bg-blue-800 rounded-r-lg hover:bg-blue-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- No Results Message (hidden by default) -->
+        <div id="noResultsMessage" class="hidden text-center py-12">
+          <svg class="mx-auto h-16 w-16 text-gray-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">No blogs found</h3>
+          <p class="text-gray-500 mb-4">Try searching with different keywords</p>
+          <button id="clearSearchBtn" class="text-blue-600 hover:text-blue-800 font-medium">Clear search</button>
         </div>
 
         <!-- Responsive Blog Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        <div id="blogGrid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
 
           <!-- Blog Card 1 -->
           <a href="single-blog/index.html" class="animate-on-scroll fade-in-up delay-200 block group">
@@ -804,6 +831,71 @@
 
 
   <script src="../script.js"></script>
+
+  <!-- Blog Search Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchInput = document.getElementById('blogSearchInput');
+      const searchForm = document.getElementById('blogSearchForm');
+      const blogGrid = document.getElementById('blogGrid');
+      const noResultsMessage = document.getElementById('noResultsMessage');
+      const clearSearchBtn = document.getElementById('clearSearchBtn');
+
+      // Get all blog cards
+      const blogCards = blogGrid.querySelectorAll('a[href*="single-blog"]');
+
+      function performSearch(query) {
+        const searchTerm = query.toLowerCase().trim();
+        let visibleCount = 0;
+
+        blogCards.forEach(card => {
+          const title = card.querySelector('h3').textContent.toLowerCase();
+          const description = card.querySelector('p').textContent.toLowerCase();
+
+          if (searchTerm === '' || title.includes(searchTerm) || description.includes(searchTerm)) {
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Show/hide no results message
+        if (visibleCount === 0 && searchTerm !== '') {
+          noResultsMessage.classList.remove('hidden');
+          blogGrid.classList.add('hidden');
+        } else {
+          noResultsMessage.classList.add('hidden');
+          blogGrid.classList.remove('hidden');
+        }
+      }
+
+      // Handle form submit
+      searchForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        performSearch(searchInput.value);
+      });
+
+      // Real-time search as user types
+      searchInput.addEventListener('input', function () {
+        performSearch(this.value);
+      });
+
+      // Clear search button
+      clearSearchBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        performSearch('');
+      });
+
+      // Check for search query in URL (from single-blog redirect)
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchQuery = urlParams.get('search');
+      if (searchQuery) {
+        searchInput.value = searchQuery;
+        performSearch(searchQuery);
+      }
+    });
+  </script>
   </div>
 </body>
 
