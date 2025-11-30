@@ -189,20 +189,27 @@ document.addEventListener('DOMContentLoaded', () => {
 function toggleFAQ(element) {
     const answer = element.nextElementSibling;
     const icon = element.querySelector("svg path");
-    answer.classList.toggle("hidden");
-    if (answer.classList.contains("hidden")) {
-        // collapsed, plus
-        icon.setAttribute(
-            "d",
-            "M18 14V26M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
-        );
-        icon.setAttribute("stroke", "#7D7D7D");
-    } else {
+
+    const faqItem = element.closest('.faq-item');
+    faqItem.classList.add('scale-110');
+    setTimeout(() => {
+        faqItem.classList.remove('scale-110');
+    }, 300);
+
+    answer.classList.toggle("expanded");
+    if (answer.classList.contains("expanded")) {
         // expanded, minus
         icon.setAttribute(
             "d",
             "M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
         );
         icon.setAttribute("stroke", "#323232");
+    } else {
+        // collapsed, plus
+        icon.setAttribute(
+            "d",
+            "M18 14V26M12 20H24M33 20C33 28.2843 26.2843 35 18 35C9.71573 35 3 28.2843 3 20C3 11.7157 9.71573 5 18 5C26.2843 5 33 11.7157 33 20Z"
+        );
+        icon.setAttribute("stroke", "#7D7D7D");
     }
 }

@@ -1075,7 +1075,7 @@
         <div class="overflow-hidden">
           <div id="blog-carousel" class="flex gap-3 sm:gap-4 lg:gap-6 pb-4">
             <!-- Blog Card 1 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-100 block">
+            <a href="blog/single-blog/index.html" class="animate-on-scroll fade-in-up delay-100 block">
               <div class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden">
                 <img src="./assets/images/person/mask-man.png" alt="Person preparing/serving food"
                   class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
@@ -1093,7 +1093,7 @@
             </a>
 
             <!-- Blog Card 2 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-200 block">
+            <a href="blog/single-blog/index.html" class="animate-on-scroll fade-in-up delay-200 block">
               <div class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden">
                 <img src="./assets/images/blogs/money.png" alt="Malaysian Ringgit banknotes"
                   class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
@@ -1110,7 +1110,7 @@
             </a>
 
             <!-- Blog Card 3 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-300 block">
+            <a href="blog/single-blog/index.html" class="animate-on-scroll fade-in-up delay-300 block">
               <div class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden">
                 <img src="./assets/images/person/groups-of-people.png" alt="Diverse group of people smiling"
                   class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
@@ -1127,7 +1127,7 @@
             </a>
 
             <!-- Blog Card 4 -->
-            <a href="single-blog.html" class="animate-on-scroll fade-in-up delay-400 block">
+            <a href="blog/single-blog/index.html" class="animate-on-scroll fade-in-up delay-400 block">
               <div class="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] lg:w-[340px] rounded-lg overflow-hidden">
                 <img src="./assets/images/blogs/shadow.png" alt="Malaysian flag with silhouettes of people"
                   class="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover" />
@@ -1147,9 +1147,9 @@
 
         <!-- View More Button -->
         <div class="text-center mt-6 md:mt-8">
-          <button
+          <a href="blog/index.html"
             class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-5 sm:py-3 sm:px-6 rounded-lg transition-colors inline-flex items-center gap-2 sm:gap-4 text-sm sm:text-base">
-            <a href="blog-grid.html">View More</a>
+            View More
             <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="mask0_7_6832" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25"
                 height="25">
@@ -1161,13 +1161,13 @@
                   fill="black" fill-opacity="0.9" />
               </g>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </section>
   <!-- FAQ Section -->
-  <section class="min-h-[60vh] md:min-h-[60vh] relative bg-transparent w-full mb-16 h-auto">
+  <section class="min-h-[60vh] md:min-h-[60vh] relative bg-transparent w-full mb-16 h-auto overflow-x-hidden">
     <img src="./assets/images/person/question-girl.png" alt="Person holding a large question mark cutout"
       class="w-full h-48 md:h-full object-cover md:absolute md:inset-0" />
     <div class="relative z-10 max-w-screen-3xl px-4 md:ml-[30%] h-full">
@@ -1177,8 +1177,8 @@
         <h2 class="animate-on-scroll fade-in-right text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-start">
           Your Questions, Answered
         </h2>
-        <div class="space-y-8 md:space-y-16 overflow-y-auto">
-          <div class="animate-on-scroll fade-in-right delay-50 faq-item">
+        <div class="space-y-8 md:space-y-16 overflow-y-auto overflow-x-hidden">
+          <div class="animate-on-scroll fade-in-right delay-50 faq-item transition-transform duration-300">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-xl font-semibold text-black">
                 What is a Hybrid AI+Human Model?
@@ -1189,13 +1189,13 @@
                 </path>
               </svg>
             </div>
-            <p class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2">
+            <p class="faq-answer text-gray-700 text-sm md:text-sm mt-2">
               Yes. Some licensed lenders accept borrowers earning from RM1,500. Our AI will filter for these lenders so
               you don’t waste time.
             </p>
           </div>
 
-          <div class="animate-on-scroll fade-in-right delay-250 faq-item">
+          <div class="animate-on-scroll fade-in-right delay-250 faq-item transition-transform duration-300">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-xl font-semibold text-black">
                 What does a Case Manager do?
@@ -1206,14 +1206,14 @@
                 </path>
               </svg>
             </div>
-            <p class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2">
+            <p class="faq-answer text-gray-700 text-sm md:text-sm mt-2">
               A Case Manager is your post-loan support person — they help manage repayments, serve as a single point of
               contact with lenders, and look for better offers to keep your financial health on track.
             </p>
           </div>
 
 
-          <div class="animate-on-scroll fade-in-right delay-400 faq-item">
+          <div class="animate-on-scroll fade-in-right delay-400 faq-item transition-transform duration-300">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-xl font-semibold text-black">
                 Are there Islamic personal loans?
@@ -1224,12 +1224,12 @@
                 </path>
               </svg>
             </div>
-            <p class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2">
+            <p class="faq-answer text-gray-700 text-sm md:text-sm mt-2">
               Yes, we partner with Islamic banks offering Shariah-compliant
               financing.
             </p>
           </div>
-          <div class="animate-on-scroll fade-in-right delay-300 faq-item">
+          <div class="animate-on-scroll fade-in-right delay-300 faq-item transition-transform duration-300">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
               <h3 class="text-base md:text-xl font-semibold text-black">
                 How soon can I get funds?
@@ -1240,7 +1240,7 @@
                 </path>
               </svg>
             </div>
-            <p class="faq-answer hidden text-gray-700 text-sm md:text-sm mt-2">
+            <p class="faq-answer text-gray-700 text-sm md:text-sm mt-2">
               Funds can be disbursed within 1-3 business days after approval.
             </p>
           </div>
