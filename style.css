@@ -630,3 +630,75 @@ overflow-x: hidden;
 .circuit-node.animate:nth-child(6n) {
   animation-delay: 1.5s;
 }
+
+.contact-button-attract:hover {
+  animation-play-state: paused;
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Shake Left-Right Animation */
+.shake-lr {
+-webkit-animation: shake-horizontal 2.5s ease-in-out infinite both;
+	        animation: shake-horizontal 2.5s ease-in-out infinite both;
+}
+@-webkit-keyframes shake-horizontal {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  4%,
+  12%,
+  20%,
+  28% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  8%,
+  16%,
+  24%,
+  32% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  36% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  38% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  4%,
+  12%,
+  20%,
+  28% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  8%,
+  16%,
+  24%,
+  32% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  36% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  38% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
