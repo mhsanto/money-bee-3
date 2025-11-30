@@ -362,40 +362,126 @@
   </section>
   <!-- A Smarter, Safer Way to Borrow (How It Works) -->
   <section id="how-it-works" class="py-16 relative">
+    <div class="absolute top-4 left-0 z-[-1]">
+      <svg class="circuit-animation w-full h-[350px]" viewBox="0 0 308 500" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <!-- Circuit Nodes (Circles and Shapes) -->
+        <circle class="circuit-node" cx="7.32" cy="325.7" r="6.24" />
+        <circle class="circuit-node" cx="227.34" cy="297.82" r="4.5" />
+        <circle class="circuit-node" cx="214.83" cy="319.17" r="6.24" />
+        <circle class="circuit-node" cx="300.26" cy="171.91" r="6.24" />
+        <circle class="circuit-node" cx="276.24" cy="125.44" r="11.54" />
+        <circle class="circuit-node" cx="180.17" cy="96.74" r="11.54" />
+        <circle class="circuit-node" cx="182.35" cy="190.63" r="11.23" />
+        <circle class="circuit-node" cx="175.7" cy="126.37" r="11.23" />
+        <circle class="circuit-node" cx="109.15" cy="185.43" r="9.77" />
+        <circle class="circuit-node" cx="109.93" cy="126.74" r="8.27" />
+        <circle class="circuit-node" cx="107.9" cy="64.37" r="11.23" />
+        <circle class="circuit-node" cx="82.53" cy="49.78" r="7.49" />
+        <circle class="circuit-node" cx="111.56" cy="40.11" r="7.49" />
+        <circle class="circuit-node" cx="70.68" cy="22.7" r="7.49" />
+        <circle class="circuit-node" cx="30.75" cy="51.03" r="7.49" />
+        <circle class="circuit-node" cx="6.42" cy="32.44" r="7.49" />
+
+        <!-- Circuit Paths (Lines) -->
+        <path class="circuit-path"
+          d="M-200.48 89.03L-198.42 87.61L-193.17 95.19L-160.87 95.81L-155.25 101.43L-114.08 102.05L-59.18 156.33L-19.9 157.58L5.995 181.34L6.413 201.31L32.49 225.57L245.82 226.82L261.36 239.87" />
+        <path class="circuit-path"
+          d="M-178.35 82.51L-172.99 76.26L-130.81 75.84L-115.83 87.9H-100.76L-73.28 116.64L-56.28 117.88L-49.23 124.1L-10.93 125.35L18.18 154.45L51.46 154.87L97.61 201.86H142.31L167.68 175.24L215.31 175.66L252.31 212.66" />
+        <path class="circuit-path"
+          d="M-160.39 111.19L-160.32 108.7L-116.14 109.96L-115.79 110.33L-66.23 161.53L-52.52 161.95L28.99 243.87H103.33" />
+        <path class="circuit-path"
+          d="M-102.18 65.44L-81.72 64.59L-60.89 82.91L6.507 83.33L43.95 118.7L83.49 119.94L100.94 137.81H134.39L158.93 110.77L235.71 111.2L248.18 124.49" />
+        <path class="circuit-path"
+          d="M-148.38 292.22L-127.91 291.37L-107.09 309.69L-39.69 310.11L-2.244 345.48L37.3 346.72L54.75 364.59H88.19L112.73 337.55L189.52 337.98L201.98 351.27" />
+        <path class="circuit-path"
+          d="M-236.75 74.39L-223.55 65.45L-223.17 65.44L-122.43 64.19L-111.19 75.01H-77.5L-62.94 89.15H2.765L39.36 124.08L78.93 123.66L96.82 144.05H149.37L164.69 127.9" />
+        <path class="circuit-path"
+          d="M-202.4 113.75L-200.66 111.96L-189.37 122.84L-154.36 123.26L-142.04 137.79L-142.45 148.59L-134.02 158.18L-98.67 157.35L-73.87 184.72L-73.04 204.63L-3.887 270.49L100.84 271.32" />
+        <path class="circuit-path" d="M-129.58 164.84H-103.7L-82.57 183.05L-82.98 204.66L17.31 300.01L102.06 298.77" />
+        <path class="circuit-path"
+          d="M181.34 349.83L191.29 361.08L189.42 362.73L180.25 352.36L153.83 353.16L127.12 376.63L126.72 386.5" />
+        <path class="circuit-path" d="M92.15 440.88L94.27 439.57L99.87 448.61V471.79L111.05 471.42" />
+        <path class="circuit-path" d="M87.81 472.83V458.53H90.3V471.67L111.49 489.6L109.87 491.5L87.81 472.83" />
+        <path class="circuit-path" d="M140.24 274.46L142.37 273.15L147.96 282.18V305.37L159.15 305" />
+        <path class="circuit-path" d="M135.9 306.41V292.1H138.39V305.25L159.58 323.18L157.97 325.08L135.9 306.41" />
+        <path class="circuit-path"
+          d="M-238.13 97.88H-230.39L-208.76 70.02H-126.58L-113.27 82.91H-99.1L-84.12 98.72H-6.355L28.996 135.32H62.67L98.86 171.5H152.65L165.54 155.69" />
+        <path class="circuit-path"
+          d="M-74.26 97.05H-2.633L34.8 131.16H65.57L102.17 166.92H143.1L168.06 138.23H228.62L244.01 153.62" />
+        <path class="circuit-path"
+          d="M-45.17 115.43L-43.46 113.61L-37.17 119.51H-5.086L20.28 147.38H54.78L103.86 198.12H136.43L159.31 170.24L239.85 171.09L250.87 182.1" />
+        <path class="circuit-path"
+          d="M226.02 299.44H250.3L262.52 284.73H282.59L291.11 276.21V268.93L304.63 255.41V248.13L298.8 242.3V176.91" />
+        <path class="circuit-path"
+          d="M-71.32 62.09L-69.56 60.32L-59.61 70.28H51.6L90.54 109.22H135.36L165.61 78.96H196.8L215.31 97.47" />
+        <path class="circuit-path" d="M-213.18 56.5H-82.69L-61.68 75.01H47.28L87.21 114.94H141.07L158.13 97.88" />
+        <path class="circuit-path"
+          d="M-84.66 36.81V34.31H-38.49V55.52H-0.331L17.14 38.06H50.82L65.43 23.45L67.2 25.21L51.86 40.55H18.17L0.702 58.02H-40.99V36.81H-84.66" />
+        <path class="circuit-path" d="M-31.84 10.4V7.902H-16.56L2.731 27.19L0.967 28.96L-17.59 10.4H-31.84" />
+        <path class="circuit-path" d="M54.51 394.04V391.54H69.79L89.08 410.83L87.31 412.59L68.75 394.04H54.51" />
+        <path class="circuit-path"
+          d="M33.76 390.21L35.53 388.44L41.3 394.22V400.56H66.25V411.79H63.76V403.05H38.8V395.25L33.76 390.21" />
+        <path class="circuit-path"
+          d="M-45.2 195.26L-43.44 193.49L15.05 251.98H90.95L98.54 259.57H153.34L166.49 272.72" />
+        <path class="circuit-path"
+          d="M-13.07 179.35L-11.31 177.58L2.057 190.95V205.29L26.49 229.73H155.83L166.65 240.54" />
+        <path class="circuit-path" d="M-43.07 66.45H99.58" />
+        <path class="circuit-path"
+          d="M166.03 69.3L180.83 62.53H196.18L210.68 77.04L208.92 78.8L195.14 65.03H181.38L167.07 71.57L166.03 69.3" />
+        <path class="circuit-path"
+          d="M-26.02 111.61H-7.617L25.03 141.76H58.1L101.4 185.07L99.64 186.83L57.06 144.26H23.998L-8.65 111.61H-26.02" />
+        <path class="circuit-path"
+          d="M-69.22 139.01L-67.45 137.24L-53.78 150.91H-19.05L-3.873 166.09H41.46L50.09 174.73V182.21L56.85 188.97H77.64L91.68 203.01V213.51H100.83" />
+        <path class="circuit-path"
+          d="M-36.1 281.27H-17.7L14.95 311.43H48.02L91.32 354.74L89.56 356.5L46.98 313.92H13.92L-18.73 281.27H-36.1" />
+        <path class="circuit-path"
+          d="M-37.3 348.99L-35.54 347.22L-21.87 360.89H12.86L28.04 376.07H73.38L82.01 384.71V392.19L88.76 398.95H109.56L123.6 412.99V423.49H132.75" />
+        <path class="circuit-path"
+          d="M115.39 41.22V38.72H129.74L134.73 43.72V75.53L141.23 82.03L139.46 83.79L132.23 76.57V44.75L128.7 41.22H115.39" />
+
+        <!-- Additional Circuit Elements -->
+        <rect class="circuit-node" x="170.5" y="145.71" width="21.21" height="21.21" />
+        <rect class="circuit-node" x="170.5" y="261.13" width="21.21" height="21.21" />
+        <rect class="circuit-node" x="160.42" y="415.67" width="21.21" height="21.21" />
+        <rect class="circuit-node" x="188.07" y="360.45" width="14.04" height="14.04" />
+      </svg>
+    </div>
     <div class="absolute bottom-[25%] left-0 z-[-2]">
-      <img src="../../assets/images/icon/bluish.png" alt="RM Currency" class="w-full h-[50rem] object-contain" />
+      <img src="../../assets/images/icon/bluish.png" alt="RM Currency" class="w-full h-[50rem] object-contain " />
     </div>
     <!-- Background Image -->
-    <div class="absolute bottom-[0] right-0 z-2 max-w-[280px] ">
-      <img src="../../assets/images/icon/RM-right.png" alt="" class="w-full h-[240px] object-contain coin-float" />
+    <div class="absolute top-[15%] right-0 z-2 max-w-[280px] overflow-hidden">
+      <img src="../../assets/images/icon/money-coins.png" alt="" class="w-full h-[240px] object-contain" />
     </div>
     <!-- Blue Effect SVG -->
-
+    <div class="absolute bottom-[25%] right-0 z-[-2]">
+      <img src="../../assets/images/icon/bluish-right.png" alt="RM Currency" class="w-full h-[50rem] object-contain " />
+    </div>
     <div class="max-w-screen-3xl mx-auto px-4">
       <div
         class="relative z-10 rounded-3xl border border-white/30 bg-white/15 backdrop-blur-lg px-6 py-10 shadow-lg md:px-10 md:py-12 md:backdrop-blur-xl lg:rounded-none lg:border-0 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:px-0 lg:py-0">
         <h2 id="how-it-works-title"
           class="animate-on-scroll fade-in-up text-3xl md:text-4xl font- text-gray-900 mb-8 text-center text-3xl md:text-4xl font-semibold">
-          The Moneybee Difference: A Loan & a Partner
+          A Smarter, Safer Way to Borrow
         </h2>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <!-- Left: Steps list -->
-          <ol class="space-y-5">
+          <ol class="space-y-2">
             <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-100">
               <span class="flex-none text-3xl font-bold text-blue-800 tabular-nums">01</span>
               <div class="flex-1">
                 <div
                   class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
                   <div class="flex gap-3 flex-col">
-                    <img src="./../../assets/images/icon/magnifying.png" alt="AI-Powered Match" width="60"
-                      height="60" />
+                    <img src="../../assets/images/icon/magnifying.png" alt="AI-Powered Match" width="60" height="60" />
                     <h3 class="font-semibold text-gray-900 text-xl">
                       AI-Powered Match
                     </h3>
                     <p class="text-gray-600">
-                      In 5 minutes, our AI scans thousands of loan options from licensed lenders to find your perfect
-                      fit.
+                      In 5 minutes, our AI scans thousands of loan options from
+                      licensed lenders to find the best match for you.
                     </p>
                   </div>
                 </div>
@@ -408,22 +494,37 @@
                 <div
                   class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
                   <div class="flex gap-3 flex-col">
-                    <img src="./../../assets/images/icon/human-expert.png" alt="Human Expert Review" width="60"
+                    <img src="../../assets/images/icon/human-expert.png" alt="Human Expert Review" width="60"
                       height="60" />
                     <h3 class="font-semibold text-gray-900 text-xl mt-2">Human Expert Review</h3>
-                    <p class="text-gray-600">An expert reviews your AI-match to ensure every detail is correct and
-                      answers your questions.</p>
+                    <p class="text-gray-600">A dedicated expert reviews your AI match to ensure every detail is correct
+                      and answers your questions.</p>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-400">
+
+            <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-300">
               <span class="flex-none text-3xl font-bold text-blue-800 tabular-nums">03</span>
               <div class="flex-1">
                 <div
                   class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
                   <div class="flex gap-3 flex-col">
-                    <img src="./../../assets/images/icon/case-manager.png" alt="Case Manager Support" width="60"
+                    <img src="../../assets/images/icon/drawdown.png" alt="Drawdown" width="40" height="40" />
+                    <h3 class="font-semibold text-gray-900 text-xl mt-2">Drawdown</h3>
+                    <p class="text-gray-600">Finalize your loan with transparent terms and a guided process.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="flex gap-4 items-start animate-on-scroll fade-in-up delay-400">
+              <span class="flex-none text-3xl font-bold text-blue-800 tabular-nums">04</span>
+              <div class="flex-1">
+                <div
+                  class="card-bg-light rounded-xl p-4  flex items-start gap-4 hover:bg-white/90 hover:shadow-md transition">
+                  <div class="flex gap-3 flex-col">
+                    <img src="../../assets/images/icon/case-manager.png" alt="Case Manager Support" width="60"
                       height="60" />
                     <h3 class="font-semibold text-gray-900 text-xl mt-2">Case Manager Support</h3>
                     <p class="text-gray-600">After drawdown, your dedicated Case Manager helps you manage payments and
@@ -435,8 +536,8 @@
           </ol>
 
           <!-- Right: Image with overlays -->
-          <div class="relative h-[100%] md:h-[100%] w-full">
-            <img src="./../../assets/images/smarter-way-to-borrow/image3.jpeg"
+          <div class="relative h-[100%] w-full  rounded-xl">
+            <img src="../../assets/images/smarter-way-to-borrow/image3.jpeg"
               alt="Consultation with financial charts overlay" class="absolute inset-0 w-full h-full object-contain" />
 
           </div>

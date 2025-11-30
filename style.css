@@ -24,15 +24,18 @@ overflow-x: hidden;
 /* Circuit Animation Keyframes */
 @keyframes circuitFlow {
   0% {
-    stroke-dashoffset: 100%;
-    opacity: 0;
+    stroke-dashoffset: 1000;
+    opacity: 0.2;
   }
-  10% {
+  30% {
     opacity: 0.6;
   }
-  100% {
-    stroke-dashoffset: 0%;
+  70% {
     opacity: 0.8;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.5;
   }
 }
 
@@ -49,10 +52,10 @@ overflow-x: hidden;
 
 @keyframes circuitGlow {
   0%, 100% {
-    filter: drop-shadow(0 0 3px #449AD5);
+    filter: drop-shadow(0 0 2px #449AD5);
   }
   50% {
-    filter: drop-shadow(0 0 10px #449AD5) drop-shadow(0 0 20px #449AD5);
+    filter: drop-shadow(0 0 8px #449AD5) drop-shadow(0 0 15px #449AD5);
   }
 }
 
@@ -555,79 +558,73 @@ overflow-x: hidden;
 
 /* Circuit Animation Styles */
 .circuit-animation {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.5s ease;
 }
 
 .circuit-animation.animate {
   opacity: 1;
-  animation: circuitGlow 3s ease-in-out infinite;
+  animation: circuitGlow 5s ease-in-out infinite;
 }
 
 .circuit-path {
   stroke: #449AD5;
   stroke-width: 1.5;
   fill: none;
-  stroke-dasharray: 100%;
-  stroke-dashoffset: 100%;
-  opacity: 0;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  opacity: 0.6;
+  animation: circuitFlow 8s ease-in-out infinite;
 }
 
-.circuit-path.animate {
-  animation: circuitFlow 4s ease-out infinite;
+.circuit-path:nth-child(2n) {
+  animation-delay: 0.5s;
 }
 
-.circuit-path.animate:nth-child(2n) {
-  animation-delay: 0.2s;
-}
-
-.circuit-path.animate:nth-child(3n) {
-  animation-delay: 0.4s;
-}
-
-.circuit-path.animate:nth-child(4n) {
-  animation-delay: 0.6s;
-}
-
-.circuit-path.animate:nth-child(5n) {
-  animation-delay: 0.8s;
-}
-
-.circuit-path.animate:nth-child(6n) {
+.circuit-path:nth-child(3n) {
   animation-delay: 1s;
 }
 
-.circuit-path.animate:nth-child(7n) {
-  animation-delay: 1.2s;
+.circuit-path:nth-child(4n) {
+  animation-delay: 1.5s;
+}
+
+.circuit-path:nth-child(5n) {
+  animation-delay: 2s;
+}
+
+.circuit-path:nth-child(6n) {
+  animation-delay: 2.5s;
+}
+
+.circuit-path:nth-child(7n) {
+  animation-delay: 3s;
 }
 
 .circuit-node {
   fill: #449AD5;
-  opacity: 0;
+  opacity: 0.6;
   transform-origin: center;
+  animation: circuitPulse 4s ease-in-out infinite;
 }
 
-.circuit-node.animate {
-  animation: circuitPulse 2s ease-in-out infinite;
-}
-
-.circuit-node.animate:nth-child(2n) {
+.circuit-node:nth-child(2n) {
   animation-delay: 0.3s;
 }
 
-.circuit-node.animate:nth-child(3n) {
+.circuit-node:nth-child(3n) {
   animation-delay: 0.6s;
 }
 
-.circuit-node.animate:nth-child(4n) {
+.circuit-node:nth-child(4n) {
   animation-delay: 0.9s;
 }
 
-.circuit-node.animate:nth-child(5n) {
+.circuit-node:nth-child(5n) {
   animation-delay: 1.2s;
 }
 
-.circuit-node.animate:nth-child(6n) {
+.circuit-node:nth-child(6n) {
   animation-delay: 1.5s;
 }
 
