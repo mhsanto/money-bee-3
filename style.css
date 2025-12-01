@@ -825,7 +825,7 @@ overflow-x: hidden;
 .footer-animated-bg {
   background: linear-gradient(181.63deg, rgba(214, 233, 255, 0.9) 1.47%, rgba(35, 82, 134, 0.8) 40%, rgba(45, 100, 160, 0.85) 60%, rgba(35, 82, 134, 0.8) 98.72%);
   background-size: 200% 200%;
-  animation: footerGradientShift 8s ease-in-out infinite;
+  animation: footerGradientShift 15s ease-in-out infinite;
 }
 
 /* Footer Item Animations */
