@@ -51,9 +51,9 @@ const blogNextBtn = document.getElementById("blog-next-btn");
 let cardWidth = 320; // default
 let gap = 24; // default
 let scrollAmount = cardWidth + gap;
-const totalCards = 4;
+let totalCards = 0; // Will be calculated dynamically
 let visibleCards = window.innerWidth >= 1024 ? 3 : 1; // Show 3 on desktop, 1 on mobile
-let maxPosition = (totalCards - visibleCards) * scrollAmount;
+let maxPosition = 0;
 
 function updateCardDimensions() {
     cardWidth =
@@ -67,6 +67,12 @@ function updateCardDimensions() {
     const style = getComputedStyle(blogCarousel);
     gap = parseFloat(style.gap) || 24;
     scrollAmount = cardWidth + gap;
+
+    // Calculate total cards dynamically
+    totalCards = blogCarousel.children.length;
+
+    // For infinite loop, we need enough cards to scroll through
+    // maxPosition should allow scrolling through all cards
     maxPosition = (totalCards - visibleCards) * scrollAmount;
 }
 
@@ -86,9 +92,12 @@ function blogNext() {
     blogCarousel.classList.add('blog-carousel-animating');
 
     blogCurrentPosition += scrollAmount;
+
+    // If we've reached the end, loop back to start
     if (blogCurrentPosition > maxPosition) {
-        blogCurrentPosition = 0; // Loop back to start
+        blogCurrentPosition = 0;
     }
+
     updateBlogCarousel();
 
     // Remove animation class after transition completes
@@ -105,9 +114,12 @@ function blogPrev() {
     blogCarousel.classList.add('blog-carousel-animating');
 
     blogCurrentPosition -= scrollAmount;
+
+    // If we've reached the beginning, loop to end
     if (blogCurrentPosition < 0) {
-        blogCurrentPosition = maxPosition; // Loop to end
+        blogCurrentPosition = maxPosition;
     }
+
     updateBlogCarousel();
 
     // Remove animation class after transition completes
@@ -126,7 +138,7 @@ window.addEventListener("resize", () => {
     if (newVisibleCards !== visibleCards) {
         visibleCards = newVisibleCards;
         updateCardDimensions();
-        blogCurrentPosition = 0;
+        blogCurrentPosition = 0; // Reset position on layout change
         updateBlogCarousel();
     }
 });
@@ -134,6 +146,117 @@ window.addEventListener("resize", () => {
 // Initial update
 updateCardDimensions();
 updateBlogCarousel();
+
+// Testimonial Carousel
+let testimonialCurrentPosition = 0;
+const testimonialCarousel = document.getElementById("testimonial-carousel");
+const testimonialSlide = document.querySelector(".testimonial-slide");
+const testimonialPrevBtn = document.getElementById("testimonial-prev-btn");
+const testimonialNextBtn = document.getElementById("testimonial-next-btn");
+const testimonialDots = document.querySelectorAll(".carousel-dot");
+let testimonialCardWidth = 900; // max-width of testimonial cards
+let testimonialGap = 16; // gap between cards
+let testimonialScrollAmount = testimonialCardWidth + testimonialGap;
+const totalTestimonials = 3;
+let currentTestimonialIndex = 0;
+
+function updateTestimonialDimensions() {
+    testimonialCardWidth = window.innerWidth >= 1024 ? 900 : window.innerWidth >= 768 ? 800 : window.innerWidth >= 640 ? 700 : window.innerWidth - 32;
+    testimonialGap = 16;
+    testimonialScrollAmount = testimonialCardWidth + testimonialGap;
+}
+
+function updateTestimonialCarousel() {
+    testimonialSlide.style.transform = `translateX(-${testimonialCurrentPosition}px)`;
+
+    // Update dots
+    testimonialDots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentTestimonialIndex);
+        dot.classList.toggle("bg-blue-500", index === currentTestimonialIndex);
+        dot.classList.toggle("bg-gray-300", index !== currentTestimonialIndex);
+    });
+}
+
+function testimonialNext() {
+    // Prevent multiple clicks during animation
+    if (testimonialCarousel.classList.contains('testimonial-carousel-animating')) return;
+
+    // Add animation class
+    testimonialCarousel.classList.add('testimonial-carousel-animating');
+
+    testimonialCurrentPosition += testimonialScrollAmount;
+    currentTestimonialIndex++;
+
+    if (currentTestimonialIndex >= totalTestimonials) {
+        currentTestimonialIndex = 0; // Loop back to start
+        testimonialCurrentPosition = 0;
+    }
+
+    updateTestimonialCarousel();
+
+    // Remove animation class after transition completes
+    setTimeout(() => {
+        testimonialCarousel.classList.remove('testimonial-carousel-animating');
+    }, 600); // Match the CSS transition duration
+}
+
+function testimonialPrev() {
+    // Prevent multiple clicks during animation
+    if (testimonialCarousel.classList.contains('testimonial-carousel-animating')) return;
+
+    // Add animation class
+    testimonialCarousel.classList.add('testimonial-carousel-animating');
+
+    testimonialCurrentPosition -= testimonialScrollAmount;
+    currentTestimonialIndex--;
+
+    if (currentTestimonialIndex < 0) {
+        currentTestimonialIndex = totalTestimonials - 1; // Loop to end
+        testimonialCurrentPosition = (totalTestimonials - 1) * testimonialScrollAmount;
+    }
+
+    updateTestimonialCarousel();
+
+    // Remove animation class after transition completes
+    setTimeout(() => {
+        testimonialCarousel.classList.remove('testimonial-carousel-animating');
+    }, 600); // Match the CSS transition duration
+}
+
+// Dot navigation
+testimonialDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+        if (testimonialCarousel.classList.contains('testimonial-carousel-animating')) return;
+
+        testimonialCarousel.classList.add('testimonial-carousel-animating');
+
+        currentTestimonialIndex = index;
+        testimonialCurrentPosition = index * testimonialScrollAmount;
+
+        updateTestimonialCarousel();
+
+        setTimeout(() => {
+            testimonialCarousel.classList.remove('testimonial-carousel-animating');
+        }, 600);
+    });
+});
+
+// Event listeners for testimonial carousel
+if (testimonialPrevBtn && testimonialNextBtn) {
+    testimonialPrevBtn.addEventListener("click", testimonialPrev);
+    testimonialNextBtn.addEventListener("click", testimonialNext);
+}
+
+// Update testimonial carousel on window resize
+window.addEventListener("resize", () => {
+    updateTestimonialDimensions();
+    testimonialCurrentPosition = currentTestimonialIndex * testimonialScrollAmount;
+    updateTestimonialCarousel();
+});
+
+// Initial testimonial carousel setup
+updateTestimonialDimensions();
+updateTestimonialCarousel();
 
 // Circuit Animation on Scroll
 const animatedSections = new Set();
