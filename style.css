@@ -636,8 +636,8 @@ overflow-x: hidden;
 
 /* Shake Left-Right Animation */
 .shake-lr {
--webkit-animation: shake-horizontal 2.5s ease-in-out infinite both;
-	        animation: shake-horizontal 2.5s ease-in-out infinite both;
+-webkit-animation: shake-horizontal 4s ease-in-out infinite both;
+	        animation: shake-horizontal 4s ease-in-out infinite both;
 }
 @-webkit-keyframes shake-horizontal {
   0%,
@@ -650,23 +650,23 @@ overflow-x: hidden;
   12%,
   20%,
   28% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
   }
   8%,
   16%,
   24%,
   32% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
   36% {
-    -webkit-transform: translateX(8px);
-            transform: translateX(8px);
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
   }
   38% {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
   }
 }
 @keyframes shake-horizontal {
@@ -680,23 +680,23 @@ overflow-x: hidden;
   12%,
   20%,
   28% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
   }
   8%,
   16%,
   24%,
   32% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
   36% {
-    -webkit-transform: translateX(8px);
-            transform: translateX(8px);
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
   }
   38% {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
   }
 }
 
