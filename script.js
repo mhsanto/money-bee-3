@@ -73,24 +73,47 @@ function updateCardDimensions() {
 function updateBlogCarousel() {
     blogCarousel.style.transform = `translateX(-${blogCurrentPosition}px)`;
 
-    // Disable buttons at limits
-    blogPrevBtn.style.opacity = blogCurrentPosition <= 0 ? "0.5" : "1";
-    blogNextBtn.style.opacity =
-        blogCurrentPosition >= maxPosition ? "0.5" : "1";
+    // Keep buttons always enabled for infinite loop
+    blogPrevBtn.style.opacity = "1";
+    blogNextBtn.style.opacity = "1";
 }
 
 function blogNext() {
-    if (blogCurrentPosition < maxPosition) {
-        blogCurrentPosition += scrollAmount;
-        updateBlogCarousel();
+    // Prevent multiple clicks during animation
+    if (blogCarousel.classList.contains('blog-carousel-animating')) return;
+
+    // Add animation class
+    blogCarousel.classList.add('blog-carousel-animating');
+
+    blogCurrentPosition += scrollAmount;
+    if (blogCurrentPosition > maxPosition) {
+        blogCurrentPosition = 0; // Loop back to start
     }
+    updateBlogCarousel();
+
+    // Remove animation class after transition completes
+    setTimeout(() => {
+        blogCarousel.classList.remove('blog-carousel-animating');
+    }, 600); // Match the CSS transition duration
 }
 
 function blogPrev() {
-    if (blogCurrentPosition > 0) {
-        blogCurrentPosition -= scrollAmount;
-        updateBlogCarousel();
+    // Prevent multiple clicks during animation
+    if (blogCarousel.classList.contains('blog-carousel-animating')) return;
+
+    // Add animation class
+    blogCarousel.classList.add('blog-carousel-animating');
+
+    blogCurrentPosition -= scrollAmount;
+    if (blogCurrentPosition < 0) {
+        blogCurrentPosition = maxPosition; // Loop to end
     }
+    updateBlogCarousel();
+
+    // Remove animation class after transition completes
+    setTimeout(() => {
+        blogCarousel.classList.remove('blog-carousel-animating');
+    }, 600); // Match the CSS transition duration
 }
 
 // Event listeners for blog carousel

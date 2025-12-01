@@ -1920,24 +1920,25 @@
     function updateBlogCarousel() {
       blogCarousel.style.transform = `translateX(-${blogCurrentPosition}px)`;
 
-      // Disable buttons at limits
-      blogPrevBtn.style.opacity = blogCurrentPosition <= 0 ? "0.5" : "1";
-      blogNextBtn.style.opacity =
-        blogCurrentPosition >= maxPosition ? "0.5" : "1";
+      // Keep buttons always enabled for infinite loop
+      blogPrevBtn.style.opacity = "1";
+      blogNextBtn.style.opacity = "1";
     }
 
     function blogNext() {
-      if (blogCurrentPosition < maxPosition) {
-        blogCurrentPosition += scrollAmount;
-        updateBlogCarousel();
+      blogCurrentPosition += scrollAmount;
+      if (blogCurrentPosition > maxPosition) {
+        blogCurrentPosition = 0; // Loop back to start
       }
+      updateBlogCarousel();
     }
 
     function blogPrev() {
-      if (blogCurrentPosition > 0) {
-        blogCurrentPosition -= scrollAmount;
-        updateBlogCarousel();
+      blogCurrentPosition -= scrollAmount;
+      if (blogCurrentPosition < 0) {
+        blogCurrentPosition = maxPosition; // Loop to end
       }
+      updateBlogCarousel();
     }
 
     // Event listeners for blog carousel

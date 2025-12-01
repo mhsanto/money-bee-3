@@ -712,3 +712,65 @@ overflow-x: hidden;
   max-height: 500px; /* Adjust based on content height */
   opacity: 1;
 }
+
+/* Blog Carousel Animation Styles */
+#blog-carousel {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.blog-carousel-animating {
+  pointer-events: none;
+}
+
+.blog-carousel-animating #blog-carousel {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Blog Navigation Button Animations */
+#blog-prev-btn,
+#blog-next-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+
+#blog-prev-btn:hover,
+#blog-next-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+#blog-prev-btn:active,
+#blog-next-btn:active {
+  transform: scale(0.95);
+}
+
+/* Disabled state during animation */
+.blog-carousel-animating #blog-prev-btn,
+.blog-carousel-animating #blog-next-btn {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: scale(1) !important;
+}
+
+.blog-carousel-animating #blog-prev-btn:hover,
+.blog-carousel-animating #blog-next-btn:hover {
+  transform: scale(1) !important;
+  box-shadow: none !important;
+}
+
+/* Add subtle slide-in animation for blog cards */
+.blog-card-enter {
+  animation: slideInFromRight 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
