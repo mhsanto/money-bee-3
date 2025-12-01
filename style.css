@@ -769,3 +769,102 @@ overflow-x: hidden;
     transform: translateX(0);
   }
 }
+
+/* Footer Gradient Animation */
+@keyframes footerGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes footerGlow {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Footer Animated Background */
+.footer-animated-bg {
+  background: linear-gradient(181.63deg, rgba(214, 233, 255, 0.9) 1.47%, rgba(35, 82, 134, 0.8) 40%, rgba(45, 100, 160, 0.85) 60%, rgba(35, 82, 134, 0.8) 98.72%);
+  background-size: 200% 200%;
+  animation: footerGradientShift 8s ease-in-out infinite;
+}
+
+/* Footer Item Animations */
+.footer-logo-animate {
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+.footer-link-animate {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-link-animate:hover {
+  transform: translateX(5px);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.footer-social-animate {
+  transition: all 0.3s ease;
+}
+
+.footer-social-animate:hover {
+  transform: translateY(-5px) scale(1.1);
+  filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3));
+}
+
+.footer-icon-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.footer-text-shimmer {
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(255, 255, 255, 0.8) 25%, 
+    rgba(255, 255, 255, 1) 50%, 
+    rgba(255, 255, 255, 0.8) 75%, 
+    rgba(255, 255, 255, 1) 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
